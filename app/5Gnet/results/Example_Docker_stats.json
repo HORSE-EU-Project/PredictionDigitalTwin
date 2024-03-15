@@ -1,0 +1,98 @@
+{
+  "read": "2022-04-21T13:57:00.863569616Z",
+  "preread": "2022-04-21T13:56:59.853804143Z",
+  "pids_stats": {
+    "current": 13
+  },
+  "num_procs": 0,
+  "storage_stats": {},
+  "cpu_stats": {
+    "cpu_usage": {
+      "total_usage": 2704128673,
+      "percpu_usage": [
+        1428616214,
+        1275512459
+      ],
+      "usage_in_kernelmode": 1490000000,
+      "usage_in_usermode": 690000000
+    },
+    "system_cpu_usage": 197545640000000,
+    "online_cpus": 2,
+    "throttling_data": {
+      "periods": 574,
+      "throttled_periods": 0,
+      "throttled_time": 0
+    }
+  },
+  "precpu_stats": {
+    "cpu_usage": {
+      "total_usage": 2634041853,
+      "percpu_usage": [
+        1389761191,
+        1244280662
+      ],
+      "usage_in_kernelmode": 1440000000,
+      "usage_in_usermode": 680000000
+    },
+    "system_cpu_usage": 197543760000000,
+    "online_cpus": 2,
+    "throttling_data": {
+      "periods": 564,
+      "throttled_periods": 0,
+      "throttled_time": 0
+    }
+  },
+  "memory_stats": {
+    "usage": 82677760,
+    "max_usage": 82677760,
+    "stats": {
+      "active_anon": 74747904,
+      "active_file": 0,
+      "cache": 0,
+      "dirty": 0,
+      "hierarchical_memory_limit": 9223372036854771712,
+      "hierarchical_memsw_limit": 0,
+      "inactive_anon": 0,
+      "inactive_file": 0,
+      "mapped_file": 0,
+      "pgfault": 22506,
+      "pgmajfault": 0,
+      "pgpgin": 20196,
+      "pgpgout": 1884,
+      "rss": 74891264,
+      "rss_huge": 0,
+      "total_active_anon": 77991936,
+      "total_active_file": 0,
+      "total_cache": 405504,
+      "total_dirty": 0,
+      "total_inactive_anon": 0,
+      "total_inactive_file": 540672,
+      "total_mapped_file": 0,
+      "total_pgfault": 28545,
+      "total_pgmajfault": 0,
+      "total_pgpgin": 23991,
+      "total_pgpgout": 4668,
+      "total_rss": 78163968,
+      "total_rss_huge": 0,
+      "total_unevictable": 0,
+      "total_writeback": 0,
+      "unevictable": 0,
+      "writeback": 0
+    },
+    "limit": 4127350784
+  },
+  "name": "/upf_mec",
+  "id": "6d8afee67a46f074bde8d06a8d836c4cff2e92faeab12ab96633a8b980bf89ea",
+  "networks": {
+    "eth0": {
+      "rx_bytes": 1018,
+      "rx_packets": 13,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_bytes": 0,
+      "tx_packets": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    }
+  }
+}

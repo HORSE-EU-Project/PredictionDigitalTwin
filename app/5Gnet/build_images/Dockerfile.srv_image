@@ -1,0 +1,23 @@
+FROM ubuntu:20.04
+
+RUN apt-get -qy update && \
+	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+	bash \
+	bash-completion \
+	curl \
+	iperf \
+	iperf3 \
+	iproute2 \
+	iputils-ping \
+	net-tools \
+	stress-ng \
+	tcpdump \
+	telnet \
+	libncurses5 \
+	sysbench \
+	python3 python3-pip && \
+	rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install docker click psutil redis
+
+CMD ["bash"]

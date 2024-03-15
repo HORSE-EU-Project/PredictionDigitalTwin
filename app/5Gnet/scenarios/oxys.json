@@ -1,0 +1,79 @@
+{
+    "description"     : "This is a scenario used to test the OXYS software",
+    "prj_folder"      : "/home/vagrant/comnetsemu/app/5Gnet",
+    "mongodb_folder"  : "/home/vagrant/mongodbdata",
+    "ueransim_image"  : "myueransim_v3-2-6",
+    "open5gs_image"   : "my5gc_v2-4-4",
+    "link_bwt"        : 100,
+    "cp_host_ip"      : "192.168.0.200/24",
+    "cld_host_ip"     : "192.168.0.202/24",
+    "mec_host_ip"     : "192.168.0.201/24",
+    "ran_host_ip"     : "192.168.0.199/24",
+    "switches": ["s1","s2"],
+    "links": [
+        {"src":"s1",       "dst":"s2", "bwt":100, "delay":"50ms"},
+        {"src":"cp",       "dst":"s2", "bwt":100, "delay":"1ms"},
+        {"src":"cld_host", "dst":"s2", "bwt":100, "delay":"1ms"},
+        {"src":"mec_host", "dst":"s1", "bwt":100, "delay":"1ms"},
+        {"src":"ran",      "dst":"s1", "bwt":100, "delay":"10ms"}
+    ],
+    "hosts": {
+        "cp": {
+            "type": "CP",
+            "ip": "192.168.0.200/24",
+            "cpu_quota": 100,
+            "upfs": [
+                {
+                    "host_ip": "192.168.0.201",
+                    "subnet" : "10.2.0.1/16",
+                    "dnn"    : "mec"
+                },
+                {
+                    "host_ip": "192.168.0.202",
+                    "subnet" : "10.1.0.1/16",
+                    "dnn"    : "cld"
+                }
+            ]
+        },
+        "ran": {
+            "type": "RAN",
+            "ip": "192.168.0.199/24",
+            "cpu_quota": 100
+        },
+        "mec_host": {
+            "type": "MEC",
+            "ip": "192.168.0.201/24",
+            "cpus": "1",
+            "cpu_quota": 100,
+            "upf": {
+                "subnet": "10.2.0.1/16",
+                "dnn": "mec",
+                "dev": "ogstun"
+            }
+        },
+        "cld_host": {
+            "type": "MEC",
+            "ip": "192.168.0.202/24",
+            "cpu_quota": 100,
+            "upf": {
+                "subnet": "10.1.0.1/16",
+                "dnn": "cld",
+                "dev": "ogstun"
+            }
+        }
+    },
+    "apps" : {
+        "oxys_srv_mec": {
+            "host":       "mec_host",
+            "image_name": "oxys-reflector"
+        },
+        "oxys_srv_cld": {
+            "host":       "cld_host",
+            "image_name": "oxys-reflector"
+        },
+        "oxys_cli": {
+            "host":       "ran",
+            "image_name": "oxys-reflector"
+        }
+    }
+}

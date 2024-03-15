@@ -1,0 +1,233 @@
+#! /usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# First version of the HORSE Digital Twin
+# DDOS scenario
+
+import os
+
+from comnetsemu.cli import CLI, spawnXtermDocker
+from comnetsemu.net import Containernet, VNFManager
+from mininet.link import TCLink
+from mininet.log import info, setLogLevel
+from mininet.node import OVSKernelSwitch, Controller, RemoteController
+
+from python_modules.Open5GS   import Open5GS
+
+from mininetFastAPI.mininetFastAPI import MininetRest
+
+import json, time
+
+if __name__ == "__main__":
+
+    AUTOTEST_MODE = os.environ.get("COMNETSEMU_AUTOTEST_MODE", 0)
+
+    setLogLevel("info")
+
+    prj_folder="/home/vagrant/comnetsemu/app/comnetsemu_5Gnet"
+    mongodb_folder="/home/vagrant/mongodbdata"
+
+    # Uncomment to link to sFlow (but first run start.sh script to activate sFlow deamon
+    # exec(open('./sflow-rt/extras/sflow.py').read())
+    env = dict()
+
+    # net = Containernet(controller=Controller, link=TCLink)
+    net = Containernet(
+        switch=OVSKernelSwitch,
+        build=False,
+        link=TCLink)
+
+    info("*** Adding Host for open5gs CP\n")
+    cp = net.addDockerHost(
+        "cp",
+        dimage="my5gc_v2-4-4",
+        ip="192.168.0.111/24",
+        # dcmd="",
+        dcmd="bash /open5gs/install/etc/open5gs/5gc_cp_init.sh",
+        docker_args={
+            "ports" : { "3000/tcp": 3000 },
+            "volumes": {
+                prj_folder + "/log": {
+                    "bind": "/open5gs/install/var/log/open5gs",
+                    "mode": "rw",
+                },
+                mongodb_folder: {
+                    "bind": "/var/lib/mongodb",
+                    "mode": "rw",
+                },
+                prj_folder + "/open5gs/config": {
+                    "bind": "/open5gs/install/etc/open5gs",
+                    "mode": "rw",
+                },
+                "/etc/timezone": {
+                    "bind": "/etc/timezone",
+                    "mode": "ro",
+                },
+                "/etc/localtime": {
+                    "bind": "/etc/localtime",
+                    "mode": "ro",
+                },
+            },
+        },
+    )
+
+
+    info("*** Adding Host for open5gs UPF\n")
+    env["COMPONENT_NAME"]="upf"
+    upf = net.addDockerHost(
+        "upf",
+        dimage="my5gc_v2-4-4",
+        ip="192.168.0.112/24",
+        # dcmd="",
+        dcmd="bash /open5gs/install/etc/open5gs/temp/5gc_up_init.sh",
+        docker_args={
+            "environment": env,
+            "volumes": {
+                prj_folder + "/log": {
+                    "bind": "/open5gs/install/var/log/open5gs",
+                    "mode": "rw",
+                },
+                prj_folder + "/open5gs/config": {
+                    "bind": "/open5gs/install/etc/open5gs/temp",
+                    "mode": "rw",
+                },
+                "/etc/timezone": {
+                    "bind": "/etc/timezone",
+                    "mode": "ro",
+                },
+                "/etc/localtime": {
+                    "bind": "/etc/localtime",
+                    "mode": "ro",
+                },
+            },
+            "cap_add": ["NET_ADMIN"],
+            "sysctls": {"net.ipv4.ip_forward": 1},
+            "devices": "/dev/net/tun:/dev/net/tun:rwm"
+        }, 
+    )
+
+    info("*** Adding gNB\n")
+    env["COMPONENT_NAME"]="gnb"
+    gnb = net.addDockerHost(
+        "gnb", 
+        dimage="myueransim_v3-2-6",
+        ip="192.168.0.131/24",
+        # dcmd="",
+        dcmd="bash /mnt/ueransim/open5gs_gnb_init.sh",
+        docker_args={
+            "environment": env,
+            "volumes": {
+                prj_folder + "/ueransim/config": {
+                    "bind": "/mnt/ueransim",
+                    "mode": "rw",
+                },
+                prj_folder + "/log": {
+                    "bind": "/mnt/log",
+                    "mode": "rw",
+                },
+                "/etc/timezone": {
+                    "bind": "/etc/timezone",
+                    "mode": "ro",
+                },
+                "/etc/localtime": {
+                    "bind": "/etc/localtime",
+                    "mode": "ro",
+                },
+                "/dev": {"bind": "/dev", "mode": "rw"},
+            },
+            "cap_add": ["NET_ADMIN"],
+            "devices": "/dev/net/tun:/dev/net/tun:rwm"
+        },
+    )
+
+    info("*** Adding UE\n")
+    env["COMPONENT_NAME"]="ue"
+    ue = net.addDockerHost(
+        "ue", 
+        dimage="myueransim_v3-2-6",
+        ip="192.168.0.132/24",
+        # dcmd="",
+        dcmd="bash /mnt/ueransim/open5gs_ue_init.sh",
+        docker_args={
+            "environment": env,
+            "volumes": {
+                prj_folder + "/ueransim/config": {
+                    "bind": "/mnt/ueransim",
+                    "mode": "rw",
+                },
+                prj_folder + "/log": {
+                    "bind": "/mnt/log",
+                    "mode": "rw",
+                },
+                "/etc/timezone": {
+                    "bind": "/etc/timezone",
+                    "mode": "ro",
+                },
+                "/etc/localtime": {
+                    "bind": "/etc/localtime",
+                    "mode": "ro",
+                },
+                "/dev": {"bind": "/dev", "mode": "rw"},
+            },
+            "cap_add": ["NET_ADMIN"],
+            "devices": "/dev/net/tun:/dev/net/tun:rwm"
+        },
+    )
+
+    dns_server = net.addDockerHost('dns_server', dimage="dev_test", ip="192.168.0.200/24", docker_args={"hostname": "dns_server"})
+    internet_server = net.addDockerHost('internet_server', dimage="dev_test",  ip="192.168.0.201/24", docker_args={"hostname": "internet_server"})
+
+
+    info("*** Add remote controller\n")
+    c0 = RemoteController( 'c0', ip='127.0.0.1', port=6653 )
+    net.addController( c0 )
+
+    info("*** Adding switch\n")
+    ceos1 = net.addSwitch("ceos1")
+    ceos2 = net.addSwitch("ceos2")
+    ceos3 = net.addSwitch("ceos3")
+    ceos4 = net.addSwitch("ceos4")
+
+    info("*** Adding links\n")
+    net.addLink(ceos1, ceos2, bw=100, delay="10ms", intfName1="ceos1-Gi2", intfName2="ceos2-Gi3")
+    net.addLink(ceos2, ceos4, bw=100, delay="10ms", intfName1="ceos2-Gi2", intfName2="ceos4-Gi2")
+    net.addLink(ceos1, ceos3, bw=100, delay="10ms", intfName1="ceos1-Gi3", intfName2="ceos3-Gi3")
+    net.addLink(ceos3, ceos4, bw=100, delay="10ms", intfName1="ceos3-Gi2", intfName2="ceos4-Gi3")
+    net.addLink(ceos2, ceos3, bw=100, delay="10ms", intfName1="ceos2-Gi4", intfName2="ceos3-Gi4")
+
+    net.addLink(cp,      ceos2, bw=1000, delay="1ms", intfName1="cp-s1",  intfName2="ceos2-Gi1")
+    net.addLink(upf,     ceos3, bw=1000, delay="1ms", intfName1="upf-e1",  intfName2="ceos3-Gi1")
+    # net.addLink(upf,     ceos3, bw=1000, delay="1ms", intfName1="upf-e2",  intfName2="ceos3-Gi5")
+
+    net.addLink(dns_server, ceos4, bw=100, delay="1ms", intfName1="dns-e1",  intfName2="ceos4-Gi1")
+    net.addLink(internet_server, ceos4, bw=100, delay="50ms", intfName1="internet-e1", intfName2="ceos4-Gi4")
+
+    net.addLink(ue,  ceos1, bw=1000, delay="1ms", intfName1="ue-s1",  intfName2="s1-ue")
+    net.addLink(gnb, ceos1, bw=1000, delay="1ms", intfName1="gnb-s1", intfName2="s1-gnb")
+    
+    print(f"\n*** Open5GS: Init 10 subscribers for UE container")
+    o5gs   = Open5GS( "172.17.0.2" ,"27017")
+    o5gs.removeAllSubscribers()
+    with open( prj_folder + "/python_modules/subscriber_profile.json" , 'r') as f:
+        profile = json.load( f )
+    counter = 894
+    for _ in range(10):
+        counter += 1
+        prefix = "001011234567"
+        prefix += str(counter)
+        profile["imsi"] = prefix
+        o5gs.addSubscriber(profile)
+
+    info("\n*** Starting network\n")
+    net.start()
+
+    # REST APIs (uncomment)
+    #mininet_rest = MininetRest(net)
+    #mininet_rest.run()
+
+    if not AUTOTEST_MODE:
+        # spawnXtermDocker("open5gs")
+        # spawnXtermDocker("gnb")
+        CLI(net)
+
+    net.stop()

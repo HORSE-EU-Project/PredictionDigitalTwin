@@ -1,0 +1,13 @@
+Open5GS daemon v2.4.4
+
+03/05 16:59:37.336: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:129)
+03/05 16:59:37.336: [app] INFO: File Logging: '/mnt/log/cld_host_upf.log' (../lib/app/ogs-init.c:132)
+03/05 16:59:37.405: [pfcp] INFO: pfcp_server() [192.168.0.202]:8805 (../lib/pfcp/path.c:30)
+03/05 16:59:37.408: [gtp] INFO: gtp_server() [192.168.0.202]:2152 (../lib/gtp/path.c:30)
+03/05 16:59:37.418: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+03/05 16:59:38.396: [pfcp] INFO: ogs_pfcp_connect() [192.168.0.200]:8805 (../lib/pfcp/path.c:59)
+03/05 16:59:38.396: [upf] INFO: PFCP associated (../src/upf/pfcp-sm.c:173)
+03/05 16:59:56.682: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:160)
+03/05 16:59:56.683: [gtp] INFO: gtp_connect() [127.0.0.4]:2152 (../lib/gtp/path.c:58)
+03/05 16:59:56.683: [upf] INFO: UE F-SEID[CP:0x1 UP:0x1] APN[cld] PDN-Type[1] IPv4[10.1.0.2] IPv6[] (../src/upf/context.c:361)
+03/05 16:59:56.835: [gtp] INFO: gtp_connect() [192.168.0.199]:2152 (../lib/gtp/path.c:58)

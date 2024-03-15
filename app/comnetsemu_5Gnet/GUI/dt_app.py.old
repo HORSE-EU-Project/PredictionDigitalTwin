@@ -1,0 +1,129 @@
+import os, sys, json, base64
+import time
+import requests
+import streamlit as st
+import streamlit.components.v1 as components
+from subprocess import PIPE, Popen
+
+# --------------------------------------------------------------------------------
+
+API_HOST='192.168.56.2'
+API_PORT=5000
+
+# TODO: MODIFY ACCORDING TO config.ini FILE
+
+API_BASE_URL=f'http://{API_HOST}:{API_PORT}'
+
+# Some definitions
+def cmdline(command):
+    process = Popen(
+        args=command,
+        stdout=PIPE,
+        shell=True
+    )
+    return
+#    return process.communicate()[0]
+
+# Session State variables:
+state = st.session_state
+if 'API_APP' not in state:
+    state.API_APP = None
+if 'API_STARTED' not in state:
+    state.API_STARTED=False
+
+# --------------------------------------------------------------------------------
+
+# NOTE: Design point... only main() is allowed to mutate state. All supporting functions should not mutate state.
+def main():
+    st.title('HORSE Digital Twin Graphical User Interface')
+
+    if st.button('Run sFlow'):
+        cmdline("./run_sFlow.sh")
+        st.markdown(f'''
+            `sFlow is running. You can access the GUI here:`
+            [**http://{API_HOST}:8008**](http://{API_HOST}:8008)
+                ''')
+        if st.button('Stop sFlow'):
+            st.write(cmdline("pkill java"))
+
+    # RUN Digital Twin
+    st.write("Command to run a simplex Digital Twin interactively")
+    st.code("sudo mn --custom ../sflow-rt/extras/sflow.py --link tc,bw=10 --topo tree,depth=2,fanout=2", language="python")
+
+    # RUN 5G/6G SPECIFIC SCENARIO
+    st.write("Commands to run the 5G Digital Twin interactively")
+    st.code("ryu-manager ryu.app.simple_switch_stp_13", language="python")
+    st.code("sudo python3 DT_v0.2.py", language="python")
+
+    st.markdown(f'''
+         `Once the DT is running, you can access the REST APIs here:`
+         [**http://{API_HOST}:8000/docs**](http://{API_HOST}:8000/docs)
+            ''')
+
+    # RUN API
+    if not state.API_STARTED:
+        st.write('To launch your DT click the button below.')
+        if st.button('🚀 Launch'):
+
+            import subprocess
+            import threading
+
+            def run(job):
+                print (f"\nRunning job: {job}\n")
+                proc = subprocess.Popen(job)
+                proc.wait()
+                return proc
+
+            job = [f'{sys.executable}', os.path.join('.', 'bootstrapper.py'), API_HOST, str(API_PORT)]
+
+            # server thread will remain active as long as streamlit thread is running, or is manually shutdown
+            thread = threading.Thread(name='FastAPI-Bootstrapper', target=run, args=(job,), daemon=True)
+            thread.start()
+
+            time.sleep(2)
+
+            # !! Start the LRP !!
+            requests.get(f'{API_BASE_URL}/run')
+
+            state.API_STARTED = True
+
+            st.experimental_rerun()
+
+    if state.API_STARTED:
+        message = {}
+        c1, c2, _, c4 = st.columns([1,1,1,1])
+        with c1:
+            if st.button('👋 Hello'):
+                resp = requests.get(f'{API_BASE_URL}/hello')
+                message = json.loads(resp.content)
+        with c2:
+            st.json(message)
+        with c4:
+            if st.button('🔥 Shutdown DT'):
+                requests.get(f'{API_BASE_URL}/shutdown')
+                state.API_STARTED = False
+                st.experimental_rerun()
+
+        st.markdown(f'''
+            #### Notes
+            - `The HORSE Digital Twin (DT) and FastAPI is running.`
+            - `To terminate the DT, click the Shutdown button above.`
+            - `To invoke the /hello endpoint (check for API availability), click the Hello button above.`
+            #### API doc links
+            `These FastAPI links only work in a localhost environment or if the FastAPI server
+            is configured on an external domain reachable from this browser window!`
+            - [**http://{API_HOST}:{API_PORT}/docs**](http://{API_HOST}:{API_PORT}/docs)
+            - [**http://{API_HOST}:{API_PORT}/redoc**](http://{API_HOST}:{API_PORT}/redoc)
+        ''')
+
+def sidebar():
+    # ABOUT
+    st.sidebar.header('About')
+    st.sidebar.info('FastAPI Wrapper to run and stop the HORSE Digital Twin (DT)!\n\n' + \
+        'Check out HORSE project (horse-6g.eu for more information.')
+    st.sidebar.markdown('---')
+
+
+if __name__ == '__main__':
+    main()
+    sidebar()

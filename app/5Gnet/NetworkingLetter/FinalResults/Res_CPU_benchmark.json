@@ -1,0 +1,4449 @@
+{
+  "2000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510144840
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 27.264000000000003,
+        "CPU_FLOATINGPOINT_MATH": 14.142814460271008,
+        "CPU_PRIME": 0,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 0,
+        "CPU_COMPRESSION": 0,
+        "CPU_SINGLETHREAD": 2.641184076024135,
+        "CPU_PHYSICS": 0,
+        "CPU_MATRIX_MULT_SSE": 0.7803978045079365,
+        "CPU_mm": 0.4240258637935743,
+        "CPU_sse": 1.7582082700608674,
+        "CPU_fma": 0,
+        "CPU_avx": 0,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 0,
+        "m_CPU_enc_AES": 0,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "260EB59357D99900D1875FD1B73BCE0E6C01F8C1"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510101550
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 24.163666666666664,
+        "CPU_FLOATINGPOINT_MATH": 14.43015686465283,
+        "CPU_PRIME": 0,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 0.03568164425899363,
+        "CPU_COMPRESSION": 0,
+        "CPU_SINGLETHREAD": 0.4751777465237097,
+        "CPU_PHYSICS": 0,
+        "CPU_MATRIX_MULT_SSE": 2.70414072071184,
+        "CPU_mm": 0.33253777591142264,
+        "CPU_sse": 1.4726552155503985,
+        "CPU_fma": 3.3201273627564025,
+        "CPU_avx": 3.3196395838287196,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 0,
+        "m_CPU_enc_AES": 2491495.0220255377,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "E30456E2BD0573FF64B6C34D4CB697C424EB7312"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513111657
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 21.087,
+        "CPU_FLOATINGPOINT_MATH": 14.534792811270947,
+        "CPU_PRIME": 0,
+        "CPU_SORTING": 0.042688752762101795,
+        "CPU_ENCRYPTION": 0,
+        "CPU_COMPRESSION": 1.5557084473894371,
+        "CPU_SINGLETHREAD": 0,
+        "CPU_PHYSICS": 0,
+        "CPU_MATRIX_MULT_SSE": 1.5462135980631664,
+        "CPU_mm": 0.17095592459326592,
+        "CPU_sse": 0.8656836816352819,
+        "CPU_fma": 2.0474665055424026,
+        "CPU_avx": 1.7254906070118143,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 0,
+        "m_CPU_enc_AES": 0,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "AEA18F64FA54E1D9DBB640E64EFACFBC6FFAC64B"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513114321
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 20.400666666666666,
+        "CPU_FLOATINGPOINT_MATH": 16.63729170397363,
+        "CPU_PRIME": 0,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 0.034476227153888636,
+        "CPU_COMPRESSION": 0,
+        "CPU_SINGLETHREAD": 0.3594260627951857,
+        "CPU_PHYSICS": 0,
+        "CPU_MATRIX_MULT_SSE": 1.2616564897892877,
+        "CPU_mm": 0.12717977410091966,
+        "CPU_sse": 1.0867288540293145,
+        "CPU_fma": 0.9327053433038743,
+        "CPU_avx": 1.7655352720346744,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 0,
+        "m_CPU_enc_AES": 1487919.4682917728,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "7555C79C42629ACA2E27C1C5226101DE4CB991BF"
+    }
+  ],
+  "1000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510145519
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 29.015333333333334,
+        "CPU_FLOATINGPOINT_MATH": 15.310664716755065,
+        "CPU_PRIME": 0,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 0.0320930719221844,
+        "CPU_COMPRESSION": 0,
+        "CPU_SINGLETHREAD": 0.49711839342503944,
+        "CPU_PHYSICS": 0,
+        "CPU_MATRIX_MULT_SSE": 0.7499679918047581,
+        "CPU_mm": 0.10204065956507768,
+        "CPU_sse": 0.4107863170047694,
+        "CPU_fma": 0.885862549156845,
+        "CPU_avx": 0.9532551092526595,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 0,
+        "m_CPU_enc_AES": 2483735.8209545272,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "35B1D3B69455B5E669EB58DB9530B9C87D86F16E"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513112530
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 14.673333333333332,
+        "CPU_FLOATINGPOINT_MATH": 4.9987239277519295,
+        "CPU_PRIME": 0,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 0,
+        "CPU_COMPRESSION": 0,
+        "CPU_SINGLETHREAD": 0,
+        "CPU_PHYSICS": 0,
+        "CPU_MATRIX_MULT_SSE": 0.665999994443055,
+        "CPU_mm": 0.027205588758932087,
+        "CPU_sse": 0.2853722318381761,
+        "CPU_fma": 0.7553729786816397,
+        "CPU_avx": 0.9572547728093492,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 0,
+        "m_CPU_enc_AES": 0,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "D5A7C12AD8D8C66FB33F3E497DA209ADA1B3BB91"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513115149
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 10.981333333333332,
+        "CPU_FLOATINGPOINT_MATH": 7.62284105876911,
+        "CPU_PRIME": 0,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 0,
+        "CPU_COMPRESSION": 0,
+        "CPU_SINGLETHREAD": 0,
+        "CPU_PHYSICS": 0.39410219551622494,
+        "CPU_MATRIX_MULT_SSE": 1.8206520718382566,
+        "CPU_mm": 0.06633347759097258,
+        "CPU_sse": 1.15680179340215,
+        "CPU_fma": 2.416424661760487,
+        "CPU_avx": 1.8887297603521334,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 0,
+        "m_CPU_enc_AES": 0,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "3DDF5B039F86C090AC32D6CAAC8E6712858CD496"
+    }
+  ],
+  "5000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510144139
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 72.82233333333333,
+        "CPU_FLOATINGPOINT_MATH": 59.62348525720864,
+        "CPU_PRIME": 0.15961351247612326,
+        "CPU_SORTING": 29.110475710509377,
+        "CPU_ENCRYPTION": 25.407477798436673,
+        "CPU_COMPRESSION": 0,
+        "CPU_SINGLETHREAD": 122.38985712863338,
+        "CPU_PHYSICS": 1.7591189726612682,
+        "CPU_MATRIX_MULT_SSE": 13.167935419902088,
+        "CPU_mm": 0.968199423227511,
+        "CPU_sse": 10.515719550545692,
+        "CPU_fma": 13.698773719697467,
+        "CPU_avx": 15.289312989463108,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 13117680.295911737,
+        "m_CPU_enc_AES": 58433998.96492133,
+        "m_CPU_enc_ECDSA": 8373335.059087537,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "66B910FB28BF6ED3223C062BEC4AC41C557BEEED"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510100136
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 140.48533333333333,
+        "CPU_FLOATINGPOINT_MATH": 101.13601947580591,
+        "CPU_PRIME": 0.2326645830122092,
+        "CPU_SORTING": 25.17026883265568,
+        "CPU_ENCRYPTION": 16.474871270307858,
+        "CPU_COMPRESSION": 264.89225337412165,
+        "CPU_SINGLETHREAD": 0,
+        "CPU_PHYSICS": 3.709579227711181,
+        "CPU_MATRIX_MULT_SSE": 37.004576724814825,
+        "CPU_mm": 1.8964935081912027,
+        "CPU_sse": 16.48697491422336,
+        "CPU_fma": 54.0113562264831,
+        "CPU_avx": 40.51539903373799,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 9325819.467256684,
+        "m_CPU_enc_AES": 38189134.81855741,
+        "m_CPU_enc_ECDSA": 4310509.565588908,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "7AE3A50DDD9C3BE6644E684CC865EA69473DCFF9"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513111007
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 216.99966666666666,
+        "CPU_FLOATINGPOINT_MATH": 176.29057568166115,
+        "CPU_PRIME": 0.5585434361666923,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 13.265828993107595,
+        "CPU_COMPRESSION": 4.018114171004257,
+        "CPU_SINGLETHREAD": 0,
+        "CPU_PHYSICS": 141.46831422934582,
+        "CPU_MATRIX_MULT_SSE": 6.231500362216954,
+        "CPU_mm": 0.8718859082140009,
+        "CPU_sse": 4.124748676900184,
+        "CPU_fma": 6.458267862439256,
+        "CPU_avx": 8.11148454731142,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 1059817.3828269024,
+        "m_CPU_enc_AES": 8521742.515599774,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "22A7318E6EB775426F5A070893C33E1FF43A2A15"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513113629
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 61.60433333333333,
+        "CPU_FLOATINGPOINT_MATH": 50.0340852000294,
+        "CPU_PRIME": 0.1508366213858892,
+        "CPU_SORTING": 0,
+        "CPU_ENCRYPTION": 13.018927329871888,
+        "CPU_COMPRESSION": 4.392949502596707,
+        "CPU_SINGLETHREAD": 0,
+        "CPU_PHYSICS": 1.7618244729603072,
+        "CPU_MATRIX_MULT_SSE": 11.254299741033474,
+        "CPU_mm": 0.7532530250092025,
+        "CPU_sse": 7.295827323568417,
+        "CPU_fma": 13.297323614996643,
+        "CPU_avx": 13.169748284535357,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 2411505.869782966,
+        "m_CPU_enc_AES": 9773704.486967325,
+        "m_CPU_enc_ECDSA": 0,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 0,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "AE20FE3E3472E6523E08BE0141356D48E85AF5F6"
+    }
+  ],
+  "10000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510143741
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 254.41666666666669,
+        "CPU_FLOATINGPOINT_MATH": 169.49378160525708,
+        "CPU_PRIME": 0.49127930468286274,
+        "CPU_SORTING": 44.2235384915152,
+        "CPU_ENCRYPTION": 30.489055014326176,
+        "CPU_COMPRESSION": 543.4638891010363,
+        "CPU_SINGLETHREAD": 53.332993949415666,
+        "CPU_PHYSICS": 8.386923036399008,
+        "CPU_MATRIX_MULT_SSE": 51.896239882799634,
+        "CPU_mm": 4.377332770835987,
+        "CPU_sse": 33.430653067679366,
+        "CPU_fma": 63.86333385076645,
+        "CPU_avx": 58.39473272995306,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 18104759.457979262,
+        "m_CPU_enc_AES": 68853053.58569627,
+        "m_CPU_enc_ECDSA": 8952461.008430721,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 62.24259415412299,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "CAA21FDF35D4D09B92E7EB24E9AA42413AAD6425"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510095705
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 326.41066666666666,
+        "CPU_FLOATINGPOINT_MATH": 253.7850818883326,
+        "CPU_PRIME": 0.7469532047554146,
+        "CPU_SORTING": 77.22194698966652,
+        "CPU_ENCRYPTION": 37.00856695855875,
+        "CPU_COMPRESSION": 842.5000032126904,
+        "CPU_SINGLETHREAD": 84.0687260741452,
+        "CPU_PHYSICS": 10.89341367137054,
+        "CPU_MATRIX_MULT_SSE": 84.88445020210746,
+        "CPU_mm": 6.219635546140239,
+        "CPU_sse": 42.887429368481676,
+        "CPU_fma": 118.23397860377615,
+        "CPU_avx": 93.53194263406455,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 22028971.56607066,
+        "m_CPU_enc_AES": 80072454.12020141,
+        "m_CPU_enc_ECDSA": 14317459.635141037,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 92.53296460541759,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "F56155534049D6C77245F8FDB35FCB27D878D15E"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513110551
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 202.79966666666667,
+        "CPU_FLOATINGPOINT_MATH": 143.5702126746643,
+        "CPU_PRIME": 0.5127922918794514,
+        "CPU_SORTING": 91.04618879698725,
+        "CPU_ENCRYPTION": 41.58158850835344,
+        "CPU_COMPRESSION": 1073.5811726610673,
+        "CPU_SINGLETHREAD": 57.08058983390928,
+        "CPU_PHYSICS": 8.198745917829847,
+        "CPU_MATRIX_MULT_SSE": 50.898478078721666,
+        "CPU_mm": 4.29326591300799,
+        "CPU_sse": 28.848492811029352,
+        "CPU_fma": 63.37445945924897,
+        "CPU_avx": 60.472481965886665,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 13542967.987174734,
+        "m_CPU_enc_AES": 107514378.10877922,
+        "m_CPU_enc_ECDSA": 9747021.159251686,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 80.82445356902308,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "6E28330414078287E69554A89D9AF9DECDA0C475"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513113125
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 139.53866666666667,
+        "CPU_FLOATINGPOINT_MATH": 133.73730539396192,
+        "CPU_PRIME": 0.47471347280423754,
+        "CPU_SORTING": 42.37496522562344,
+        "CPU_ENCRYPTION": 18.29196988150298,
+        "CPU_COMPRESSION": 414.8041684046907,
+        "CPU_SINGLETHREAD": 40.92165688023093,
+        "CPU_PHYSICS": 6.620624408292468,
+        "CPU_MATRIX_MULT_SSE": 41.69939626691874,
+        "CPU_mm": 3.4147298590534607,
+        "CPU_sse": 25.61138493445617,
+        "CPU_fma": 46.09008385067895,
+        "CPU_avx": 53.3967200156211,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 11037788.054000175,
+        "m_CPU_enc_AES": 40370917.44646187,
+        "m_CPU_enc_ECDSA": 6132856.330938566,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 46.50927005238568,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "1C5DB9E9E34A7A8296078A38816440AA1A84005B"
+    }
+  ],
+  "50000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510143447
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 2042.5753333333334,
+        "CPU_FLOATINGPOINT_MATH": 1742.3031362811641,
+        "CPU_PRIME": 5.750073377531457,
+        "CPU_SORTING": 637.7927009139302,
+        "CPU_ENCRYPTION": 278.26045467153943,
+        "CPU_COMPRESSION": 7552.43371155301,
+        "CPU_SINGLETHREAD": 767.3537449889274,
+        "CPU_PHYSICS": 81.08189733707101,
+        "CPU_MATRIX_MULT_SSE": 570.3483174650033,
+        "CPU_mm": 43.46229146433518,
+        "CPU_sse": 336.2166577455648,
+        "CPU_fma": 759.896545759954,
+        "CPU_avx": 614.9317488894912,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 143477959.976325,
+        "m_CPU_enc_AES": 608936783.7153409,
+        "m_CPU_enc_ECDSA": 122916959.86132643,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 702.4673184615323,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "2E9C2B3BA1CCA6D837B0E06F4E66644F5FA3A842"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510095500
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 2073.081666666667,
+        "CPU_FLOATINGPOINT_MATH": 1653.2618872769144,
+        "CPU_PRIME": 5.476615508289445,
+        "CPU_SORTING": 628.9683146656473,
+        "CPU_ENCRYPTION": 263.3327903999386,
+        "CPU_COMPRESSION": 7489.851999591027,
+        "CPU_SINGLETHREAD": 684.6698966034718,
+        "CPU_PHYSICS": 73.68961985123444,
+        "CPU_MATRIX_MULT_SSE": 535.5936627516193,
+        "CPU_mm": 46.109495324145485,
+        "CPU_sse": 309.0427728949851,
+        "CPU_fma": 701.0946287390735,
+        "CPU_avx": 596.6435866207992,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 137809276.71617135,
+        "m_CPU_enc_AES": 575221238.1524901,
+        "m_CPU_enc_ECDSA": 115342817.21055642,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 680.9971436588734,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "505E786FE3817F7B45837F1D51FAB771748DEB3A"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513110331
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1996.1176666666665,
+        "CPU_FLOATINGPOINT_MATH": 1624.2887980954479,
+        "CPU_PRIME": 6.446449019996048,
+        "CPU_SORTING": 623.8821176269034,
+        "CPU_ENCRYPTION": 266.96645863883964,
+        "CPU_COMPRESSION": 7910.900917545485,
+        "CPU_SINGLETHREAD": 580.505304425272,
+        "CPU_PHYSICS": 89.13296826941502,
+        "CPU_MATRIX_MULT_SSE": 619.6673117748448,
+        "CPU_mm": 50.241862960073995,
+        "CPU_sse": 358.50451456887157,
+        "CPU_fma": 836.8335648327558,
+        "CPU_avx": 663.6638559229073,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 144028347.13572657,
+        "m_CPU_enc_AES": 574749701.7802775,
+        "m_CPU_enc_ECDSA": 121025815.08503592,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 699.2700099856414,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "C86D1BA24A0B2B813181C9C3D1E124EB8F6C7C59"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513112811
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 2202.7986666666666,
+        "CPU_FLOATINGPOINT_MATH": 1829.7268023993443,
+        "CPU_PRIME": 7.283023408513619,
+        "CPU_SORTING": 650.9414041324598,
+        "CPU_ENCRYPTION": 272.7272840817036,
+        "CPU_COMPRESSION": 8057.350942191984,
+        "CPU_SINGLETHREAD": 862.9872836948751,
+        "CPU_PHYSICS": 89.97863625713535,
+        "CPU_MATRIX_MULT_SSE": 607.7158010425283,
+        "CPU_mm": 29.266824539567878,
+        "CPU_sse": 317.53913321183336,
+        "CPU_fma": 848.7883396214036,
+        "CPU_avx": 656.8199302943481,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 150355758.24710327,
+        "m_CPU_enc_AES": 611549292.3304614,
+        "m_CPU_enc_ECDSA": 96020803.32220459,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 735.1014991333882,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "448B239B142D39124913055AFB28CC80003DC0A8"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513115428
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 2108.416,
+        "CPU_FLOATINGPOINT_MATH": 1672.3248201261806,
+        "CPU_PRIME": 5.963742235372926,
+        "CPU_SORTING": 634.507613699554,
+        "CPU_ENCRYPTION": 267.95706294124864,
+        "CPU_COMPRESSION": 7663.209034947194,
+        "CPU_SINGLETHREAD": 824.0122865013622,
+        "CPU_PHYSICS": 82.18490412142764,
+        "CPU_MATRIX_MULT_SSE": 574.6242482001956,
+        "CPU_mm": 43.715942274360216,
+        "CPU_sse": 315.0225356459914,
+        "CPU_fma": 767.1852291335583,
+        "CPU_avx": 641.6649798210369,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 150361158.97665006,
+        "m_CPU_enc_AES": 576659840.1989201,
+        "m_CPU_enc_ECDSA": 115899036.516478,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 701.017560615136,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "3D99EA8C8FE2A2399E38926B8196FF795A86BF40"
+    }
+  ],
+  "100000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510143324
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 4645.151333333333,
+        "CPU_FLOATINGPOINT_MATH": 3810.344462429241,
+        "CPU_PRIME": 13.71554392904729,
+        "CPU_SORTING": 1460.3937929926226,
+        "CPU_ENCRYPTION": 554.0062560183392,
+        "CPU_COMPRESSION": 17539.19480601054,
+        "CPU_SINGLETHREAD": 1654.9166375204247,
+        "CPU_PHYSICS": 183.4804786097434,
+        "CPU_MATRIX_MULT_SSE": 1205.8826196751147,
+        "CPU_mm": 100.289311083852,
+        "CPU_sse": 689.393089053011,
+        "CPU_fma": 1581.3098058180722,
+        "CPU_avx": 1346.9449641542606,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 308707153.92241704,
+        "m_CPU_enc_AES": 1178465106.182417,
+        "m_CPU_enc_ECDSA": 255580731.62722433,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1544.4093671475405,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "94595F431AE65A834E2F895BD2CD3ACD2B3EB0E1"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220510095347
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 4338.715333333334,
+        "CPU_FLOATINGPOINT_MATH": 3624.77036644416,
+        "CPU_PRIME": 12.819927709669685,
+        "CPU_SORTING": 1315.7043033579005,
+        "CPU_ENCRYPTION": 548.2006026249353,
+        "CPU_COMPRESSION": 16378.241049694998,
+        "CPU_SINGLETHREAD": 1688.404653027479,
+        "CPU_PHYSICS": 171.36158360640343,
+        "CPU_MATRIX_MULT_SSE": 1148.991462729824,
+        "CPU_mm": 94.01648721948817,
+        "CPU_sse": 653.3792264837346,
+        "CPU_fma": 1576.226916073836,
+        "CPU_avx": 1217.3682456319011,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 299895601.84314185,
+        "m_CPU_enc_AES": 1182716306.6171093,
+        "m_CPU_enc_ECDSA": 241878076.83388126,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1457.7783099981164,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2111,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "569E90DCBD52D6B4BD2E93F27B1F1803F6CC8495"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513110212
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 4690.0233333333335,
+        "CPU_FLOATINGPOINT_MATH": 3649.147814727415,
+        "CPU_PRIME": 12.189986891699126,
+        "CPU_SORTING": 1465.1816634575744,
+        "CPU_ENCRYPTION": 579.3725806434121,
+        "CPU_COMPRESSION": 17029.169265736517,
+        "CPU_SINGLETHREAD": 1660.94070063039,
+        "CPU_PHYSICS": 177.21328760343926,
+        "CPU_MATRIX_MULT_SSE": 1036.1497398721954,
+        "CPU_mm": 96.22805221065641,
+        "CPU_sse": 699.7018423277838,
+        "CPU_fma": 1494.4317460895684,
+        "CPU_avx": 914.3156311992341,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 313089469.2066485,
+        "m_CPU_enc_AES": 1251056406.0325093,
+        "m_CPU_enc_ECDSA": 258402674.1230818,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1512.6065877702717,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "962D9F1B29DCDFC64EA7C90CF7B66F6ACE94DB53"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513112654
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 4717.287333333334,
+        "CPU_FLOATINGPOINT_MATH": 3921.0669543759327,
+        "CPU_PRIME": 15.926295181478395,
+        "CPU_SORTING": 1476.9443517706354,
+        "CPU_ENCRYPTION": 603.2646663904737,
+        "CPU_COMPRESSION": 18309.42936399301,
+        "CPU_SINGLETHREAD": 1703.6310420924308,
+        "CPU_PHYSICS": 202.90764883502067,
+        "CPU_MATRIX_MULT_SSE": 1296.6746994437838,
+        "CPU_mm": 102.96867651136876,
+        "CPU_sse": 745.2799526323467,
+        "CPU_fma": 1712.3254181592456,
+        "CPU_avx": 1432.418727539759,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 334636971.5398078,
+        "m_CPU_enc_AES": 1290871346.9671144,
+        "m_CPU_enc_ECDSA": 272198233.9682498,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1620.0960027066278,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "BA62A8EF1D9AAC94C7F0D5261A609554A0AE79F0"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220513115308
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 4555.241666666667,
+        "CPU_FLOATINGPOINT_MATH": 3654.3713715561025,
+        "CPU_PRIME": 13.210259431182408,
+        "CPU_SORTING": 1409.137267284095,
+        "CPU_ENCRYPTION": 577.2120835156159,
+        "CPU_COMPRESSION": 16400.5791596803,
+        "CPU_SINGLETHREAD": 1635.2610905483302,
+        "CPU_PHYSICS": 172.3981311177791,
+        "CPU_MATRIX_MULT_SSE": 1149.721476870428,
+        "CPU_mm": 95.30907714346382,
+        "CPU_sse": 702.5605071382263,
+        "CPU_fma": 1466.4429677435949,
+        "CPU_avx": 1280.1609557294628,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 315166976.95291954,
+        "m_CPU_enc_AES": 1265875147.7035134,
+        "m_CPU_enc_ECDSA": 234710088.3969782,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1505.6277414286762,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "F0A2EC2478EB3D19507FE0BA53CDE7231CD379CB"
+    }
+  ],
+  "75000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610102419
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 2990.354333333333,
+        "CPU_FLOATINGPOINT_MATH": 2504.36977211893,
+        "CPU_PRIME": 9.621671729775603,
+        "CPU_SORTING": 1007.4482444858179,
+        "CPU_ENCRYPTION": 398.9965802168991,
+        "CPU_COMPRESSION": 11634.081784858012,
+        "CPU_SINGLETHREAD": 1038.8510384919127,
+        "CPU_PHYSICS": 124.36792217574178,
+        "CPU_MATRIX_MULT_SSE": 867.6466563425996,
+        "CPU_mm": 58.46137826124249,
+        "CPU_sse": 493.0857671214376,
+        "CPU_fma": 1182.4577393539982,
+        "CPU_avx": 927.3964625523629,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 225453168.07797945,
+        "m_CPU_enc_AES": 856556162.7248402,
+        "m_CPU_enc_ECDSA": 173125383.4897259,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1054.6287846139433,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "B16763750C7B6BA0B3F0FEEE5F4B608468EBDDC1"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610103219
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3137.348,
+        "CPU_FLOATINGPOINT_MATH": 2549.3283536073423,
+        "CPU_PRIME": 10.227681547758458,
+        "CPU_SORTING": 1004.0295631632296,
+        "CPU_ENCRYPTION": 388.0867526287001,
+        "CPU_COMPRESSION": 11331.017904497632,
+        "CPU_SINGLETHREAD": 1107.3816424989361,
+        "CPU_PHYSICS": 121.61164137144993,
+        "CPU_MATRIX_MULT_SSE": 855.1811985434304,
+        "CPU_mm": 69.53580527811974,
+        "CPU_sse": 479.52227724991627,
+        "CPU_fma": 1113.467000084925,
+        "CPU_avx": 972.5543182954497,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 209362695.9431591,
+        "m_CPU_enc_AES": 845115827.097153,
+        "m_CPU_enc_ECDSA": 166336841.13286346,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1052.904068134816,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "0BC8326904C3CD044EE425E0059E317604FE0A80"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610104043
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3090.559,
+        "CPU_FLOATINGPOINT_MATH": 2438.010888869222,
+        "CPU_PRIME": 9.727294348596336,
+        "CPU_SORTING": 956.5191633541348,
+        "CPU_ENCRYPTION": 384.29736765522654,
+        "CPU_COMPRESSION": 11283.327447733627,
+        "CPU_SINGLETHREAD": 1087.7420434351009,
+        "CPU_PHYSICS": 128.43637196696722,
+        "CPU_MATRIX_MULT_SSE": 857.250907543056,
+        "CPU_mm": 63.81069767403193,
+        "CPU_sse": 479.6296913772729,
+        "CPU_fma": 1165.1208328561734,
+        "CPU_avx": 927.002198395722,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 203550339.16758057,
+        "m_CPU_enc_AES": 841216036.3023825,
+        "m_CPU_enc_ECDSA": 164128614.28937727,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1034.1185003050205,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "E9B84DACE8012DBD964F5333E691EC2A1097E458"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610104857
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3348.241666666667,
+        "CPU_FLOATINGPOINT_MATH": 2602.8816249391493,
+        "CPU_PRIME": 10.269087555084905,
+        "CPU_SORTING": 1007.5863056904166,
+        "CPU_ENCRYPTION": 386.01185061505726,
+        "CPU_COMPRESSION": 11590.678537334712,
+        "CPU_SINGLETHREAD": 1221.9982730446857,
+        "CPU_PHYSICS": 127.35027885250383,
+        "CPU_MATRIX_MULT_SSE": 992.4006917642768,
+        "CPU_mm": 62.26172824522646,
+        "CPU_sse": 550.4149011144411,
+        "CPU_fma": 1321.290392605741,
+        "CPU_avx": 1105.4967815726484,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 224946173.43693736,
+        "m_CPU_enc_AES": 808799439.5739437,
+        "m_CPU_enc_ECDSA": 180542673.8007216,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1088.940042144248,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "EE9A610392EC007F84EFC83C3B00C7C82B8EEBA9"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610105734
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3237.5526666666665,
+        "CPU_FLOATINGPOINT_MATH": 2462.4866458846645,
+        "CPU_PRIME": 10.649575269850413,
+        "CPU_SORTING": 988.8810104277222,
+        "CPU_ENCRYPTION": 417.89629637360696,
+        "CPU_COMPRESSION": 11578.136986791278,
+        "CPU_SINGLETHREAD": 1165.3099680297016,
+        "CPU_PHYSICS": 136.52261203824685,
+        "CPU_MATRIX_MULT_SSE": 926.988681336655,
+        "CPU_mm": 65.52979174604134,
+        "CPU_sse": 555.5890842359591,
+        "CPU_fma": 1163.385835164407,
+        "CPU_avx": 1061.9911246095987,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 233438792.94608182,
+        "m_CPU_enc_AES": 902263543.5846975,
+        "m_CPU_enc_ECDSA": 178885744.0679745,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1086.1660094677495,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "04F565BC03B2E829015A9967413A878D168680FE"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610110555
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3149.654666666667,
+        "CPU_FLOATINGPOINT_MATH": 2500.8997106804213,
+        "CPU_PRIME": 10.16094373678558,
+        "CPU_SORTING": 983.1241797028129,
+        "CPU_ENCRYPTION": 404.77493116568235,
+        "CPU_COMPRESSION": 11620.518891345473,
+        "CPU_SINGLETHREAD": 1148.496018445954,
+        "CPU_PHYSICS": 126.60928192152328,
+        "CPU_MATRIX_MULT_SSE": 848.3037857162983,
+        "CPU_mm": 68.73058464038265,
+        "CPU_sse": 480.87954039769147,
+        "CPU_fma": 1117.159671352149,
+        "CPU_avx": 946.8721453990545,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 234515572.00470483,
+        "m_CPU_enc_AES": 869823012.2233181,
+        "m_CPU_enc_ECDSA": 168973250.43793678,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1061.982054562788,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "E62638B72580D9C3F340BCECA78AF16B3407CB2C"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610111443
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 2946.3106666666667,
+        "CPU_FLOATINGPOINT_MATH": 2572.5742963073676,
+        "CPU_PRIME": 10.01934123786384,
+        "CPU_SORTING": 958.8390975557244,
+        "CPU_ENCRYPTION": 379.4440993886566,
+        "CPU_COMPRESSION": 10701.073682282698,
+        "CPU_SINGLETHREAD": 1071.9782118443336,
+        "CPU_PHYSICS": 122.43380440816216,
+        "CPU_MATRIX_MULT_SSE": 910.3562209770424,
+        "CPU_mm": 64.41061787015093,
+        "CPU_sse": 454.36484449624754,
+        "CPU_fma": 1243.8623478795864,
+        "CPU_avx": 1032.8414705552932,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 206820575.31851357,
+        "m_CPU_enc_AES": 817726330.1916986,
+        "m_CPU_enc_ECDSA": 169081022.37146777,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1025.4780332319078,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "5736CC5086D9200B834F5F4EA4DD9F6F117FE1F9"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610112319
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3179.1670000000004,
+        "CPU_FLOATINGPOINT_MATH": 2779.4998067067063,
+        "CPU_PRIME": 10.799559061150063,
+        "CPU_SORTING": 959.1622163075825,
+        "CPU_ENCRYPTION": 379.4703269509,
+        "CPU_COMPRESSION": 11494.411483896129,
+        "CPU_SINGLETHREAD": 1135.7979644156235,
+        "CPU_PHYSICS": 124.61813807074904,
+        "CPU_MATRIX_MULT_SSE": 893.1934736983862,
+        "CPU_mm": 60.87997148129084,
+        "CPU_sse": 492.7676167851263,
+        "CPU_fma": 1212.106089215587,
+        "CPU_avx": 974.7067150944457,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 221412469.01740155,
+        "m_CPU_enc_AES": 797670497.9321351,
+        "m_CPU_enc_ECDSA": 174627465.70906407,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1060.200896269283,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "3E4C7CABFB2B5A79C54B689C7A6128B04CD2DBBE"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610113022
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3205.1530000000002,
+        "CPU_FLOATINGPOINT_MATH": 2518.6275349382427,
+        "CPU_PRIME": 9.356865884355074,
+        "CPU_SORTING": 945.5576554427839,
+        "CPU_ENCRYPTION": 392.1422177475561,
+        "CPU_COMPRESSION": 11555.532195684926,
+        "CPU_SINGLETHREAD": 1120.8041074637345,
+        "CPU_PHYSICS": 124.60858169332285,
+        "CPU_MATRIX_MULT_SSE": 862.7577513230362,
+        "CPU_mm": 62.72320851060965,
+        "CPU_sse": 475.38733545640844,
+        "CPU_fma": 1195.3644741036087,
+        "CPU_avx": 917.5214444090914,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 219324131.7581336,
+        "m_CPU_enc_AES": 837149409.6993625,
+        "m_CPU_enc_ECDSA": 177099212.89308816,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1048.9018602063038,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "A3CD0ED3F2E2786F2F4504B19D54BA97F3CBF0E7"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610113702
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 3077.353,
+        "CPU_FLOATINGPOINT_MATH": 2669.8010931097497,
+        "CPU_PRIME": 9.45546183384755,
+        "CPU_SORTING": 958.1371938834623,
+        "CPU_ENCRYPTION": 382.28979972257366,
+        "CPU_COMPRESSION": 11402.70310632267,
+        "CPU_SINGLETHREAD": 1227.7937924797159,
+        "CPU_PHYSICS": 125.11849839588336,
+        "CPU_MATRIX_MULT_SSE": 829.2046985856882,
+        "CPU_mm": 64.97182841788094,
+        "CPU_sse": 493.5135142098674,
+        "CPU_fma": 1102.7400217921167,
+        "CPU_avx": 891.3605597550804,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 216494983.91566056,
+        "m_CPU_enc_AES": 806850593.698278,
+        "m_CPU_enc_ECDSA": 179234149.48775378,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 1040.2876592082857,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "00E52ED2B976077DD6F45BD703EB9FB064927D14"
+    }
+  ],
+  "25000": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610102539
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 681.955,
+        "CPU_FLOATINGPOINT_MATH": 612.0289242425308,
+        "CPU_PRIME": 2.0862896529844415,
+        "CPU_SORTING": 188.55348393493742,
+        "CPU_ENCRYPTION": 84.5998458230039,
+        "CPU_COMPRESSION": 2519.6234965692693,
+        "CPU_SINGLETHREAD": 250.6676666079873,
+        "CPU_PHYSICS": 27.24416311253745,
+        "CPU_MATRIX_MULT_SSE": 200.85836166187323,
+        "CPU_mm": 10.4887115157362,
+        "CPU_sse": 110.1919827810309,
+        "CPU_fma": 276.1932637674073,
+        "CPU_avx": 216.18983843718152,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 60056225.997284904,
+        "m_CPU_enc_AES": 165319148.782659,
+        "m_CPU_enc_ECDSA": 40752729.02116251,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 227.51835348298857,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "C0EC974C5A04E1F65F03AE5889152C600EE4DFCA"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610103339
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 746.2573333333332,
+        "CPU_FLOATINGPOINT_MATH": 541.9322870659676,
+        "CPU_PRIME": 2.3252327993439,
+        "CPU_SORTING": 191.60414963485044,
+        "CPU_ENCRYPTION": 78.66244957211366,
+        "CPU_COMPRESSION": 2685.732789259928,
+        "CPU_SINGLETHREAD": 228.15359311497576,
+        "CPU_PHYSICS": 29.84541973177673,
+        "CPU_MATRIX_MULT_SSE": 214.9340309083609,
+        "CPU_mm": 14.295517962093399,
+        "CPU_sse": 124.71741545751638,
+        "CPU_fma": 310.0104185048058,
+        "CPU_avx": 210.07425876276056,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 44827986.55330856,
+        "m_CPU_enc_AES": 166967210.91617128,
+        "m_CPU_enc_ECDSA": 35655472.698106095,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 229.85679546640776,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "3DF36719B98C5CF0828CC35817A7531BD7E668E0"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610104210
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 678.9493333333332,
+        "CPU_FLOATINGPOINT_MATH": 566.5942360777593,
+        "CPU_PRIME": 2.0145877202441236,
+        "CPU_SORTING": 188.85506705047283,
+        "CPU_ENCRYPTION": 79.6542751122337,
+        "CPU_COMPRESSION": 2573.4541379745083,
+        "CPU_SINGLETHREAD": 225.02692434815108,
+        "CPU_PHYSICS": 29.181471367286886,
+        "CPU_MATRIX_MULT_SSE": 194.14349485344718,
+        "CPU_mm": 14.337030125930003,
+        "CPU_sse": 108.19676776590302,
+        "CPU_fma": 252.06082735126287,
+        "CPU_avx": 222.17288944317562,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 45794351.94174406,
+        "m_CPU_enc_AES": 167541930.28762305,
+        "m_CPU_enc_ECDSA": 37234401.3108896,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 222.9242123016951,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "DA2F0A7BF6DF1D6F158166356EC25DD7DF96C8B7"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610105023
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 599.9736666666668,
+        "CPU_FLOATINGPOINT_MATH": 573.3112847157106,
+        "CPU_PRIME": 1.9434231838876124,
+        "CPU_SORTING": 227.11204763346151,
+        "CPU_ENCRYPTION": 100.95022763267747,
+        "CPU_COMPRESSION": 2661.7908522427924,
+        "CPU_SINGLETHREAD": 236.88974591882803,
+        "CPU_PHYSICS": 28.59608178677999,
+        "CPU_MATRIX_MULT_SSE": 171.15109229307728,
+        "CPU_mm": 14.872715095555488,
+        "CPU_sse": 102.26684913369348,
+        "CPU_fma": 241.8716673472948,
+        "CPU_avx": 169.3147603982436,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 49402158.86720765,
+        "m_CPU_enc_AES": 229830001.58204132,
+        "m_CPU_enc_ECDSA": 38329797.22123829,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 235.17700534378147,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "A90288A3D366B9FE8D6523A6529F0AB2ADF8003E"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610105904
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 724.342,
+        "CPU_FLOATINGPOINT_MATH": 574.4510806314512,
+        "CPU_PRIME": 2.041490673513225,
+        "CPU_SORTING": 190.30489813285726,
+        "CPU_ENCRYPTION": 91.02255030177662,
+        "CPU_COMPRESSION": 2729.198123191265,
+        "CPU_SINGLETHREAD": 192.97144009380887,
+        "CPU_PHYSICS": 29.24683727581627,
+        "CPU_MATRIX_MULT_SSE": 197.98508132629638,
+        "CPU_mm": 11.413196781995607,
+        "CPU_sse": 118.2469258083182,
+        "CPU_fma": 198.72938551513056,
+        "CPU_avx": 276.9789326554405,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 53417273.33002807,
+        "m_CPU_enc_AES": 192874085.49522895,
+        "m_CPU_enc_ECDSA": 40040826.290450126,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 234.32726216595816,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "EFDB01EF4634993FEF712D86AC716F600A854109"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610110726
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 865.4663333333333,
+        "CPU_FLOATINGPOINT_MATH": 919.5681516229902,
+        "CPU_PRIME": 2.8755959261735384,
+        "CPU_SORTING": 184.60315821833206,
+        "CPU_ENCRYPTION": 93.97727448745539,
+        "CPU_COMPRESSION": 2275.9925237653288,
+        "CPU_SINGLETHREAD": 219.63690284341934,
+        "CPU_PHYSICS": 27.558939052379323,
+        "CPU_MATRIX_MULT_SSE": 208.5986885367849,
+        "CPU_mm": 15.716836077214523,
+        "CPU_sse": 125.91677676403393,
+        "CPU_fma": 239.1141087094257,
+        "CPU_avx": 260.7651801368952,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 54933354.89134175,
+        "m_CPU_enc_AES": 198144811.83209538,
+        "m_CPU_enc_ECDSA": 42548776.99543698,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 244.52116971464304,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "0F1C3822B6B569FE336877A37E3BD3E861098378"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610111609
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 681.671,
+        "CPU_FLOATINGPOINT_MATH": 516.3720395165401,
+        "CPU_PRIME": 1.7833437653747897,
+        "CPU_SORTING": 181.95767482878836,
+        "CPU_ENCRYPTION": 82.62895745204645,
+        "CPU_COMPRESSION": 2524.918700045462,
+        "CPU_SINGLETHREAD": 217.9303284393514,
+        "CPU_PHYSICS": 27.353716855199245,
+        "CPU_MATRIX_MULT_SSE": 189.82954864693045,
+        "CPU_mm": 13.440215443790617,
+        "CPU_sse": 120.66088840552598,
+        "CPU_fma": 252.2009227686845,
+        "CPU_avx": 196.62683476658083,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 41856859.46841321,
+        "m_CPU_enc_AES": 185334332.5959354,
+        "m_CPU_enc_ECDSA": 32737033.00336258,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 218.55234436610255,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "C4B014C0942EE000A9173EE3E0A023CCFB9845ED"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610112445
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 716.461,
+        "CPU_FLOATINGPOINT_MATH": 595.1604174603286,
+        "CPU_PRIME": 2.3604983994143782,
+        "CPU_SORTING": 307.1586673100596,
+        "CPU_ENCRYPTION": 105.94190141994648,
+        "CPU_COMPRESSION": 2763.087766288725,
+        "CPU_SINGLETHREAD": 255.53002509729566,
+        "CPU_PHYSICS": 35.72979486692954,
+        "CPU_MATRIX_MULT_SSE": 249.48888377296998,
+        "CPU_mm": 19.392562902660288,
+        "CPU_sse": 141.28854119403272,
+        "CPU_fma": 331.84230681079873,
+        "CPU_avx": 275.33580331407853,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 64271306.26480888,
+        "m_CPU_enc_AES": 229020064.42510194,
+        "m_CPU_enc_ECDSA": 39973034.98005459,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 274.7060706490099,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "F5E383035DD82FFCF496BBE87ADF891B894315B5"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610113143
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 766.9183333333333,
+        "CPU_FLOATINGPOINT_MATH": 666.795956715313,
+        "CPU_PRIME": 2.1610610989413077,
+        "CPU_SORTING": 248.31098609297607,
+        "CPU_ENCRYPTION": 128.07884246730583,
+        "CPU_COMPRESSION": 2860.274450216715,
+        "CPU_SINGLETHREAD": 245.29518874820263,
+        "CPU_PHYSICS": 29.731004462483178,
+        "CPU_MATRIX_MULT_SSE": 256.28801127021825,
+        "CPU_mm": 22.34041869122525,
+        "CPU_sse": 152.10176774607956,
+        "CPU_fma": 331.3532964198625,
+        "CPU_avx": 285.4089696447128,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 63495776.839187905,
+        "m_CPU_enc_AES": 302076089.7829271,
+        "m_CPU_enc_ECDSA": 37329334.33487803,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 280.86550757870646,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "FE0B85F2E04593E71365E3479E3E4C27456F1313"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610113825
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 936.9396666666667,
+        "CPU_FLOATINGPOINT_MATH": 606.0409417560365,
+        "CPU_PRIME": 2.0629202097223924,
+        "CPU_SORTING": 252.89562498167197,
+        "CPU_ENCRYPTION": 124.60259511249737,
+        "CPU_COMPRESSION": 3105.4832317775295,
+        "CPU_SINGLETHREAD": 265.5015647480069,
+        "CPU_PHYSICS": 30.48156579170844,
+        "CPU_MATRIX_MULT_SSE": 255.12678435306293,
+        "CPU_mm": 20.636645022067288,
+        "CPU_sse": 130.42562986439907,
+        "CPU_fma": 360.8643814398911,
+        "CPU_avx": 274.09034175489865,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 62021160.25662474,
+        "m_CPU_enc_AES": 276224165.077033,
+        "m_CPU_enc_ECDSA": 53720546.98438845,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 290.6098601322121,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "1663F373377877700D2911EFACE240ECB515F20A"
+    }
+  ],
+  "12500": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610102748
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 289.60900000000004,
+        "CPU_FLOATINGPOINT_MATH": 248.63732631973076,
+        "CPU_PRIME": 0.7511617566762903,
+        "CPU_SORTING": 65.30181099687516,
+        "CPU_ENCRYPTION": 31.88500349299816,
+        "CPU_COMPRESSION": 775.1863864511267,
+        "CPU_SINGLETHREAD": 71.58553320720988,
+        "CPU_PHYSICS": 10.004263731314218,
+        "CPU_MATRIX_MULT_SSE": 72.50199465199069,
+        "CPU_mm": 6.500947661384629,
+        "CPU_sse": 42.42347677930252,
+        "CPU_fma": 106.18412960166012,
+        "CPU_avx": 68.89837757500945,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 21701587.85348708,
+        "m_CPU_enc_AES": 68376261.73926234,
+        "m_CPU_enc_ECDSA": 10223698.67527268,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 82.12132508249152,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "246640446247CC5030761C632A95759009881697"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610103550
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 247.95566666666667,
+        "CPU_FLOATINGPOINT_MATH": 260.28416754063073,
+        "CPU_PRIME": 0.7473887520194518,
+        "CPU_SORTING": 82.08097742352047,
+        "CPU_ENCRYPTION": 32.4538523944673,
+        "CPU_COMPRESSION": 778.9583837940337,
+        "CPU_SINGLETHREAD": 72.57304239852313,
+        "CPU_PHYSICS": 12.798918330355205,
+        "CPU_MATRIX_MULT_SSE": 64.87308230361634,
+        "CPU_mm": 5.396144619855367,
+        "CPU_sse": 44.29626940051357,
+        "CPU_fma": 85.25217393415447,
+        "CPU_avx": 65.07080357618096,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 17885840.30526508,
+        "m_CPU_enc_AES": 70065540.41534907,
+        "m_CPU_enc_ECDSA": 14139611.464528669,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 84.29264159261001,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "5146F40E7623E233B89905C397A18281BD579AF2"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610104420
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 258.156,
+        "CPU_FLOATINGPOINT_MATH": 195.812304198322,
+        "CPU_PRIME": 0.7351446959744385,
+        "CPU_SORTING": 68.25742516152116,
+        "CPU_ENCRYPTION": 30.779962614063713,
+        "CPU_COMPRESSION": 729.7295355833066,
+        "CPU_SINGLETHREAD": 73.15655883276541,
+        "CPU_PHYSICS": 13.47629431009632,
+        "CPU_MATRIX_MULT_SSE": 69.0916682072314,
+        "CPU_mm": 4.346763495114439,
+        "CPU_sse": 47.06642685355732,
+        "CPU_fma": 84.49757383386772,
+        "CPU_avx": 75.71100393426914,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 20007957.826021373,
+        "m_CPU_enc_AES": 63505331.02056436,
+        "m_CPU_enc_ECDSA": 13312101.387427673,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 78.55743707208678,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "F32A0519A82B37B4F4AFC0946A5FAC15B8ADDA36"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610105247
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 258.55833333333334,
+        "CPU_FLOATINGPOINT_MATH": 162.47526556165337,
+        "CPU_PRIME": 0.5465133844981014,
+        "CPU_SORTING": 58.85187101672244,
+        "CPU_ENCRYPTION": 30.776264571425692,
+        "CPU_COMPRESSION": 744.831532665437,
+        "CPU_SINGLETHREAD": 67.22588488562975,
+        "CPU_PHYSICS": 10.24708568265678,
+        "CPU_MATRIX_MULT_SSE": 71.32668123082458,
+        "CPU_mm": 7.048667589676004,
+        "CPU_sse": 40.90874397839754,
+        "CPU_fma": 94.60274964780791,
+        "CPU_avx": 78.46855006626828,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 17302874.93526528,
+        "m_CPU_enc_AES": 68001515.03076479,
+        "m_CPU_enc_ECDSA": 11509367.23171172,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 74.03574994121622,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "AABAC000B628E184820C6F3D8A07C5068377BB13"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610110123
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 239.43566666666666,
+        "CPU_FLOATINGPOINT_MATH": 226.81865280507225,
+        "CPU_PRIME": 0.6525125491489467,
+        "CPU_SORTING": 61.75603811171531,
+        "CPU_ENCRYPTION": 32.14936156256314,
+        "CPU_COMPRESSION": 725.7134810157283,
+        "CPU_SINGLETHREAD": 70.46913174382925,
+        "CPU_PHYSICS": 14.113720151220122,
+        "CPU_MATRIX_MULT_SSE": 66.43257270168897,
+        "CPU_mm": 5.457153216481959,
+        "CPU_sse": 43.35525248680154,
+        "CPU_fma": 89.23638979921027,
+        "CPU_avx": 66.70607581905512,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 19477840.976036947,
+        "m_CPU_enc_AES": 71695632.8696667,
+        "m_CPU_enc_ECDSA": 9959673.003775002,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 77.21250508922704,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "4A5058957CB81591EA765F6A4FDB47F8F9CDF11A"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610110944
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 234.34733333333332,
+        "CPU_FLOATINGPOINT_MATH": 215.58054880327683,
+        "CPU_PRIME": 0.7243539136093792,
+        "CPU_SORTING": 56.62827432466091,
+        "CPU_ENCRYPTION": 31.66975859998125,
+        "CPU_COMPRESSION": 733.1187316257045,
+        "CPU_SINGLETHREAD": 67.5799414224175,
+        "CPU_PHYSICS": 11.215470519576876,
+        "CPU_MATRIX_MULT_SSE": 70.79005269927686,
+        "CPU_mm": 6.016418855758392,
+        "CPU_sse": 38.47363856938232,
+        "CPU_fma": 88.8984764104988,
+        "CPU_avx": 84.99804311794946,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 16241932.46471148,
+        "m_CPU_enc_AES": 72752661.36780253,
+        "m_CPU_enc_ECDSA": 10629852.548687816,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 75.35192331313199,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "DACEA12B4BE78DFF05F792636F8DB83D2DFA9106"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610111829
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 250.25133333333332,
+        "CPU_FLOATINGPOINT_MATH": 190.5487268480666,
+        "CPU_PRIME": 0.7033877014296006,
+        "CPU_SORTING": 58.99567341104019,
+        "CPU_ENCRYPTION": 29.018582914020993,
+        "CPU_COMPRESSION": 692.5428489664309,
+        "CPU_SINGLETHREAD": 69.77688494726796,
+        "CPU_PHYSICS": 10.717273188877108,
+        "CPU_MATRIX_MULT_SSE": 60.03002243041417,
+        "CPU_mm": 6.0204411077801785,
+        "CPU_sse": 35.02607000280304,
+        "CPU_fma": 88.08750040144434,
+        "CPU_avx": 56.97649688699512,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 15955122.3166381,
+        "m_CPU_enc_AES": 64834754.13884257,
+        "m_CPU_enc_ECDSA": 10494692.337476753,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 72.47939580746211,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "FDEC29B086EE20D7C6CF6F916F1AEF87069B382F"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610112637
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 401.931,
+        "CPU_FLOATINGPOINT_MATH": 302.2520137864502,
+        "CPU_PRIME": 0.922913669164185,
+        "CPU_SORTING": 96.61268471451191,
+        "CPU_ENCRYPTION": 46.176243198452724,
+        "CPU_COMPRESSION": 1161.651620923516,
+        "CPU_SINGLETHREAD": 86.57911322661587,
+        "CPU_PHYSICS": 13.721098859876665,
+        "CPU_MATRIX_MULT_SSE": 106.81282874046988,
+        "CPU_mm": 8.943296068971115,
+        "CPU_sse": 66.551809205644,
+        "CPU_fma": 121.63975819962472,
+        "CPU_avx": 132.24691881614092,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 26430854.976874854,
+        "m_CPU_enc_AES": 100079496.26917434,
+        "m_CPU_enc_ECDSA": 18747549.918133095,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 116.89284021923835,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "FDBC0B4D0CCDC73E72D28EC319183E00A75CA3D8"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610113329
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 346.977,
+        "CPU_FLOATINGPOINT_MATH": 305.8654511203754,
+        "CPU_PRIME": 1.0855648024484397,
+        "CPU_SORTING": 102.57292175101819,
+        "CPU_ENCRYPTION": 46.3861428434906,
+        "CPU_COMPRESSION": 1133.9221597184498,
+        "CPU_SINGLETHREAD": 83.36530154536389,
+        "CPU_PHYSICS": 15.712832559173533,
+        "CPU_MATRIX_MULT_SSE": 104.36438161362685,
+        "CPU_mm": 8.465141778133642,
+        "CPU_sse": 56.42354110772716,
+        "CPU_fma": 143.39547083863013,
+        "CPU_avx": 113.27413289452323,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 29231672.585517887,
+        "m_CPU_enc_AES": 99931691.63292918,
+        "m_CPU_enc_ECDSA": 16754824.136320937,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 116.18740731271855,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "2BB6A93BB5D054564B7E7C1E147FC2D411FA5FF5"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610114008
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 448.2703333333334,
+        "CPU_FLOATINGPOINT_MATH": 367.72997131712185,
+        "CPU_PRIME": 0.8634936061612621,
+        "CPU_SORTING": 123.60572343270596,
+        "CPU_ENCRYPTION": 51.81645362259154,
+        "CPU_COMPRESSION": 1452.252139118314,
+        "CPU_SINGLETHREAD": 105.42457943206044,
+        "CPU_PHYSICS": 13.634893414483955,
+        "CPU_MATRIX_MULT_SSE": 94.27761111378027,
+        "CPU_mm": 8.595275474583104,
+        "CPU_sse": 53.90194593061431,
+        "CPU_fma": 151.74364714219507,
+        "CPU_avx": 77.18724026853147,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 29953115.708105475,
+        "m_CPU_enc_AES": 114792775.55584185,
+        "m_CPU_enc_ECDSA": 18254577.757340305,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 133.46661114118683,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "422A4A2C607BE10654F7E99146EC6A5C29330B66"
+    }
+  ],
+  "7500": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610103109
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 141.503,
+        "CPU_FLOATINGPOINT_MATH": 152.2228669935502,
+        "CPU_PRIME": 0.35660411841092576,
+        "CPU_SORTING": 31.696392642536388,
+        "CPU_ENCRYPTION": 16.05119886532497,
+        "CPU_COMPRESSION": 453.21011804674976,
+        "CPU_SINGLETHREAD": 39.84245855268222,
+        "CPU_PHYSICS": 5.589790970067631,
+        "CPU_MATRIX_MULT_SSE": 43.40922130322911,
+        "CPU_mm": 3.4982892491090487,
+        "CPU_sse": 22.600193470672885,
+        "CPU_fma": 52.98551680428885,
+        "CPU_avx": 54.64195363472559,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 9039405.2937318,
+        "m_CPU_enc_AES": 35228455.52607036,
+        "m_CPU_enc_ECDSA": 6224844.88441883,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 43.52103186035946,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "CF529BAB30AC52BBC5BD303F0F372B3B54FABF8E"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610103934
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 142.80466666666666,
+        "CPU_FLOATINGPOINT_MATH": 118.46315739606405,
+        "CPU_PRIME": 0.3340877699552779,
+        "CPU_SORTING": 29.942624295040847,
+        "CPU_ENCRYPTION": 17.473606880097876,
+        "CPU_COMPRESSION": 364.9310133717851,
+        "CPU_SINGLETHREAD": 37.230793213792246,
+        "CPU_PHYSICS": 5.834177071727508,
+        "CPU_MATRIX_MULT_SSE": 47.80507670328156,
+        "CPU_mm": 2.4523625022426585,
+        "CPU_sse": 21.1694930315091,
+        "CPU_fma": 62.11108126756618,
+        "CPU_avx": 60.1346558107694,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 8459946.849548753,
+        "m_CPU_enc_AES": 39290916.16946569,
+        "m_CPU_enc_ECDSA": 7216351.404702093,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 41.289646905436925,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "B9F910DDED491ABF5244729E31BA50E5871B4505"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610104747
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 129.69333333333333,
+        "CPU_FLOATINGPOINT_MATH": 101.7718612696259,
+        "CPU_PRIME": 0.39453429538580986,
+        "CPU_SORTING": 33.256874526886605,
+        "CPU_ENCRYPTION": 16.210569905033587,
+        "CPU_COMPRESSION": 393.35998664075555,
+        "CPU_SINGLETHREAD": 40.060403716700996,
+        "CPU_PHYSICS": 5.241779965574854,
+        "CPU_MATRIX_MULT_SSE": 44.42355935741452,
+        "CPU_mm": 2.510858043973281,
+        "CPU_sse": 20.817596916303064,
+        "CPU_fma": 64.77911713245305,
+        "CPU_avx": 47.67396402348744,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 7648861.849368778,
+        "m_CPU_enc_AES": 37230131.53033832,
+        "m_CPU_enc_ECDSA": 6115050.266514399,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 41.05620585634351,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "A4122C1A9E64D46731903C9B9832694FB6B237DA"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610105626
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 125.33866666666668,
+        "CPU_FLOATINGPOINT_MATH": 110.20289013769397,
+        "CPU_PRIME": 0.31801402222541475,
+        "CPU_SORTING": 28.53698434278043,
+        "CPU_ENCRYPTION": 16.20573430580275,
+        "CPU_COMPRESSION": 348.9895783052836,
+        "CPU_SINGLETHREAD": 32.284983592090875,
+        "CPU_PHYSICS": 5.674087900165456,
+        "CPU_MATRIX_MULT_SSE": 31.16488140748546,
+        "CPU_mm": 2.9067508716064037,
+        "CPU_sse": 17.523976989659488,
+        "CPU_fma": 40.50067069130575,
+        "CPU_avx": 35.46999654149113,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 8917875.105089001,
+        "m_CPU_enc_AES": 36604965.60326377,
+        "m_CPU_enc_ECDSA": 5455991.457971501,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 37.33395958430141,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "6D9DACECFE767041942B90C7196ECC2539BC4712"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610110446
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 151.514,
+        "CPU_FLOATINGPOINT_MATH": 159.0202639529021,
+        "CPU_PRIME": 0.4107236826370342,
+        "CPU_SORTING": 28.901720992129633,
+        "CPU_ENCRYPTION": 20.09591763746537,
+        "CPU_COMPRESSION": 527.7830039938103,
+        "CPU_SINGLETHREAD": 35.02324177549929,
+        "CPU_PHYSICS": 5.102649518227479,
+        "CPU_MATRIX_MULT_SSE": 43.514418003569034,
+        "CPU_mm": 4.985954517917777,
+        "CPU_sse": 28.2301560599077,
+        "CPU_fma": 59.04357669438025,
+        "CPU_avx": 43.269521256419154,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 8392209.760813504,
+        "m_CPU_enc_AES": 48974207.313680276,
+        "m_CPU_enc_ECDSA": 5849873.723374881,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 46.12595006238421,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "0AAFA6A454E8E34767270ABDE21DE436282D1A32"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610111333
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 118.215,
+        "CPU_FLOATINGPOINT_MATH": 117.27652945663493,
+        "CPU_PRIME": 0.29427446118793205,
+        "CPU_SORTING": 29.28027223396865,
+        "CPU_ENCRYPTION": 16.363411624484698,
+        "CPU_COMPRESSION": 345.3291103658753,
+        "CPU_SINGLETHREAD": 34.62993747029689,
+        "CPU_PHYSICS": 5.566591984708543,
+        "CPU_MATRIX_MULT_SSE": 40.13880939890785,
+        "CPU_mm": 2.349218154654947,
+        "CPU_sse": 21.717008178662457,
+        "CPU_fma": 40.078142929728585,
+        "CPU_avx": 58.621277088332505,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 9541909.773126788,
+        "m_CPU_enc_AES": 36235005.82375881,
+        "m_CPU_enc_ECDSA": 5697926.525781393,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 38.267730160790876,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "76DAE95476C5EC3FCFB5941BA307B0B76A874BBD"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610112210
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 158.73233333333334,
+        "CPU_FLOATINGPOINT_MATH": 107.06822896912719,
+        "CPU_PRIME": 0.3227388737359146,
+        "CPU_SORTING": 29.887579778610363,
+        "CPU_ENCRYPTION": 25.959126640302824,
+        "CPU_COMPRESSION": 359.54206385971816,
+        "CPU_SINGLETHREAD": 31.48518194942621,
+        "CPU_PHYSICS": 6.113504343313661,
+        "CPU_MATRIX_MULT_SSE": 31.767097988985654,
+        "CPU_mm": 3.369752056501394,
+        "CPU_sse": 16.112101949576648,
+        "CPU_fma": 36.943978271523804,
+        "CPU_avx": 42.2452137458565,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 9981066.396617353,
+        "m_CPU_enc_AES": 63229149.49785233,
+        "m_CPU_enc_ECDSA": 8450135.633476844,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 42.05840041245804,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "8DC3DCC7B4D583B0DA350EB381715353880C1288"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610112911
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 199.06033333333335,
+        "CPU_FLOATINGPOINT_MATH": 181.10692284461385,
+        "CPU_PRIME": 0.5460128942591108,
+        "CPU_SORTING": 50.61944551627207,
+        "CPU_ENCRYPTION": 19.69159626986267,
+        "CPU_COMPRESSION": 509.2358010822069,
+        "CPU_SINGLETHREAD": 55.98085387802426,
+        "CPU_PHYSICS": 8.135592878074874,
+        "CPU_MATRIX_MULT_SSE": 57.55871241320715,
+        "CPU_mm": 5.140535309058938,
+        "CPU_sse": 25.447447452648394,
+        "CPU_fma": 82.36319746027516,
+        "CPU_avx": 64.86549232669788,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 14491112.839777555,
+        "m_CPU_enc_AES": 39195717.4153422,
+        "m_CPU_enc_ECDSA": 8257575.495682804,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 57.52916493551494,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "1ACEC7D7264A8EC24D07475AB67DF66B465BDFC3"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610113552
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 214.89333333333335,
+        "CPU_FLOATINGPOINT_MATH": 191.34232017711446,
+        "CPU_PRIME": 0.6355067485429187,
+        "CPU_SORTING": 55.13751048035395,
+        "CPU_ENCRYPTION": 22.13936989651098,
+        "CPU_COMPRESSION": 647.5128957927991,
+        "CPU_SINGLETHREAD": 67.30777692507816,
+        "CPU_PHYSICS": 9.699365403215296,
+        "CPU_MATRIX_MULT_SSE": 69.41886785039715,
+        "CPU_mm": 5.889866927799807,
+        "CPU_sse": 35.728690485656315,
+        "CPU_fma": 93.6851627467272,
+        "CPU_avx": 78.84275031880792,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 10356681.698496036,
+        "m_CPU_enc_AES": 50313494.48283221,
+        "m_CPU_enc_ECDSA": 8974259.60448345,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 65.84608886948736,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "16D7CC305D80FC403405270FD05C05EFEA536CBD"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610114246
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 184.97866666666664,
+        "CPU_FLOATINGPOINT_MATH": 162.77141402820178,
+        "CPU_PRIME": 0.5176677016002754,
+        "CPU_SORTING": 53.29090285865058,
+        "CPU_ENCRYPTION": 19.390253270225358,
+        "CPU_COMPRESSION": 532.8234148900368,
+        "CPU_SINGLETHREAD": 53.645331368037716,
+        "CPU_PHYSICS": 10.240666420452047,
+        "CPU_MATRIX_MULT_SSE": 56.198287525792324,
+        "CPU_mm": 3.8500575358860183,
+        "CPU_sse": 34.55383021180613,
+        "CPU_fma": 80.47390043962864,
+        "CPU_avx": 53.56713192594218,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 15328028.844045836,
+        "m_CPU_enc_AES": 39217766.81150189,
+        "m_CPU_enc_ECDSA": 6450666.983691749,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 57.444029135807604,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "2EE26364E07EA5E3D84CB028567BCE730BAEFAC3"
+    }
+  ],
+  "37500": [
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610114622
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1505.6733333333334,
+        "CPU_FLOATINGPOINT_MATH": 1185.0814853147367,
+        "CPU_PRIME": 4.172518828416042,
+        "CPU_SORTING": 485.3713292420562,
+        "CPU_ENCRYPTION": 194.69776678550184,
+        "CPU_COMPRESSION": 5133.305544560226,
+        "CPU_SINGLETHREAD": 513.8903618439881,
+        "CPU_PHYSICS": 61.626123611376435,
+        "CPU_MATRIX_MULT_SSE": 421.9541197067092,
+        "CPU_mm": 35.14524127298618,
+        "CPU_sse": 252.48053060692533,
+        "CPU_fma": 571.5467652327596,
+        "CPU_avx": 441.8350632804428,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 105003603.91512309,
+        "m_CPU_enc_AES": 421517810.36209905,
+        "m_CPU_enc_ECDSA": 85944802.23740098,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 503.57286892531835,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "E7E49C521B7EB7A14B283E30496DE87B733771AE"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610114736
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1449.1336666666666,
+        "CPU_FLOATINGPOINT_MATH": 1254.299093518763,
+        "CPU_PRIME": 3.9627981555052623,
+        "CPU_SORTING": 462.0951771639458,
+        "CPU_ENCRYPTION": 194.7324850459661,
+        "CPU_COMPRESSION": 5022.336579305382,
+        "CPU_SINGLETHREAD": 487.699082325768,
+        "CPU_PHYSICS": 60.011927231735285,
+        "CPU_MATRIX_MULT_SSE": 422.4658351548868,
+        "CPU_mm": 37.28933513376805,
+        "CPU_sse": 237.21545414710636,
+        "CPU_fma": 569.2665328168265,
+        "CPU_avx": 460.91551850072733,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 101962634.78694421,
+        "m_CPU_enc_AES": 428520825.50317514,
+        "m_CPU_enc_ECDSA": 82091970.42855749,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 495.61213840267186,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "980DD02E104CFB3F46B21170ECF2DC8A043EF7F6"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610114851
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1453.5593333333331,
+        "CPU_FLOATINGPOINT_MATH": 1233.3901165054704,
+        "CPU_PRIME": 4.270116768363932,
+        "CPU_SORTING": 445.7078458383716,
+        "CPU_ENCRYPTION": 175.71330401572197,
+        "CPU_COMPRESSION": 5087.449160837832,
+        "CPU_SINGLETHREAD": 486.8023052928948,
+        "CPU_PHYSICS": 61.005203702370835,
+        "CPU_MATRIX_MULT_SSE": 426.6008883469541,
+        "CPU_mm": 32.507091738511946,
+        "CPU_sse": 228.18599448436566,
+        "CPU_fma": 580.5214789570575,
+        "CPU_avx": 471.0951915994391,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 94724059.90942204,
+        "m_CPU_enc_AES": 376484670.0631838,
+        "m_CPU_enc_ECDSA": 81537530.44216323,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 484.3980282442103,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "DD98E4F5A53A437F334B203B723FF43EAAC78D0D"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610115008
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1498.2893333333332,
+        "CPU_FLOATINGPOINT_MATH": 1235.3185396701347,
+        "CPU_PRIME": 4.314931459298366,
+        "CPU_SORTING": 490.35317296220825,
+        "CPU_ENCRYPTION": 193.47999510860086,
+        "CPU_COMPRESSION": 4958.887241951756,
+        "CPU_SINGLETHREAD": 473.6641657751225,
+        "CPU_PHYSICS": 59.08856610664497,
+        "CPU_MATRIX_MULT_SSE": 410.21047868114186,
+        "CPU_mm": 31.12954043658959,
+        "CPU_sse": 245.8855627800253,
+        "CPU_fma": 542.9114636266247,
+        "CPU_avx": 441.83440963677555,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 104273304.843182,
+        "m_CPU_enc_AES": 421179213.46469617,
+        "m_CPU_enc_ECDSA": 83182919.7451107,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 500.0044219561268,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "A9D4183DC6A1BACEC73C73C8253E26D08ED5C9C5"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610115124
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1521.601,
+        "CPU_FLOATINGPOINT_MATH": 1144.6891774792027,
+        "CPU_PRIME": 3.3037074639656097,
+        "CPU_SORTING": 472.0242237913069,
+        "CPU_ENCRYPTION": 187.2419951772274,
+        "CPU_COMPRESSION": 4995.270077413752,
+        "CPU_SINGLETHREAD": 514.2210636473231,
+        "CPU_PHYSICS": 62.72259849797234,
+        "CPU_MATRIX_MULT_SSE": 416.93047427526557,
+        "CPU_mm": 32.82634522282119,
+        "CPU_sse": 235.08997520484755,
+        "CPU_fma": 557.1244047389016,
+        "CPU_avx": 458.57704288204764,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 107235847.6667031,
+        "m_CPU_enc_AES": 401644663.75408053,
+        "m_CPU_enc_ECDSA": 80131875.58408563,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 489.7377564916544,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "53BD8A32DE388E9CB605021BED0834BA6B99413B"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610115238
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1474.0073333333335,
+        "CPU_FLOATINGPOINT_MATH": 1199.1240657784042,
+        "CPU_PRIME": 4.702004711103482,
+        "CPU_SORTING": 458.20526527896874,
+        "CPU_ENCRYPTION": 175.02901093409918,
+        "CPU_COMPRESSION": 4754.224057041936,
+        "CPU_SINGLETHREAD": 464.98616515110274,
+        "CPU_PHYSICS": 59.4613532834975,
+        "CPU_MATRIX_MULT_SSE": 419.38135843108796,
+        "CPU_mm": 29.73804112923684,
+        "CPU_sse": 240.9489097283172,
+        "CPU_fma": 556.9876895341561,
+        "CPU_avx": 460.20747603079053,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 102455454.87743047,
+        "m_CPU_enc_AES": 375763921.9595907,
+        "m_CPU_enc_ECDSA": 72374283.6706807,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 479.56736238387555,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "8AD8CE57BFBB2DD88FCF7AEDBB9C221F02C56E55"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610115357
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1515.6133333333332,
+        "CPU_FLOATINGPOINT_MATH": 1206.3994253902595,
+        "CPU_PRIME": 4.654054106294987,
+        "CPU_SORTING": 446.5496811389991,
+        "CPU_ENCRYPTION": 185.26187405876328,
+        "CPU_COMPRESSION": 4989.518558947862,
+        "CPU_SINGLETHREAD": 485.35347924042355,
+        "CPU_PHYSICS": 61.04198752500427,
+        "CPU_MATRIX_MULT_SSE": 424.3514470295113,
+        "CPU_mm": 33.60001334969961,
+        "CPU_sse": 236.14611769535588,
+        "CPU_fma": 571.6175338814214,
+        "CPU_avx": 465.2906895117565,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 111862727.99261153,
+        "m_CPU_enc_AES": 386035718.47082907,
+        "m_CPU_enc_ECDSA": 84885018.09568475,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 490.88914801957947,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "8DAE2CA3DBF94876907A68112587086E7C4AFDB9"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610115510
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1394.1796666666667,
+        "CPU_FLOATINGPOINT_MATH": 1202.0362900035816,
+        "CPU_PRIME": 4.410145424243015,
+        "CPU_SORTING": 469.2816596271754,
+        "CPU_ENCRYPTION": 185.21657734155505,
+        "CPU_COMPRESSION": 5105.178840289982,
+        "CPU_SINGLETHREAD": 497.0872239590402,
+        "CPU_PHYSICS": 57.224328757071724,
+        "CPU_MATRIX_MULT_SSE": 436.2989638807487,
+        "CPU_mm": 34.82543889928077,
+        "CPU_sse": 239.57411698573137,
+        "CPU_fma": 578.4481244040725,
+        "CPU_avx": 490.8746502524424,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 98745700.29069804,
+        "m_CPU_enc_AES": 402569646.426173,
+        "m_CPU_enc_ECDSA": 81325626.69062428,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 490.91492150956515,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "62D275FCD80CD76EED83096270E3FF5EC9782E98"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610115626
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1452.5416666666665,
+        "CPU_FLOATINGPOINT_MATH": 1239.6336296873474,
+        "CPU_PRIME": 4.072675955790097,
+        "CPU_SORTING": 476.05537680496843,
+        "CPU_ENCRYPTION": 182.07530570366714,
+        "CPU_COMPRESSION": 5102.763152205436,
+        "CPU_SINGLETHREAD": 491.34502406314516,
+        "CPU_PHYSICS": 59.34715034742793,
+        "CPU_MATRIX_MULT_SSE": 408.6245321263933,
+        "CPU_mm": 34.3412095656158,
+        "CPU_sse": 231.77946610456118,
+        "CPU_fma": 576.9424631277384,
+        "CPU_avx": 417.1516671468803,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 104474367.96834852,
+        "m_CPU_enc_AES": 387281185.3188155,
+        "m_CPU_enc_ECDSA": 81003833.97342137,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 491.19093044143636,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "6586338FFEE34D40EC07CC656D31C81C12883501"
+    },
+    {
+      "BaselineInfo": {
+        "WebDBID": -1,
+        "TimeStamp": 20220610115742
+      },
+      "Version": {
+        "Major": 10,
+        "Minor": 2,
+        "Build": 1001,
+        "SpecialBuildName": "",
+        "ptArchitecture": "x86_64_linux"
+      },
+      "Results": {
+        "Results Complete": true,
+        "NumTestProcesses": 2,
+        "CPU_INTEGER_MATH": 1388.547,
+        "CPU_FLOATINGPOINT_MATH": 1110.3367614508875,
+        "CPU_PRIME": 4.41204914663778,
+        "CPU_SORTING": 444.21497870433654,
+        "CPU_ENCRYPTION": 183.34747589724793,
+        "CPU_COMPRESSION": 4952.029044918323,
+        "CPU_SINGLETHREAD": 495.4099959681732,
+        "CPU_PHYSICS": 59.13765212741891,
+        "CPU_MATRIX_MULT_SSE": 410.91500466188836,
+        "CPU_mm": 33.68446797736212,
+        "CPU_sse": 239.55413068604105,
+        "CPU_fma": 560.4921437451347,
+        "CPU_avx": 432.6987395544893,
+        "CPU_avx512": 0,
+        "m_CPU_enc_SHA": 95055363.54084592,
+        "m_CPU_enc_AES": 397069875.2125375,
+        "m_CPU_enc_ECDSA": 84636049.90591455,
+        "ME_ALLOC_S": 0,
+        "ME_READ_S": 0,
+        "ME_READ_L": 0,
+        "ME_WRITE": 0,
+        "ME_LARGE": 0,
+        "ME_LATENCY": 0,
+        "ME_THREADED": 0,
+        "SUMM_CPU": 475.6426100945365,
+        "SUMM_ME": 0
+      },
+      "SystemInformation": {
+        "OSName": "Ubuntu 20.04.4 LTS",
+        "Kernel": "5.4.0-73-generic",
+        "Device": "",
+        "Processor": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz",
+        "NumSockets": 1,
+        "Manufacturer": "GenuineIntel",
+        "NumCores": 2,
+        "NumLogicals": 2,
+        "CPUFrequency": 2112,
+        "Memory": 3936,
+        "MemModuleInfo": {
+          "iNumMemSticks": 0
+        }
+      },
+      "Checksum": "238DB9FC965310DD9E8CE0607DFDA2D0536B7749"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+docker login azure
+docker context create aci myacicontext
+docker context ls
+docker context use myacicontext
+docker run -p 80:80 mcr.microsoft.com/azuredocs/aci-helloworld
+# docker logs quizzical-edison
+docker stop quizzical-edison
+docker rm quizzical-edison
+docker ps
+
+docker run --name server -p 80:80 -p 6969 -p 861 granelli/measure 
+python3 webserver.py 80
