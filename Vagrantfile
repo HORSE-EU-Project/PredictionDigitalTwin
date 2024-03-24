@@ -15,7 +15,7 @@ RAM = 4096
 # Bento: Packer templates for building minimal Vagrant baseboxes
 # The bento/ubuntu-XX.XX is a small image of about 500 MB, fast to download
 BOX = "bento/ubuntu-20.04"
-VM_NAME = "ubuntu-20.04-comnetsemu"
+VM_NAME = "NDT"
 
 # When using libvirt as the provider, use this box, bento boxes do not support libvirt.
 BOX_LIBVIRT = "generic/ubuntu2004"
@@ -127,10 +127,10 @@ Vagrant.configure("2") do |config|
       libvirt.memory = RAM
     end
 
-    comnetsemu.vm.hostname = "comnetsemu"
+    comnetsemu.vm.hostname = "NDT"
     comnetsemu.vm.box_check_update = true
     comnetsemu.vm.post_up_message = '
-The VM is up! Run "$ vagrant ssh comnetsemu" to ssh into the running VM.
+The VM is up! Run "$ vagrant ssh NDT" to ssh into the running VM.
 
 IMPORTANT! For all ComNetsEmu users and developers:
 
@@ -139,6 +139,9 @@ please run the upgrade process described [here](https://git.comnets.net/public-r
 New features, fixes and other improvements require **manually** running the upgrade script.
 But the script will automatically check and perform the upgrade, and if you have a good internet connection,
 it will not take much time.
+
+If you are using an ARM processor, please create/edit the /boot/cmdline.txt file, and add:
+cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
     '
 
     comnetsemu.vm.provision :shell, inline: $bootstrap, privileged: true
@@ -156,6 +159,10 @@ it will not take much time.
     comnetsemu.vm.network "forwarded_port", guest: 8082, host: 8082
     comnetsemu.vm.network "forwarded_port", guest: 8083, host: 8083
     comnetsemu.vm.network "forwarded_port", guest: 8084, host: 8084
+    comnetsemu.vm.network "forwarded_port", guest: 8000, host: 8000
+    comnetsemu.vm.network "forwarded_port", guest: 3000, host: 3000
+    comnetsemu.vm.network "forwarded_port", guest: 8008, host: 8008, host_ip: "127.0.0.1"
+    comnetsemu.vm.network "forwarded_port", guest: 5000, host: 5000
 
     # - Uncomment the underlying line to add a private network to the VM.
     #   If VirtualBox is used as the hypervisor, this means adding or using (if already created) a host-only interface to the VM.
