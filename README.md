@@ -6,7 +6,7 @@ HORSE Prediction and Prevention Digital Twin
 *This project is based on the virtual emulator/testbed designed for the book:
 [Computing in Communication Networks: From Theory to Practice](https://www.amazon.com/Computing-Communication-Networks-Theory-Practice-ebook/dp/B088ZS597R)*
 
-To go straight to the HORSE Prediction and Prevention Digital Twin implementation in the 5GS, please click [HERE](.app/comnetsemu_5Gnet)
+To go straight to the HORSE Prediction and Prevention Digital Twin implementation in the 5GS, please click [HERE](./app/comnetsemu_5Gnet)
 
 **INFO: This project is currently still under development [beta]. Version 1.0.0 has not yet been released.
 We try to make it stable but breaking changes might happen.**
