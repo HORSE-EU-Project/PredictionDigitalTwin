@@ -100,14 +100,14 @@ SCRIPT
 
 Vagrant.configure("2") do |config|
 
-  config.vm.define "comnetsemu" do |comnetsemu|
-    comnetsemu.vm.box = BOX
+  config.vm.define "NDT" do |ndt|
+    ndt.vm.box = BOX
     # Sync ./ to home directory of vagrant to simplify the install script
-    comnetsemu.vm.synced_folder ".", "/vagrant", disabled: true
-    comnetsemu.vm.synced_folder ".", "/home/vagrant/comnetsemu"
+    ndt.vm.synced_folder ".", "/vagrant", disabled: true
+    ndt.vm.synced_folder ".", "/home/vagrant/comnetsemu"
 
     # For Virtualbox provider
-    comnetsemu.vm.provider "virtualbox" do |vb|
+    ndt.vm.provider "virtualbox" do |vb|
       vb.name = VM_NAME
       vb.cpus = CPUS
       vb.memory = RAM
@@ -117,7 +117,7 @@ Vagrant.configure("2") do |config|
     end
 
     # For libvirt provider
-    comnetsemu.vm.provider "libvirt" do |libvirt, override|
+    ndt.vm.provider "libvirt" do |libvirt, override|
       # Overrides are used to modify default options that do not work for libvirt provider.
       override.vm.box = BOX_LIBVIRT
       override.vm.synced_folder ".", "/home/vagrant/comnetsemu", type: "nfs", nfs_version: 4
@@ -127,49 +127,41 @@ Vagrant.configure("2") do |config|
       libvirt.memory = RAM
     end
 
-    comnetsemu.vm.hostname = "NDT"
-    comnetsemu.vm.box_check_update = true
-    comnetsemu.vm.post_up_message = '
+    ndt.vm.hostname = "NDT"
+    ndt.vm.box_check_update = true
+    ndt.vm.post_up_message = '
 The VM is up! Run "$ vagrant ssh NDT" to ssh into the running VM.
-
-IMPORTANT! For all ComNetsEmu users and developers:
-
-When a new version is released (https://git.comnets.net/public-repo/comnetsemu/-/tags),
-please run the upgrade process described [here](https://git.comnets.net/public-repo/comnetsemu#upgrade-comnetsemu-and-dependencies).
-New features, fixes and other improvements require **manually** running the upgrade script.
-But the script will automatically check and perform the upgrade, and if you have a good internet connection,
-it will not take much time.
 
 If you are using an ARM processor, please create/edit the /boot/cmdline.txt file, and add:
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
     '
 
-    comnetsemu.vm.provision :shell, inline: $bootstrap, privileged: true
-    comnetsemu.vm.provision :shell, inline: $setup_x11_server, privileged: true
-    comnetsemu.vm.provision :shell, inline: $setup_comnetsemu, privileged: false
-    comnetsemu.vm.provision :shell, inline: $post_installation, privileged: true
+    ndt.vm.provision :shell, inline: $bootstrap, privileged: true
+    ndt.vm.provision :shell, inline: $setup_x11_server, privileged: true
+    ndt.vm.provision :shell, inline: $setup_comnetsemu, privileged: false
+    ndt.vm.provision :shell, inline: $post_installation, privileged: true
 
-    comnetsemu.vm.provider "libvirt" do |libvirt, override|
+    ndt.vm.provider "libvirt" do |libvirt, override|
       override.vm.provision :shell, inline: $setup_libvirt_vm_always, privileged: true, run: "always"
     end
-    comnetsemu.vm.provision :shell, privileged:false, run: "always", path: "./util/echo_banner.sh"
+    ndt.vm.provision :shell, privileged:false, run: "always", path: "./util/echo_banner.sh"
 
     # VM networking
-    comnetsemu.vm.network "forwarded_port", guest: 8888, host: 8888, host_ip: "127.0.0.1"
-    comnetsemu.vm.network "forwarded_port", guest: 8082, host: 8082
-    comnetsemu.vm.network "forwarded_port", guest: 8083, host: 8083
-    comnetsemu.vm.network "forwarded_port", guest: 8084, host: 8084
-    comnetsemu.vm.network "forwarded_port", guest: 8000, host: 8000
-    comnetsemu.vm.network "forwarded_port", guest: 3000, host: 3000
-    comnetsemu.vm.network "forwarded_port", guest: 8008, host: 8008, host_ip: "127.0.0.1"
-    comnetsemu.vm.network "forwarded_port", guest: 5000, host: 5000
+    ndt.vm.network "forwarded_port", guest: 8888, host: 8888, host_ip: "127.0.0.1"
+    ndt.vm.network "forwarded_port", guest: 8082, host: 8082
+    ndt.vm.network "forwarded_port", guest: 8083, host: 8083
+    ndt.vm.network "forwarded_port", guest: 8084, host: 8084
+    ndt.vm.network "forwarded_port", guest: 8000, host: 8000
+    ndt.vm.network "forwarded_port", guest: 3000, host: 1234
+    ndt.vm.network "forwarded_port", guest: 8008, host: 8008, host_ip: "127.0.0.1"
+    ndt.vm.network "forwarded_port", guest: 5000, host: 1235
 
     # - Uncomment the underlying line to add a private network to the VM.
     #   If VirtualBox is used as the hypervisor, this means adding or using (if already created) a host-only interface to the VM.
-    comnetsemu.vm.network "private_network", ip: "192.168.56.2"
+    ndt.vm.network "private_network", ip: "192.168.56.2"
 
     # Enable X11 forwarding
-    comnetsemu.ssh.forward_agent = true
-    comnetsemu.ssh.forward_x11 = true
+    ndt.ssh.forward_agent = true
+    ndt.ssh.forward_x11 = true
   end
 end
