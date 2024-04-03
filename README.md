@@ -44,7 +44,7 @@ For more information, please read the documentation about Comnetsemu: [README_co
 
 -   Implements an end-to-end emulation of the 5GS, using UERANSIM and Open5GS
 
-Check the [Roadmap](./doc/roadmap.md) for planed and WIP features.
+For more information, please refer to the [Prediction and Prevention Digital Twin README](./app/comnetsemu_5Gnet/README.md).
 
 
 ## Installation

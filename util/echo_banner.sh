@@ -16,4 +16,5 @@ echo ""
 echo "PRESENTS"
 echo ""
 
-cat horse-logo.txt
+cat "/home/vagrant/comnetsemu/util/horse-logo.txt"
+
