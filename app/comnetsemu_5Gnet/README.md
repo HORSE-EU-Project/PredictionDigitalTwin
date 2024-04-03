@@ -50,27 +50,28 @@ cd ../open5gs
 ```
 
 
-## Run experiments
+## How to run the Network Digital Twin
 
-### Start the network topology:
+### The HORSE reference network topology and 5GS setup
 
-#### Basic deployment scenario
+#### Reference HORSE deployment scenario
 
-The scenario includes 5 DockerHosts as shown in the figure below.
+The following briefly illustrates the default HORSE deployment scenario.
+
+<img src="./images/horse-topology.jpg" title="./images/horse-topology.jpg" width=1000px></img>
+
+#### Original deployment scenario
+
+This was the original scenario, that includes 5 DockerHosts as shown in the figure below.
 The UE starts two PDU session one for each slice defined in the core network.
+This picture is provided to describe the configuration of the 5GS and related IP assignments.
 
 <img src="./images/topology.jpg" title="./images/topology.jpg" width=1000px></img>
 
-Notice that at the first run the set-up should not work due to missing information in the 5GC.
-To configure it we should leverage the WebUI by opening the following page in a browser on the host OS.
+To configure the 5GC, we can open the WebUI by opening the following page in a browser on the host OS.
 ```
 http://<VM_IP>:3000/
 ```
-
-#### Sample HORSE deployment scenario
-
-TBD
-
 
 ### Check UE connections
 
