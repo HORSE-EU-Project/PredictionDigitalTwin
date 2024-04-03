@@ -1,3 +1,5 @@
+<img src="./images/HORSE-logo.jpg" title="./images/HORSE-logo.jpg" width=1000px></img>
+
 HORSE Prediction and Prevention Digital Twin
 ============================================
 *This is the official repository of the Prediction and Prevention Digital Twin developed within the [HORSE SNS JU project](https://horse-6g.eu).
