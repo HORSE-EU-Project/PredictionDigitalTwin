@@ -60,7 +60,6 @@ cd ../open5gs
 
 The following briefly illustrates the default HORSE deployment scenario.
 
-<img src="./images/horse-topology.jpg" title="./images/horse-topology.jpg" width=1000px></img>
 <img src="./HORSE_data/HORSE-DDoS-DNS-simp.png" title="HORSE Default topology" width=1000px></img>
 
 #### Original deployment scenario
