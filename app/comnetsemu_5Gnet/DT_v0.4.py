@@ -225,7 +225,7 @@ if __name__ == "__main__":
     info("\n*** Starting network\n")
     net.start()
     
-    info("\n*** Waiting for 1 min. before registering mobile UEs...")
+    info("\n*** Waiting for 1 min. before registering mobile UEs...\n")
     time.sleep(60)
     net.pingAll()
 
