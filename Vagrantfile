@@ -15,7 +15,7 @@ RAM = 4096
 # Bento: Packer templates for building minimal Vagrant baseboxes
 # The bento/ubuntu-XX.XX is a small image of about 500 MB, fast to download
 BOX = "bento/ubuntu-20.04"
-VM_NAME = "NDT"
+VM_NAME = "ubuntu-20.04-ndt"
 
 # When using libvirt as the provider, use this box, bento boxes do not support libvirt.
 BOX_LIBVIRT = "generic/ubuntu2004"
