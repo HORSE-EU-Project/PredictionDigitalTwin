@@ -41,7 +41,7 @@ if __name__ == "__main__":
     mongodb_folder="/home/vagrant/mongodbdata"
 
     # Uncomment to link to sFlow (but first run start.sh script to activate sFlow deamon
-    exec(open('./sflow-rt/extras/sflow.py').read())
+    # exec(open('./sflow-rt/extras/sflow.py').read())
     env = dict()
 
     # net = Containernet(controller=Controller, link=TCLink)
