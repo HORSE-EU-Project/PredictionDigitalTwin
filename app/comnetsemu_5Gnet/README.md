@@ -17,25 +17,45 @@ Supported open source software:
 - Open5gs: v2.4.2
 
 ## Run instructions
-In different terminals:
 
+For interactive operation, please run the following commands in different terminals.
+
+Start sFlow (optional):
 ```
 ./sflow-rt/launch.sh
 ```
 
+Start the Network Digital Twin:
 ```
 sudo python3 [NDT_scenario_file].py
 ```
 
+Start the Ryu controller:
 ```
 ryu-manager ryu.app.simple_switch_stp_13 ryu.app.ofctl_rest
 ```
 
+Run the web-based GUI to interact with the Digital Twin (for testing purposes):
+```
+cd GUI
+./launch
+```
+
 ## Build Instructions
 
-First, install the original comnetsemu VM.
+First, from the host machine, install the original comnetsemu VM:
 
-Clone repository in the comnetsemu VM.
+```
+vagrant up NDT
+```
+
+and log into the VM:
+
+```
+vagrant ssh NDT
+```
+
+Once/if Comnetsemu is installed, then you must build or download the required docker containers.
 
 Build the necessary docker images:
 
@@ -50,6 +70,8 @@ Or alternatively download them from DockerHub
 cd ../open5gs
 ./dockerhub_pull.sh
 ```
+
+Be sure that the additional libraries are provided in the vm_provisioning.sh script in the /util directory.
 
 
 ## How to run the Network Digital Twin
