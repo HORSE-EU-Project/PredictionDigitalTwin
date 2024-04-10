@@ -1345,3 +1345,26 @@ Open5GS daemon v2.4.4
 04/06 12:39:43.333: [ausf] INFO: [be39ae76-f412-41ee-b55d-893cbf0d29a2] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
 04/06 12:39:43.362: [ausf] INFO: [be3ce190-f412-41ee-bfcd-6787976ff2db] (NRF-notify) NF registered (../src/ausf/nnrf-handler.c:179)
 04/06 12:39:43.362: [ausf] INFO: [be3ce190-f412-41ee-bfcd-6787976ff2db] (NRF-notify) NF Profile updated (../src/ausf/nnrf-handler.c:198)
+Open5GS daemon v2.4.4
+
+04/10 06:53:14.888: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+04/10 06:53:14.889: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+04/10 06:53:14.895: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/10 06:53:14.909: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+04/10 06:53:14.932: [ausf] INFO: [01043ff4-f707-41ee-a7a8-59b2419ebe89] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+04/10 06:55:55.493: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+04/10 06:55:55.494: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+04/10 06:55:55.494: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/10 06:55:55.509: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+04/10 06:55:55.514: [ausf] INFO: [60bdcf6e-f707-41ee-99f2-834b37072b85] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+04/10 12:29:41.098: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+04/10 12:29:41.098: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+04/10 12:29:41.100: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/10 12:29:41.116: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+04/10 12:29:41.137: [ausf] INFO: [00eeb768-f736-41ee-a720-3d3bed9106d0] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+04/10 12:29:41.265: [ausf] INFO: [0102c352-f736-41ee-8c2a-4de809bd0a44] (NRF-notify) NF registered (../src/ausf/nnrf-handler.c:179)
+04/10 12:29:41.265: [ausf] INFO: [0102c352-f736-41ee-8c2a-4de809bd0a44] (NRF-notify) NF Profile updated (../src/ausf/nnrf-handler.c:198)

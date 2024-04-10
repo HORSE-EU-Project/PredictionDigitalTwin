@@ -41,9 +41,12 @@ def main():
     if topology_file is not None:
         file_details = {"FileName":topology_file.name,"FileType":topology_file.type}
         st.write(file_details)
-        with open(os.path.join("tempDir",topology_file.name),"wb") as f: 
+        #with open(os.path.join("tempDir",topology_file.name),"wb") as f: 
+        with open(os.path.join("tempDir","input.yaml"),"wb") as f:
             f.write(topology_file.getbuffer())         
         st.success("File Saved")
+        cmdline("cd ../yaml-parser/ ; python3 parse_yaml.py ../GUI/tempDir/input.yaml ; mv output.py ../GUI/tempDir/output.py ; cd ../GUI")
+        st.success("Topology converted from YAML")
 
     st.divider() 
 

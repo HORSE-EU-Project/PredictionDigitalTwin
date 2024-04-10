@@ -981,3 +981,25 @@ Open5GS daemon v2.4.4
 04/06 12:39:43.325: [sbi] INFO: nghttp2_server() [127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:144)
 04/06 12:39:43.333: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
 04/06 12:39:43.341: [nssf] INFO: [be3b85d4-f412-41ee-ae62-c5bc633f2420] NF registred [Heartbeat:10s] (../src/nssf/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+04/10 06:53:14.959: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nssf.yaml' (../lib/app/ogs-init.c:129)
+04/10 06:53:14.959: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nssf.log' (../lib/app/ogs-init.c:132)
+04/10 06:53:14.966: [sbi] INFO: nghttp2_server() [127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/10 06:53:14.976: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+04/10 06:53:14.981: [nssf] INFO: [010e4cce-f707-41ee-8638-e1f7773f6063] NF registred [Heartbeat:10s] (../src/nssf/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+04/10 06:55:55.487: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nssf.yaml' (../lib/app/ogs-init.c:129)
+04/10 06:55:55.487: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nssf.log' (../lib/app/ogs-init.c:132)
+04/10 06:55:55.488: [sbi] INFO: nghttp2_server() [127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/10 06:55:55.492: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+04/10 06:55:55.498: [nssf] INFO: [60bcd528-f707-41ee-a4bd-77c7a5e4e6e7] NF registred [Heartbeat:10s] (../src/nssf/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+04/10 12:29:41.234: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nssf.yaml' (../lib/app/ogs-init.c:129)
+04/10 12:29:41.235: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nssf.log' (../lib/app/ogs-init.c:132)
+04/10 12:29:41.247: [sbi] INFO: nghttp2_server() [127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/10 12:29:41.273: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+04/10 12:29:41.277: [nssf] INFO: [01051e86-f736-41ee-8db4-b95be5a85817] NF registred [Heartbeat:10s] (../src/nssf/nf-sm.c:198)
+04/10 12:38:17.868: [app] INFO: SIGHUP received (../src/main.c:58)

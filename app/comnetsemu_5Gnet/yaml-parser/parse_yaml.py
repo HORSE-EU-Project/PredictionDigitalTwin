@@ -22,24 +22,24 @@ with open(input_filename, 'r') as file:
                 # append content to the main file 
                 f.write(line)
 
-        print("\n\tinfo(\"*** Adding switches and hosts\")")
+        print("\n    info(\"*** Adding switches and hosts\")")
         for node in data['nodes']:
         #print(node['name'], node['vendor'], node['config']['image'], node['interfaces'])
             if node['vendor']=="CISCO":
-                print("\t\t%s=self.addSwitch('%s')" % (node['name'], node['name']))
+                print("    %s=net.addSwitch('%s')" % (node['name'], node['name']))
                 switch_num+=1
             else:
                 if ("server" in node['name']):
-                    print("\t\t%s=self.addDockerHost('%s', dimage=\"dev_test\", ip=\"%s\", docker_args={\"hostname\": \"%s\"})" % (node['name'], node['name'], str(startIP+host_num), node['name']))
+                    print("    %s=net.addDockerHost('%s', dimage=\"dev_test\", ip=\"%s\", docker_args={\"hostname\": \"%s\"})" % (node['name'], node['name'], str(startIP+host_num), node['name']))
                     host_num+=1
                 else:
-                    print("\t\t# %s will be a mobile host configured within EURANSIM" % node['name'])
+                    print("    # %s will be a mobile host configured within EURANSIM" % node['name'])
                     host_num+=1
 
-        print("\n\tinfo(\"*** Adding links\")")
+        print("\n    info(\"*** Adding links\")")
 
         for link in data['links']:
-            print("\t\tself.addLink(%s, %s, bw=100, delay=\"10ms\", intfName1=\"%s-%s\", intfName2=\"%s-%s\")" % (link['a_node'], link['z_node'], link['a_node'], link['a_int'], link['z_node'], link['z_int']))
+            print("    net.addLink(%s, %s, bw=100, delay=\"10ms\", intfName1=\"%s-%s\", intfName2=\"%s-%s\")" % (link['a_node'], link['z_node'], link['a_node'], link['a_int'], link['z_node'], link['z_int']))
 
         with open('footer.py','r') as firstfile: 
         # read content from last portion of the template file 

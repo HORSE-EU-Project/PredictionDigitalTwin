@@ -192,78 +192,42 @@ if __name__ == "__main__":
     net.addController( c0 )
     
 
-	info("*** Adding switches and hosts")
-		cgserver=self.addDockerHost('cgserver', dimage="dev_test", ip="192.168.0.100", docker_args={"hostname": "cgserver"})
-		csr1=self.addSwitch('csr1')
-		csr4=self.addSwitch('csr4')
-		csr5=self.addSwitch('csr5')
-		csr6=self.addSwitch('csr6')
-		csr7=self.addSwitch('csr7')
-		csr2=self.addSwitch('csr2')
-		csr3=self.addSwitch('csr3')
-		csr11=self.addSwitch('csr11')
-		csr12=self.addSwitch('csr12')
-		csr13=self.addSwitch('csr13')
-		# dnsc10 will be a mobile host configured within EURANSIM
-		# dnsc8 will be a mobile host configured within EURANSIM
-		# dnsc2 will be a mobile host configured within EURANSIM
-		# dnsc1 will be a mobile host configured within EURANSIM
-		# dnsc9 will be a mobile host configured within EURANSIM
-		# dnsc3 will be a mobile host configured within EURANSIM
-		# dnsc4 will be a mobile host configured within EURANSIM
-		# dnsc5 will be a mobile host configured within EURANSIM
-		# dnsc6 will be a mobile host configured within EURANSIM
-		# dnsc7 will be a mobile host configured within EURANSIM
-		# dnss will be a mobile host configured within EURANSIM
-		# ddoss will be a mobile host configured within EURANSIM
-		# ddosc1 will be a mobile host configured within EURANSIM
-		# ddosc2 will be a mobile host configured within EURANSIM
-		# ddosc3 will be a mobile host configured within EURANSIM
-		# ddosc7 will be a mobile host configured within EURANSIM
-		# ddosc5 will be a mobile host configured within EURANSIM
-		# ddosc4 will be a mobile host configured within EURANSIM
-		# ddosc8 will be a mobile host configured within EURANSIM
-		# ddosc10 will be a mobile host configured within EURANSIM
-		# ddosc6 will be a mobile host configured within EURANSIM
-		# ddosc9 will be a mobile host configured within EURANSIM
+    info("*** Adding switches and hosts")
+    # ceos2 will be a mobile host configured within EURANSIM
+    # dns-c10 will be a mobile host configured within EURANSIM
+    # dns-c8 will be a mobile host configured within EURANSIM
+    # dns-c2 will be a mobile host configured within EURANSIM
+    # dns-c1 will be a mobile host configured within EURANSIM
+    # dns-c9 will be a mobile host configured within EURANSIM
+    # dns-c3 will be a mobile host configured within EURANSIM
+    # dns-c4 will be a mobile host configured within EURANSIM
+    # dns-c5 will be a mobile host configured within EURANSIM
+    # dns-c6 will be a mobile host configured within EURANSIM
+    # dns-c7 will be a mobile host configured within EURANSIM
+    # dns-s will be a mobile host configured within EURANSIM
+    # internet will be a mobile host configured within EURANSIM
+    # 5g-core will be a mobile host configured within EURANSIM
+    # upf will be a mobile host configured within EURANSIM
+    # ceos1 will be a mobile host configured within EURANSIM
+    # gnb will be a mobile host configured within EURANSIM
 
-	info("*** Adding links")
-		self.addLink(csr4, csr1, bw=100, delay="10ms", intfName1="csr4-eth2", intfName2="csr1-eth2")
-		self.addLink(csr5, csr2, bw=100, delay="10ms", intfName1="csr5-eth3", intfName2="csr2-eth5")
-		self.addLink(csr6, csr5, bw=100, delay="10ms", intfName1="csr6-eth3", intfName2="csr5-eth2")
-		self.addLink(csr6, csr4, bw=100, delay="10ms", intfName1="csr6-eth4", intfName2="csr4-eth4")
-		self.addLink(csr7, csr6, bw=100, delay="10ms", intfName1="csr7-eth2", intfName2="csr6-eth2")
-		self.addLink(csr7, csr3, bw=100, delay="10ms", intfName1="csr7-eth4", intfName2="csr3-eth3")
-		self.addLink(csr2, csr1, bw=100, delay="10ms", intfName1="csr2-eth3", intfName2="csr1-eth3")
-		self.addLink(csr3, csr2, bw=100, delay="10ms", intfName1="csr3-eth4", intfName2="csr2-eth4")
-		self.addLink(csr11, csr1, bw=100, delay="10ms", intfName1="csr11-eth2", intfName2="csr1-eth4")
-		self.addLink(csr11, csr4, bw=100, delay="10ms", intfName1="csr11-eth3", intfName2="csr4-eth3")
-		self.addLink(csr11, dnsc2, bw=100, delay="10ms", intfName1="csr11-eth4", intfName2="dnsc2-eth1")
-		self.addLink(csr11, dnsc8, bw=100, delay="10ms", intfName1="csr11-eth10", intfName2="dnsc8-eth1")
-		self.addLink(csr11, dnsc10, bw=100, delay="10ms", intfName1="csr11-eth12", intfName2="dnsc10-eth1")
-		self.addLink(csr12, csr2, bw=100, delay="10ms", intfName1="csr12-eth2", intfName2="csr2-eth2")
-		self.addLink(csr12, csr3, bw=100, delay="10ms", intfName1="csr12-eth4", intfName2="csr3-eth5")
-		self.addLink(csr13, csr3, bw=100, delay="10ms", intfName1="csr13-eth2", intfName2="csr3-eth2")
-		self.addLink(csr13, csr7, bw=100, delay="10ms", intfName1="csr13-eth3", intfName2="csr7-eth3")
-		self.addLink(csr13, ddosc1, bw=100, delay="10ms", intfName1="csr13-eth4", intfName2="ddosc1-eth1")
-		self.addLink(csr13, ddosc2, bw=100, delay="10ms", intfName1="csr13-eth5", intfName2="ddosc2-eth1")
-		self.addLink(dnsc1, csr11, bw=100, delay="10ms", intfName1="dnsc1-eth1", intfName2="csr11-eth7")
-		self.addLink(dnsc9, csr11, bw=100, delay="10ms", intfName1="dnsc9-eth1", intfName2="csr11-eth11")
-		self.addLink(dnsc3, csr11, bw=100, delay="10ms", intfName1="dnsc3-eth1", intfName2="csr11-eth13")
-		self.addLink(dnsc4, csr11, bw=100, delay="10ms", intfName1="dnsc4-eth1", intfName2="csr11-eth5")
-		self.addLink(dnsc5, csr11, bw=100, delay="10ms", intfName1="dnsc5-eth1", intfName2="csr11-eth6")
-		self.addLink(dnsc6, csr11, bw=100, delay="10ms", intfName1="dnsc6-eth1", intfName2="csr11-eth8")
-		self.addLink(dnsc7, csr11, bw=100, delay="10ms", intfName1="dnsc7-eth1", intfName2="csr11-eth9")
-		self.addLink(cgserver, csr7, bw=100, delay="10ms", intfName1="cgserver-eth1", intfName2="csr7-eth5")
-		self.addLink(ddoss, csr1, bw=100, delay="10ms", intfName1="ddoss-eth1", intfName2="csr1-eth5")
-		self.addLink(ddosc3, csr13, bw=100, delay="10ms", intfName1="ddosc3-eth1", intfName2="csr13-eth6")
-		self.addLink(ddosc7, csr13, bw=100, delay="10ms", intfName1="ddosc7-eth1", intfName2="csr13-eth10")
-		self.addLink(ddosc5, csr13, bw=100, delay="10ms", intfName1="ddosc5-eth1", intfName2="csr13-eth8")
-		self.addLink(ddosc4, csr13, bw=100, delay="10ms", intfName1="ddosc4-eth1", intfName2="csr13-eth7")
-		self.addLink(ddosc8, csr13, bw=100, delay="10ms", intfName1="ddosc8-eth1", intfName2="csr13-eth11")
-		self.addLink(ddosc10, csr13, bw=100, delay="10ms", intfName1="ddosc10-eth1", intfName2="csr13-eth13")
-		self.addLink(ddosc6, csr13, bw=100, delay="10ms", intfName1="ddosc6-eth1", intfName2="csr13-eth9")
-		self.addLink(ddosc9, csr13, bw=100, delay="10ms", intfName1="ddosc9-eth1", intfName2="csr13-eth12")
+    info("*** Adding links")
+    net.addLink(ceos2, ceos1, bw=100, delay="10ms", intfName1="ceos2-eth1", intfName2="ceos1-eth2")
+    net.addLink(dns-c10, gnb, bw=100, delay="10ms", intfName1="dns-c10-eth1", intfName2="gnb-eth10")
+    net.addLink(dns-c8, gnb, bw=100, delay="10ms", intfName1="dns-c8-eth1", intfName2="gnb-eth8")
+    net.addLink(dns-c2, gnb, bw=100, delay="10ms", intfName1="dns-c2-eth1", intfName2="gnb-eth2")
+    net.addLink(dns-c1, gnb, bw=100, delay="10ms", intfName1="dns-c1-eth1", intfName2="gnb-eth1")
+    net.addLink(dns-c9, gnb, bw=100, delay="10ms", intfName1="dns-c9-eth1", intfName2="gnb-eth9")
+    net.addLink(dns-c3, gnb, bw=100, delay="10ms", intfName1="dns-c3-eth1", intfName2="gnb-eth3")
+    net.addLink(dns-c4, gnb, bw=100, delay="10ms", intfName1="dns-c4-eth1", intfName2="gnb-eth4")
+    net.addLink(dns-c5, gnb, bw=100, delay="10ms", intfName1="dns-c5-eth1", intfName2="gnb-eth5")
+    net.addLink(dns-c6, gnb, bw=100, delay="10ms", intfName1="dns-c6-eth1", intfName2="gnb-eth6")
+    net.addLink(dns-c7, gnb, bw=100, delay="10ms", intfName1="dns-c7-eth1", intfName2="gnb-eth7")
+    net.addLink(dns-s, ceos2, bw=100, delay="10ms", intfName1="dns-s-eth1", intfName2="ceos2-eth2")
+    net.addLink(internet, ceos2, bw=100, delay="10ms", intfName1="internet-eth1", intfName2="ceos2-eth3")
+    net.addLink(ceos1, upf, bw=100, delay="10ms", intfName1="ceos1-eth3", intfName2="upf-eth1")
+    net.addLink(ceos1, 5g-core, bw=100, delay="10ms", intfName1="ceos1-eth4", intfName2="5g-core-eth1")
+    net.addLink(gnb, ceos1, bw=100, delay="10ms", intfName1="gnb-eth11", intfName2="ceos1-eth1")
 
     print(f"\n*** Open5GS: Init 10 subscribers for UE container")
     o5gs   = Open5GS( "172.17.0.2" ,"27017")
