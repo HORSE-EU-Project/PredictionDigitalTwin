@@ -1520,3 +1520,22 @@ Open5GS daemon v2.4.4
 04/10 17:02:06.181: [ausf] INFO: [0f58421c-f75c-41ee-8a9e-e55b34b473b0] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
 04/10 17:02:06.235: [ausf] INFO: [0f617bca-f75c-41ee-a29a-ef603fbabb3d] (NRF-notify) NF registered (../src/ausf/nnrf-handler.c:179)
 04/10 17:02:06.235: [ausf] INFO: [0f617bca-f75c-41ee-a29a-ef603fbabb3d] (NRF-notify) NF Profile updated (../src/ausf/nnrf-handler.c:198)
+Open5GS daemon v2.4.4
+
+04/13 15:13:42.892: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+04/13 15:13:42.895: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+04/13 15:13:42.899: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/13 15:13:42.911: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+04/13 15:13:42.955: [ausf] INFO: [6a57509c-f9a8-41ee-b6ba-3349668ed033] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+04/13 15:13:43.121: [ausf] INFO: [6a725a5e-f9a8-41ee-90f5-2d5733afe2c3] (NRF-notify) NF registered (../src/ausf/nnrf-handler.c:179)
+04/13 15:13:43.121: [ausf] INFO: [6a725a5e-f9a8-41ee-90f5-2d5733afe2c3] (NRF-notify) NF Profile updated (../src/ausf/nnrf-handler.c:198)
+Open5GS daemon v2.4.4
+
+04/13 15:25:34.143: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+04/13 15:25:34.144: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+04/13 15:25:34.153: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/13 15:25:34.167: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+04/13 15:25:34.170: [ausf] INFO: [1247e14e-f9aa-41ee-8453-fd334a9032a1] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+04/13 15:25:56.455: [app] WARNING: Try to discover [UDM] (../lib/sbi/path.c:110)
+04/13 15:25:56.458: [ausf] INFO: [12472236-f9aa-41ee-b5db-f9325b8ab126] (NF-discover) NF registered (../src/ausf/nnrf-handler.c:283)
+04/13 15:25:56.459: [ausf] INFO: [12472236-f9aa-41ee-b5db-f9325b8ab126] (NF-discover) NF Profile updated (../src/ausf/nnrf-handler.c:329)

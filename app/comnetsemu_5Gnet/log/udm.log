@@ -1565,3 +1565,22 @@ Open5GS daemon v2.4.4
 04/10 17:02:06.236: [udm] INFO: [0f617bca-f75c-41ee-a29a-ef603fbabb3d] NF registred [Heartbeat:10s] (../src/udm/nf-sm.c:198)
 04/10 17:02:06.252: [udm] INFO: [0f658968-f75c-41ee-9f1a-a571bbab9199] (NRF-notify) NF registered (../src/udm/nnrf-handler.c:180)
 04/10 17:02:06.253: [udm] INFO: [0f658968-f75c-41ee-9f1a-a571bbab9199] (NRF-notify) NF Profile updated (../src/udm/nnrf-handler.c:199)
+Open5GS daemon v2.4.4
+
+04/13 15:13:43.066: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:129)
+04/13 15:13:43.068: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:132)
+04/13 15:13:43.076: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/13 15:13:43.088: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+04/13 15:13:43.123: [udm] INFO: [6a725a5e-f9a8-41ee-90f5-2d5733afe2c3] NF registred [Heartbeat:10s] (../src/udm/nf-sm.c:198)
+04/13 15:14:05.569: [app] WARNING: Try to discover [UDR] (../lib/sbi/path.c:110)
+04/13 15:14:05.571: [udm] INFO: [6a71e63c-f9a8-41ee-8268-afe4e108d5f2] (NF-discover) NF registered (../src/udm/nnrf-handler.c:284)
+04/13 15:14:05.572: [udm] INFO: [6a71e63c-f9a8-41ee-8268-afe4e108d5f2] (NF-discover) NF Profile updated (../src/udm/nnrf-handler.c:330)
+Open5GS daemon v2.4.4
+
+04/13 15:25:34.145: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:129)
+04/13 15:25:34.146: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:132)
+04/13 15:25:34.147: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:144)
+04/13 15:25:34.163: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+04/13 15:25:34.169: [udm] INFO: [12472236-f9aa-41ee-b5db-f9325b8ab126] NF registred [Heartbeat:10s] (../src/udm/nf-sm.c:198)
+04/13 15:25:34.226: [udm] INFO: [124d179a-f9aa-41ee-bf3d-577e4845ea37] (NRF-notify) NF registered (../src/udm/nnrf-handler.c:180)
+04/13 15:25:34.226: [udm] INFO: [124d179a-f9aa-41ee-bf3d-577e4845ea37] (NRF-notify) NF Profile updated (../src/udm/nnrf-handler.c:199)
