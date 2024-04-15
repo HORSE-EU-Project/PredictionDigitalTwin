@@ -50,31 +50,47 @@ def main():
 
     st.divider() 
 
-    if st.button('Run sFlow'):
-        cmdline("./run_sFlow.sh")
-        st.markdown(f'''
-            `sFlow is running. You can access the GUI here:`
-            [**http://{API_HOST}:8008**](http://{API_HOST}:8008)
-                ''')
-        if st.button('Stop sFlow'):
-            st.write(cmdline("pkill java"))
-
-    # RUN Digital Twin with arbitrary topology
-    # st.divider()
-    # st.write("Command to run a simplex Digital Twin interactively")
-    # st.code("sudo mn --custom ../sflow-rt/extras/sflow.py --link tc,bw=10 --topo tree,depth=2,fanout=2", language="python")
-
-    st.divider() 
+#    if st.button('Run sFlow'):
+#        cmdline("./run_sFlow.sh")
+#        st.markdown(f'''
+#            `sFlow is running. You can access the GUI here:`
+#            [**http://{API_HOST}:8008**](http://{API_HOST}:8008)
+#                ''')
+#        if st.button('Stop sFlow'):
+#            st.write(cmdline("pkill java"))
 
     # RUN 5G/6G SPECIFIC SCENARIO
-    st.write("Commands to run the 5G Digital Twin interactively")
+    st.write("Commands to run the 5G Network Digital Twin interactively:")
     st.code("ryu-manager ryu.app.simple_switch_stp_13", language="python")
-    st.code("sudo python3 DT_v0.3.py", language="python")
+    st.code("sudo python3 DT_v0.5.py", language="python")
 
     st.markdown(f'''
          `Once the DT is running, you can access the REST APIs here:`
          [**http://{API_HOST}:8000/docs**](http://{API_HOST}:8000/docs)
          ''')
+
+    st.divider()
+
+    # RUN Digital Twin commands
+    st.write("Commands to run specific scenarios on the NDT:")
+
+    col1, col2 = st.columns([1,1])
+
+    with col1:
+        if st.button('Run hping'):
+            cmdline('cd ../scenarios ; ./run_hping.sh ; cd ../GUI')
+        if st.button('Flooding attack'):
+            cmdline('cd ../scenarios ; ./flood.sh ; cd ../GUI')
+        if st.button('Dump traffic'):
+            cmdline('cd ../scenarios ; ./dump_traffic.sh ; cd ../GUI')
+
+    with col2:
+        if st.button('Run iperf server (Internet)'):
+            cmdline('cd ../scenarios ; ./run_iperf_server.sh ; cd ../GUI')
+        if st.button('Run iperf client (UE)'):
+            cmdline('cd ../scenarios ; ./run_iperf_client.sh ; cd ../GUI')
+
+    # st.code("sudo mn --custom ../sflow-rt/extras/sflow.py --link tc,bw=10 --topo tree,depth=2,fanout=2", language="python")
 
     st.divider() 
 
