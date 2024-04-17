@@ -41,6 +41,15 @@ cd GUI
 ./launch
 ```
 
+IMPORTANT: to be able to capture traffic, you need to enable vagrant to use sudo without password.
+This is done by the following command:
+```
+sudo visudo
+```
+and then by putting the following line after the root attributes:
+```
+vagrant ALL=(ALL:ALL) NOPASSWD: ALL
+```
 ## Build Instructions
 
 First, from the host machine, install the original comnetsemu VM:

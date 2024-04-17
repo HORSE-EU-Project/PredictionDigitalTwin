@@ -4,15 +4,9 @@ import requests
 import streamlit as st
 import streamlit.components.v1 as components
 from subprocess import PIPE, Popen
+from configparser import ConfigParser
 
 # --------------------------------------------------------------------------------
-
-API_HOST='192.168.56.2'
-API_PORT=5000
-
-# TODO: MODIFY ACCORDING TO config.ini FILE
-
-API_BASE_URL=f'http://{API_HOST}:{API_PORT}'
 
 # Some definitions
 def cmdline(command):
@@ -22,7 +16,6 @@ def cmdline(command):
         shell=True
     )
     return
-#    return process.communicate()[0]
 
 # Session State variables:
 state = st.session_state
@@ -36,6 +29,13 @@ if 'API_CHECKED' not in state:
 # NOTE: Design point... only main() is allowed to mutate state. All supporting functions should not mutate state.
 def main():
     st.title('HORSE Digital Twin Graphical Testing Interface')
+
+    config_object = ConfigParser()
+    config_object.read("config.ini")
+    mininet_config = config_object["MININET_SERVER"]
+    API_HOST=mininet_config["ipaddr"]
+    API_PORT=int(mininet_config["port"])
+    API_BASE_URL=f'http://{API_HOST}:{API_PORT}'
 
     topology_file = st.file_uploader("Upload YAML Topology File",type=['yaml'])
     if topology_file is not None:
