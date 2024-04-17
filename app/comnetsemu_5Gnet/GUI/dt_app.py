@@ -16,7 +16,7 @@ def cmdline(command):
         shell=True
     )
     return
-
+[B
 # Session State variables:
 state = st.session_state
 if 'API_APP' not in state:
@@ -115,10 +115,10 @@ def main():
                 state.API_CHECKED = False
 
     if st.button('🔥 sFlow charts'):
-        st.components.v1.iframe("http://192.168.56.2:8008/app/mininet-dashboard/html/index.html#charts", height=400, scrolling=True)
+        st.components.v1.iframe(f'http://{API_HOST}:8008/app/mininet-dashboard/html/index.html#charts', height=400, scrolling=True)
 
     if st.button('🔥 Digital Twin APIs'):
-        st.components.v1.iframe("http://192.168.56.2:8000/docs", height=400, scrolling=True)
+        st.components.v1.iframe(f'http://{API_HOST}:8000/docs', height=400, scrolling=True)
 
     # Information
     st.markdown(f'''

@@ -81,14 +81,8 @@ $ vagrant ssh NDT
 Congratulations! The installation is done successfully!
 You can now run the tests, examples, and **skip** the rest of the documentation in this section.
 
-**For users running Windows as the host OS:**
+Please proceed to the [Network Digital Twin section](./add/comnetsemu_5G/README.md) for more information.
 
-**Warning**: Main developers of ComNetsEmu does not use Windows
-and does not have a Windows machine to test on.
-
-1.  If you are using Windows, we recommend using [Mobaxterm](https://mobaxterm.mobatek.net/)
-	as the console.
-    This should solve problems opening `xterm` in the emulator.
 
 ---
 
