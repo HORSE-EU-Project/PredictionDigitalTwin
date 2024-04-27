@@ -81,7 +81,7 @@ cd ../open5gs
 ```
 
 Be sure that the additional libraries are provided in the vm_provisioning.sh script in the /util directory.
-Install all the additional modules as indicated in the [Customization folder](./customization/) 
+
 
 ## How to run the Network Digital Twin
 
@@ -101,19 +101,10 @@ This picture is provided to describe the configuration of the 5GS and related IP
 
 <img src="./images/topology.jpg" title="./images/topology.jpg" width=1000px></img>
 
-#### Used ports
-
-The Network Digital Twin makes extensive usage of the following ports:
-
-| Port   | Description |
-| :----- | :----- |
-| 3000   | Open5GC management interface (user: admin, password: 1423) |
-| 8000   | NDT FastApi (/docs for Swagger) |
-| 8008   | sFlow |
-| 8501   | NDT GUI |
-| 8082   | VSCode (password: password - if available)
-
-
+To configure the 5GC, we can open the WebUI by opening the following page in a browser on the host OS.
+```
+http://<VM_IP>:3000/
+```
 
 ### Check UE connections
 

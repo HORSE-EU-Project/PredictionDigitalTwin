@@ -33,6 +33,16 @@ from mininetFastAPI.mininetFastAPI import MininetRest
 import json, time, os
 from multiprocessing import Process, active_children
 
+from subprocess import PIPE, Popen
+
+def cmdline(command):
+    process = Popen(
+        args=command,
+        stdout=PIPE,
+        shell=True
+    )
+    return
+
 if __name__ == "__main__":
 
     AUTOTEST_MODE = os.environ.get("COMNETSEMU_AUTOTEST_MODE", 0)
@@ -46,7 +56,10 @@ if __name__ == "__main__":
     mongodb_folder="/home/vagrant/mongodbdata"
 
     # Uncomment to link to sFlow (but first run start.sh script to activate sFlow deamon
-    # exec(open('./sflow-rt/extras/sflow.py').read())
+    print("*** Starting sFlow\n")
+    cmdline("./sflow-rt/start.sh &")
+    time.sleep(5)
+    exec(open('./sflow-rt/extras/sflow.py').read())
     env = dict()
 
     # net = Containernet(controller=Controller, link=TCLink)
@@ -161,7 +174,8 @@ if __name__ == "__main__":
     env["COMPONENT_NAME"]="ue"
     ue = net.addDockerHost(
         "ue", 
-        dimage="myueransim_v3-2-6",
+        # dimage="myueransim_v3-2-6",
+        dimage="ue_enhanced",
         ip="192.168.0.132/24",
         # dcmd="",
         dcmd="bash /mnt/ueransim/open5gs_ue_init.sh",
@@ -220,9 +234,10 @@ if __name__ == "__main__":
     info("\n*** Starting network\n")
     net.start()
     
-    info("\n*** Registering mobile UEs...\n")
-    #time.sleep(60)
+    info("\n*** Checking network connectivity\n")
     net.pingAll()
+
+    info("\n*** Registering mobile UEs...\n")
 
     print(f"\n*** Open5GS: Init 10 subscribers for UE container")
     o5gs   = Open5GS( "172.17.0.2" ,"27017")
@@ -240,11 +255,17 @@ if __name__ == "__main__":
     #info("\n*** Starting network\n")
     #net.start()
 
+    print("\n*** Waiting for 5G GTP connections to be instantiated...")
+    cmdline("./5g_wait_for_healthy.sh")
+
+    print("\n*** Checking network connectivity\n")
+    net.pingAll()
+
     # Fork between CLI and RESTAPI
     processid = os.fork()
     print (" Process ID: " + str(processid))
 
-    if processid >0: # Main process
+    if processid > 0: # Main process
         mininet_rest = MininetRest(net)
         mininet_rest.run()
         print('INFO:     Main waiting for childs to terminate...')

@@ -1,7 +1,9 @@
 import os, sys, json, base64
 import time
 import requests
+from pathlib import Path
 import streamlit as st
+import pandas as pd
 import streamlit.components.v1 as components
 from subprocess import PIPE, Popen
 from configparser import ConfigParser
@@ -16,7 +18,7 @@ def cmdline(command):
         shell=True
     )
     return
-[B
+
 # Session State variables:
 state = st.session_state
 if 'API_APP' not in state:
@@ -90,7 +92,30 @@ def main():
         if st.button('Run iperf client (UE)'):
             cmdline('cd ../scenarios ; ./run_iperf_client.sh ; cd ../GUI')
 
-    # st.code("sudo mn --custom ../sflow-rt/extras/sflow.py --link tc,bw=10 --topo tree,depth=2,fanout=2", language="python")
+    st.divider()
+
+    # Visualize docker containers status
+
+    # Specify the directory path and the file prefix
+    DIRECTORY_PATH = Path('../data/')
+    FILE_PREFIX = 'container_stats_'
+    FILE_EXTENSION = '.csv'  # Change this to the desired file extension
+
+    # Get a list of files matching the prefix and extension
+    matching_files = DIRECTORY_PATH.glob(f"{FILE_PREFIX}*{FILE_EXTENSION}")
+
+    # Find the most recent file based on creation time
+    latest_file = max(matching_files, key=lambda f: f.stat().st_ctime)
+    
+    df = pd.read_csv(latest_file)
+    st.write("Containers status:")
+    st.write(df) # visualize the csv table
+
+    if st.button('Collect data'):
+        st.write(cmdline('cd ../scripts ; ./container_stats_csv.sh ; cd ../GUI'))
+
+    if st.button('Check health'):
+        st.write(cmdline('cd ../scripts ; ./containers_overloaded_csv.sh ; cd ../GUI'))
 
     st.divider() 
 
