@@ -1,7 +1,0 @@
-Container Name, CPU Usage (%), Memory Usage (MB)
-internet_server,0.00%,1.727MiB / 7.751GiB
-dns_s,0.00%,3.285MiB / 7.751GiB
-ue,65.98%,8.809MiB / 7.751GiB
-gnb,0.10%,5.426MiB / 7.751GiB
-upf,0.03%,24.82MiB / 7.751GiB
-cp,0.21%,374MiB / 7.751GiB
