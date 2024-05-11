@@ -50,6 +50,15 @@ and then by putting the following line after the root attributes:
 ```
 vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 ```
+
+## Used ports
+
+- VSCode server: 8888 (password: password)
+- Open5GS CP: 3000 (user: admin, password: 1423)
+- Digital Twin Fast API: 8000 (8000/docs for Swagger)
+- sFlow: 8008
+- Test GUI: 5000
+
 ## Build Instructions
 
 First, from the host machine, install the original comnetsemu VM:
