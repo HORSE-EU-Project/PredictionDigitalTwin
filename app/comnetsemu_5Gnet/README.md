@@ -53,11 +53,14 @@ vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 
 ## Used ports
 
-- VSCode server: 8888 (password: password)
-- Open5GS CP: 3000 (user: admin, password: 1423)
-- Digital Twin Fast API: 8000 (8000/docs for Swagger)
-- sFlow: 8008
-- Test GUI: 5000
+| Service | Port | Notes |
+| :-------- | :-------: | :------ |
+| Digital Twin GUI | 5000 |  |
+| Digital Twin API | 8000 | (8000/docs for Swagger) |
+| Open5GS Core | 3000 | (user: admin, password: 1423) |
+| sFlow | 8008 | if active |
+| VSCode server | 8888 | to be installed and run manually (password: password) |B
+
 
 ## Build Instructions
 
