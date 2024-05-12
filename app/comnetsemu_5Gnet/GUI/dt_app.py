@@ -25,6 +25,8 @@ if 'API_APP' not in state:
     state.API_APP = None
 if 'API_CHECKED' not in state:
     state.API_CHECKED=False
+if 'SFLOW_ON' not in state:
+    state.SFLOW_ON=True
 
 # --------------------------------------------------------------------------------
 
@@ -52,19 +54,12 @@ def main():
 
     st.divider() 
 
-#    if st.button('Run sFlow'):
-#        cmdline("./run_sFlow.sh")
-#        st.markdown(f'''
-#            `sFlow is running. You can access the GUI here:`
-#            [**http://{API_HOST}:8008**](http://{API_HOST}:8008)
-#                ''')
-#        if st.button('Stop sFlow'):
-#            st.write(cmdline("pkill java"))
-
     # RUN 5G/6G SPECIFIC SCENARIO
-    st.write("Commands to run the 5G Network Digital Twin interactively:")
+    st.write("To run the 5G/6G Network Digital Twin:")
+    st.code("./run_digitaltwin.sh", language="python")
+    st.write("To run the 5G/6G Network Digital Twin interactively:")
     st.code("ryu-manager ryu.app.simple_switch_stp_13", language="python")
-    st.code("sudo python3 DT_v0.5.py", language="python")
+    st.code("sudo python3 DT_v0.7.py", language="python")
 
     st.markdown(f'''
          `Once the DT is running, you can access the REST APIs here:`
@@ -104,12 +99,12 @@ def main():
     # Get a list of files matching the prefix and extension
     matching_files = DIRECTORY_PATH.glob(f"{FILE_PREFIX}*{FILE_EXTENSION}")
 
-    # Find the most recent file based on creation time
-    latest_file = max(matching_files, key=lambda f: f.stat().st_ctime)
-    
-    df = pd.read_csv(latest_file)
-    st.write("Containers status:")
-    st.write(df) # visualize the csv table
+    if any(file.name.startswith(FILE_PREFIX) for file in DIRECTORY_PATH.iterdir() if file.is_file()):
+        # Find the most recent file based on creation time
+        latest_file = max(matching_files, key=lambda f: f.stat().st_ctime)
+        df = pd.read_csv(latest_file)
+        st.write("Containers status:")
+        st.write(df) # visualize the csv table
 
     if st.button('Collect data'):
         st.write(cmdline('cd ../scripts ; ./container_stats_csv.sh ; cd ../GUI'))
@@ -128,19 +123,30 @@ def main():
 
     if state.API_CHECKED:
         message = {}
-        c1, c2, _, c4 = st.columns([1,1,1,1])
+        c1, c2, c3, _ = st.columns([1,1,1,1])
         with c1:
             if st.button('👋 Hello'):
                 resp = requests.get(f'http://{API_HOST}:8000')
                 message = json.loads(resp.content)
         with c2:
             st.json(message)
-        with c4:
-            if st.button('🔥 Shutdown DT'): 
+        with c3:
+            if st.button('🔥 Close API'): 
                 state.API_CHECKED = False
 
-    if st.button('🔥 sFlow charts'):
-        st.components.v1.iframe(f'http://{API_HOST}:8008/app/mininet-dashboard/html/index.html#charts', height=400, scrolling=True)
+    d1, d2, d3, _ = st.columns([1,1,1,1])
+
+    with d1:
+       if st.button('🔥 sFlow charts'):
+           state.SFLOW_ON = True
+    with d2:
+       if st.button('🔥 hide charts'):
+           state.SFLOW_ON = False
+    with d3:
+       st.write(state.SFLOW_ON)
+
+    if state.SFLOW_ON:
+       st.components.v1.iframe(f'http://{API_HOST}:8008/app/mininet-dashboard/html/index.html#charts', height=400, scrolling=True)
 
     if st.button('🔥 Digital Twin APIs'):
         st.components.v1.iframe(f'http://{API_HOST}:8000/docs', height=400, scrolling=True)

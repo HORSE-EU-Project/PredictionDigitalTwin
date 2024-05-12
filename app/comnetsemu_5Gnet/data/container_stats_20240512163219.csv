@@ -1,0 +1,7 @@
+NAME,CPU %,MEM USAGE / LIMIT,MEM %
+internet_server,0.01%,1.98MiB / 3.844GiB,0.05%
+dns_s,0.00%,2.008MiB / 3.844GiB,0.05%
+ue,1.21%,8.023MiB / 3.844GiB,0.20%
+gnb,0.35%,5MiB / 3.844GiB,0.13%
+upf,0.01%,24.7MiB / 3.844GiB,0.63%
+cp,0.53%,258.7MiB / 3.844GiB,6.57%

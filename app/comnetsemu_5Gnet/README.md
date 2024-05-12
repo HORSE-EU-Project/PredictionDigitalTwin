@@ -59,8 +59,8 @@ vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 | Digital Twin API | 8000 | (8000/docs for Swagger) |
 | Open5GS Core | 3000 -> 1234| (user: admin, password: 1423) |
 | sFlow | 8008 | if active |
-| VSCode server | 8888 | to be installed and run manually (password: password) |B
-
+| VSCode server | 8888 | to be installed and run manually (password: password) |
+| NTFY server | 80 -> 1235 | to be run manually or configured |
 
 ## Build Instructions
 
