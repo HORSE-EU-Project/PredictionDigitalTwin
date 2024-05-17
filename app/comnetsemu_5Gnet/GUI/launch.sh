@@ -2,4 +2,4 @@
 #streamlit run --server.address=192.168.219.3 dt_app.py
 #deactivate
 
-streamlit run dt_app.py
+streamlit run --server.port=8501 dt_app.py

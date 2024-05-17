@@ -54,13 +54,22 @@ def main():
 
     st.divider() 
 
-    st.header("Digital Twin Topology")
-    st.image("../HORSE_data/HORSE-DDoS-DNS-simp.png",width=800)
-    
+    # RUN 5G/6G SPECIFIC SCENARIO
+    st.write("To run the 5G/6G Network Digital Twin:")
+    st.code("./run_digitaltwin.sh", language="python")
+    st.write("To run the 5G/6G Network Digital Twin interactively:")
+    st.code("ryu-manager ryu.app.simple_switch_stp_13", language="python")
+    st.code("sudo python3 DT_v0.7.py", language="python")
+
+    st.markdown(f'''
+         `Once the DT is running, you can access the REST APIs here:`
+         [**http://{API_HOST}:8000/docs**](http://{API_HOST}:8000/docs)
+         ''')
+
     st.divider()
 
     # RUN Digital Twin commands
-    st.header("Digital Twin Commands")
+    st.write("Commands to run specific scenarios on the NDT:")
 
     col1, col2 = st.columns([1,1])
 
@@ -80,9 +89,32 @@ def main():
 
     st.divider()
 
+    # Visualize docker containers status
+
+    # Specify the directory path and the file prefix
+    DIRECTORY_PATH = Path('../data/')
+    FILE_PREFIX = 'container_stats_'
+    FILE_EXTENSION = '.csv'  # Change this to the desired file extension
+
+    # Get a list of files matching the prefix and extension
+    matching_files = DIRECTORY_PATH.glob(f"{FILE_PREFIX}*{FILE_EXTENSION}")
+
+    if any(file.name.startswith(FILE_PREFIX) for file in DIRECTORY_PATH.iterdir() if file.is_file()):
+        # Find the most recent file based on creation time
+        latest_file = max(matching_files, key=lambda f: f.stat().st_ctime)
+        df = pd.read_csv(latest_file)
+        st.write("Containers status:")
+        st.write(df) # visualize the csv table
+
+    if st.button('Collect data'):
+        st.write(cmdline('cd ../scripts ; ./container_stats_csv.sh ; cd ../GUI'))
+
+    if st.button('Check health'):
+        st.write(cmdline('cd ../scripts ; ./containers_overloaded_csv.sh ; cd ../GUI'))
+
+    st.divider() 
+
     # Interacting with Mininet REST API
-    st.header('Digital Twin Dashboard')
-    
     if not state.API_CHECKED:
         st.write('To check the Digital Twin REST API, click the button below.')
         if st.button('🚀 Verify API'):
@@ -116,45 +148,8 @@ def main():
     if state.SFLOW_ON:
        st.components.v1.iframe(f'http://{API_HOST}:8008/app/mininet-dashboard/html/index.html#charts', height=400, scrolling=True)
 
-    # Visualize docker containers status
-
-    # Specify the directory path and the file prefix
-    DIRECTORY_PATH = Path('../data/')
-    FILE_PREFIX = 'container_stats_'
-    FILE_EXTENSION = '.csv'  # Change this to the desired file extension
-
-    # Get a list of files matching the prefix and extension
-    matching_files = DIRECTORY_PATH.glob(f"{FILE_PREFIX}*{FILE_EXTENSION}")
-
-    if any(file.name.startswith(FILE_PREFIX) for file in DIRECTORY_PATH.iterdir() if file.is_file()):
-        # Find the most recent file based on creation time
-        latest_file = max(matching_files, key=lambda f: f.stat().st_ctime)
-        df = pd.read_csv(latest_file)
-        st.write("Containers status:")
-        st.write(df) # visualize the csv table
-
-    if st.button('Collect data'):
-        st.write(cmdline('cd ../scripts ; ./container_stats_csv.sh ; cd ../GUI'))
-
-    if st.button('Check health'):
-        st.write(cmdline('cd ../scripts ; ./containers_overloaded_csv.sh ; cd ../GUI'))
-
     if st.button('🔥 Digital Twin APIs'):
         st.components.v1.iframe(f'http://{API_HOST}:8000/docs', height=400, scrolling=True)
-
-    st.divider()
-
-    # RUN 5G/6G SPECIFIC SCENARIO
-    st.write("To run the 5G/6G Network Digital Twin:")
-    st.code("./run_digitaltwin.sh", language="python")
-    st.write("To run the 5G/6G Network Digital Twin interactively:")
-    st.code("ryu-manager ryu.app.simple_switch_stp_13", language="python")
-    st.code("sudo python3 DT_v0.7.py", language="python")
-
-    st.markdown(f'''
-         `Once the DT is running, you can access the REST APIs here:`
-         [**http://{API_HOST}:8000/docs**](http://{API_HOST}:8000/docs)
-         ''')
 
     # Information
     st.markdown(f'''

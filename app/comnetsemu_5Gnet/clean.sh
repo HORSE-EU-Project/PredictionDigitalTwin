@@ -2,26 +2,35 @@
 
 sudo mn -c
 
+echo "*** Stopping all containers"
 docker stop $(docker ps -aq)
-
 docker container prune -f
+docker rm $(sudo docker ps -a -q) -f
 
 if [ "$1" == "log" ]; then
-    cd log && sudo rm *.log 
+    rm log/*.log 
 fi
 
-sudo ip link delete s1-ue
-sudo ip link delete s2-s3
-sudo ip link delete s2-s1
-sudo ip link delete gnb-s1
-sudo ip link delete s1-gnb
-sudo ip link delete s1-cp
-sudo ip link delete gnb-s2
-sudo ip link delete s2-gnb
-sudo ip link delete s3-cp
-sudo ip link delete s1-ue1
-sudo ip link delete s1-ue2
-sudo ip link delete s1-ue3
-sudo ip link delete s2-upf_mec
-sudo ip link delete s3-upf
-sudo ip link delete s1-uegnb
+if [ "$1" == "data" ]; then
+    rm data/*
+fi
+
+# Get all network links that contain the string 'ceos'
+echo "*** Removing all links"
+links=$(ip link | grep -oP '(?<=: )ceos[^:]*')
+
+# Loop through each link and delete it
+for link in $links; do
+    sudo ip link delete "$link"
+done
+
+# Kill sFlow
+echo "*** Stopping sFlow"
+pkill java
+
+# Find all processes containing 'dt_app' and kill them
+echo "*** Stopping any GUI"
+pgrep -f 'dt_app' | while read -r pid; do
+    echo "Killing process with PID $pid"
+    kill -9 "$pid"
+done

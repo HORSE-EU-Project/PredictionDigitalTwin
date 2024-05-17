@@ -4,9 +4,6 @@
 # First version of the HORSE Digital Twin
 # DDOS scenario
 
-# 1. Launch ryu-manager ryu.app.simple_switch_stp_13
-# 2. Launch the Digital Twin with "sudo python3 DT_vx.y.py
-
 # Installing traceroute & hping in the UE:
 # apt update
 # apt install -y hping3
@@ -55,10 +52,8 @@ if __name__ == "__main__":
     # prj_folder="/home/vagrant/comnetsemu/app/comnetsemu_5Gnet"
     mongodb_folder="/home/vagrant/mongodbdata"
 
-    # Uncomment to link to sFlow (but first run start.sh script to activate sFlow deamon
-    print("*** Starting sFlow\n")
-    cmdline("./sflow-rt/start.sh &")
-    time.sleep(5)
+    # Comment to avoid running sFlow (but first run start.sh script to activate sFlow deamon)
+    # Connects OFSwitches to sFlow
     exec(open('./sflow-rt/extras/sflow.py').read())
     env = dict()
 
@@ -68,7 +63,7 @@ if __name__ == "__main__":
         build=False,
         link=TCLink)
 
-    info("*** Adding Host for open5gs CP\n")
+    info("\n*** Adding Host for open5gs CP\n")
     cp = net.addDockerHost(
         "cp",
         dimage="my5gc_v2-4-4",
