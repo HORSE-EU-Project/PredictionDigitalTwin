@@ -1,0 +1,57 @@
+UERANSIM v3.2.6
+[2024-05-18 11:41:11.837] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
+[2024-05-18 11:41:11.897] [sctp] [info] SCTP connection established (192.168.0.111:38412)
+[2024-05-18 11:41:11.898] [sctp] [debug] SCTP association setup ascId[19]
+[2024-05-18 11:41:11.898] [ngap] [debug] Sending NG Setup Request
+[2024-05-18 11:41:11.926] [ngap] [debug] NG Setup Response received
+[2024-05-18 11:41:11.927] [ngap] [info] NG Setup procedure is successful
+[2024-05-18 11:41:17.488] [rrc] [debug] UE[1] new signal detected
+[2024-05-18 11:41:17.488] [rrc] [debug] UE[2] new signal detected
+[2024-05-18 11:41:17.489] [rrc] [debug] UE[3] new signal detected
+[2024-05-18 11:41:17.489] [rrc] [debug] UE[4] new signal detected
+[2024-05-18 11:41:17.489] [rrc] [debug] UE[5] new signal detected
+[2024-05-18 11:41:17.490] [rrc] [debug] UE[6] new signal detected
+[2024-05-18 11:41:17.490] [rrc] [debug] UE[7] new signal detected
+[2024-05-18 11:41:17.491] [rrc] [debug] UE[8] new signal detected
+[2024-05-18 11:41:17.491] [rrc] [debug] UE[9] new signal detected
+[2024-05-18 11:41:17.491] [rrc] [debug] UE[10] new signal detected
+[2024-05-18 11:41:17.520] [rrc] [info] RRC Setup for UE[2]
+[2024-05-18 11:41:17.534] [ngap] [debug] Initial NAS message received from UE[2]
+[2024-05-18 11:41:17.534] [rrc] [info] RRC Setup for UE[5]
+[2024-05-18 11:41:17.535] [rrc] [info] RRC Setup for UE[7]
+[2024-05-18 11:41:17.537] [rrc] [info] RRC Setup for UE[6]
+[2024-05-18 11:41:17.539] [rrc] [info] RRC Setup for UE[9]
+[2024-05-18 11:41:17.540] [ngap] [debug] Initial NAS message received from UE[5]
+[2024-05-18 11:41:17.540] [rrc] [info] RRC Setup for UE[10]
+[2024-05-18 11:41:17.541] [ngap] [debug] Initial NAS message received from UE[7]
+[2024-05-18 11:41:17.544] [rrc] [info] RRC Setup for UE[4]
+[2024-05-18 11:41:17.544] [rrc] [info] RRC Setup for UE[3]
+[2024-05-18 11:41:17.545] [rrc] [info] RRC Setup for UE[1]
+[2024-05-18 11:41:17.545] [ngap] [debug] Initial NAS message received from UE[6]
+[2024-05-18 11:41:17.545] [rrc] [info] RRC Setup for UE[8]
+[2024-05-18 11:41:17.549] [ngap] [debug] Initial NAS message received from UE[9]
+[2024-05-18 11:41:17.549] [ngap] [debug] Initial NAS message received from UE[10]
+[2024-05-18 11:41:17.553] [ngap] [debug] Initial NAS message received from UE[3]
+[2024-05-18 11:41:17.553] [ngap] [debug] Initial NAS message received from UE[4]
+[2024-05-18 11:41:17.554] [ngap] [debug] Initial NAS message received from UE[1]
+[2024-05-18 11:41:17.554] [ngap] [debug] Initial NAS message received from UE[8]
+[2024-05-18 11:41:17.792] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.796] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.797] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.797] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.832] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.834] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.834] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.849] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.850] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.850] [ngap] [debug] Initial Context Setup Request received
+[2024-05-18 11:41:17.937] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+[2024-05-18 11:41:17.940] [ngap] [info] PDU session resource(s) setup for UE[5] count[1]
+[2024-05-18 11:41:17.994] [ngap] [info] PDU session resource(s) setup for UE[6] count[1]
+[2024-05-18 11:41:18.007] [ngap] [info] PDU session resource(s) setup for UE[7] count[1]
+[2024-05-18 11:41:18.015] [ngap] [info] PDU session resource(s) setup for UE[10] count[1]
+[2024-05-18 11:41:18.022] [ngap] [info] PDU session resource(s) setup for UE[3] count[1]
+[2024-05-18 11:41:18.029] [ngap] [info] PDU session resource(s) setup for UE[9] count[1]
+[2024-05-18 11:41:18.032] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2024-05-18 11:41:18.035] [ngap] [info] PDU session resource(s) setup for UE[4] count[1]
+[2024-05-18 11:41:18.042] [ngap] [info] PDU session resource(s) setup for UE[8] count[1]
