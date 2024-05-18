@@ -60,7 +60,9 @@ vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 | Open5GS Core | 3000 -> 1234| (user: admin, password: 1423) |
 | sFlow | 8008 | if active |
 | VSCode server | 8888 | to be installed and run manually (password: password) |
-| NTFY server | 80 -> 1235 | to be run manually or configured |
+| NTFY server | 80 -> 1236 | to be run manually |
+| Wireshark server | 80 -> 8085 | to be run manually |
+| Reserved by Open5GS | 1235 | |
 
 ## Build Instructions
 
