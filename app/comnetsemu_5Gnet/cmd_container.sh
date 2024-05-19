@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker exec -it $(docker ps -aq -f "name=^$1$") /bin/bash -c "$2"
+docker exec -i $(docker ps -aq -f "name=^$1$") /bin/bash -c "$2"
 

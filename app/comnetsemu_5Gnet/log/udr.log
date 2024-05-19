@@ -30,3 +30,48 @@ Open5GS daemon v2.4.4
 05/18 11:40:55.496: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
 05/18 11:40:55.501: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
 05/18 11:40:55.507: [udr] INFO: [7cd3d5b4-150b-41ef-9d76-9d24386291e0] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+05/19 16:24:27.162: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+05/19 16:24:27.162: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+05/19 16:24:27.237: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+05/19 16:24:27.241: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+05/19 16:24:27.271: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+05/19 16:24:27.272: [udr] INFO: [42fdd6ae-15fc-41ef-a7d8-2d30cc6e3ef6] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+05/19 16:29:04.357: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+05/19 16:29:04.358: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+05/19 16:29:04.363: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+05/19 16:29:04.364: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+05/19 16:29:04.379: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+05/19 16:29:04.407: [udr] INFO: [e83652c2-15fc-41ef-8d8f-db29c04a44b0] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+05/19 16:31:55.499: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+05/19 16:31:55.499: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+05/19 16:31:55.522: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+05/19 16:31:55.523: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+05/19 16:31:55.532: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+05/19 16:31:55.543: [udr] INFO: [4e38820c-15fd-41ef-a878-d5206d5d7cd3] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+05/19 16:46:22.155: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+05/19 16:46:22.174: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+05/19 16:46:22.188: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+05/19 16:46:22.190: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+05/19 16:46:22.191: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+05/19 16:46:22.207: [udr] INFO: [52cc7010-15ff-41ef-851d-0991960b531f] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+05/19 17:12:56.051: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+05/19 17:12:56.053: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+05/19 17:12:56.084: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+05/19 17:12:56.085: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+05/19 17:12:56.089: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+05/19 17:12:56.094: [udr] INFO: [08d30f9c-1603-41ef-b8a2-893ce477cd72] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+05/19 17:18:08.911: [udr] ERROR: [08d30f9c-1603-41ef-b8a2-893ce477cd72] No heartbeat (../src/udr/nf-sm.c:281)
+05/19 17:18:08.992: [udr] INFO: [08d30f9c-1603-41ef-b8a2-893ce477cd72] NF de-registered (../src/udr/nf-sm.c:218)
+05/19 17:18:09.164: [udr] ERROR: [08d30f9c-1603-41ef-b8a2-893ce477cd72] HTTP response error [404] (../src/udr/nf-sm.c:135)
+05/19 17:18:09.468: [udr] WARNING: [08d30f9c-1603-41ef-b8a2-893ce477cd72] Retry to registration with NRF (../src/udr/nf-sm.c:369)
+05/19 17:18:09.476: [udr] INFO: [08d30f9c-1603-41ef-b8a2-893ce477cd72] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)

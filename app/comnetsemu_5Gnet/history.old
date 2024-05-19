@@ -1,0 +1,720 @@
+    1  ryu-manager ryu.app.simple_switch_13
+    2  exit
+    3  exit
+    4  ls
+    5  sudo python3 DT_v0.5.py 
+    6  sudo mn -c
+    7  docker ps
+    8  sudo docker ps
+    9  sudo docker stop 2562225534a8
+   10  sudo docker stop b7d5c133aa7b
+   11  sudo docker ps
+   12  ./clean_all_containers.sh 
+   13  ./clean.sh 
+   14  ls
+   15  cd customization/
+   16  ls
+   17  ./build.sh 
+   18  sudo ./build.sh 
+   19  sudo docker images
+   20  cd ..
+   21  sudo python3 DT_v0.5.py 
+   22  quit
+   23  nano config.ini 
+   24  exit
+   25  ./enter_container.sh ue
+   26  sudo ./enter_container.sh ue
+   27  ifconfig | more
+   28  exit
+   29  ryu-manager ryu.app.simple_switch_13
+   30  sudo mn -c
+   31  ./clean.sh 
+   32  sudo ./clean_all_containers.sh 
+   33  exit
+   34  cd comnetsemu/
+   35  make test
+   36  sudo make test
+   37  cd app/comnetsemu_5Gnet
+   38  ls
+   39  cd build/
+   40  ls
+   41  ./dockerhub_pull.sh 
+   42  sudo ./dockerhub_pull.sh 
+   43  sudo docker images
+   44  cd ..
+   45  ls
+   46  tmux
+   47  cd
+   48  cd 
+   49  cd comnetsemu/util/
+   50  ls
+   51  bash vm_customize.sh 
+   52  ryu-manager ryu.app.simple_switch.py
+   53  ./install -a
+   54  ls
+   55  ./install.sh
+   56  ./install.sh -a
+   57  ryu-manager ryu.app.simple_switch.py
+   58  pip install ryu
+   59  pip3 install ryu
+   60  sudo pip install ryu
+   61  sudo pip3 install ryu
+   62  sudo ryu-manager ryu.app.simple_switch.py
+   63  pip install dnspython==2.2.1
+   64  sudo ryu-manager ryu.app.simple_switch.py
+   65  ryu-manager ryu.app.simple_switch.py
+   66  ryu-manager ryu.app.simple_switch
+   67  cd 
+   68  cd comnetsemu/app/comnetsemu_5Gnet
+   69  tmux
+   70  cd ../..
+   71  cd util/
+   72  nano docker_enable.sh
+   73  chmod +x do
+   74  chmod +x docker_enable.sh 
+   75  ./docker_enable.sh 
+   76  exit
+   77  ./5g_healthcheck.sh 
+   78  nano 5g_healthcheck.sh 
+   79  ./5g_healthcheck.sh 
+   80  fg
+   81  cd GUI/
+   82  ls
+   83  ./launch.sh 
+   84  cd ..
+   85  ./enter_container.sh ue
+   86  exit
+   87  ls
+   88  cd GUI/
+   89  ls
+   90  nano config.ini 
+   91  cd ..
+   92  nano config.ini 
+   93  ryu-manager ryu.app.simple_switch_13
+   94  exit
+   95  ifconfig
+   96  sudo python3 DT_v0.5.py 
+   97  ./clean.sh 
+   98  exit
+   99  docker ps
+  100  cd comnetsemu/app/comnetsemu_5Gnet
+  101  tmux
+  102  exit
+  103  ./5g_healthcheck.sh 
+  104  ./enter_container.sh ue
+  105  cd Gui
+  106  ls
+  107  ./launch.sh 
+  108  exit
+  109  cd scripts/
+  110  ls
+  111  ./write_config.sh 
+  112  ifconfig
+  113  nano write_config.sh 
+  114  nano select_interface.sh
+  115  chmod +x select_interface.sh 
+  116  ./select_interface.sh 
+  117  nano select_interface.sh
+  118  ./select_interface.sh 
+  119  nano write_config.sh 
+  120  nano select_interface.sh
+  121  ./select_interface.sh 
+  122  nano write_config.sh 
+  123  ./write_config.sh 
+  124  nano write_config.sh 
+  125  ls
+  126  nano config.ini 
+  127  cat config.ini 
+  128  cd ..
+  129  ls -la config.ini 
+  130  cat config.ini 
+  131  cd GUI/
+  132  ls
+  133  nano config.ini 
+  134  ls -la config.ini 
+  135  cd ..
+  136  rm config.ini 
+  137  ln -s scripts/config.ini config.ini
+  138  ls -la
+  139  cd GUI/
+  140  cat config.ini 
+  141  cd ..
+  142  ryu-manager ryu.app.simple_switch_13
+  143  exit
+  144  sudo python3 DT_v0.6.py 
+  145  ls
+  146  cd log/
+  147  ls
+  148  ls -la
+  149  rm *.log
+  150  cd ..
+  151  ls
+  152  cd pcap/
+  153  ls
+  154  cd ..
+  155  rmdir pcap/
+  156  cd data/
+  157  ls
+  158  rm *
+  159  ls
+  160  cd ..
+  161  ls
+  162  tar tzvf scenarios.tgz 
+  163  rm scenarios.tgz 
+  164  ls
+  165  cat output.py 
+  166  rm output.py 
+  167  ls
+  168  ls old/
+  169  ls -la DT_v0.5.py 
+  170  ls -la old/DT_v0.5.py 
+  171  exit
+  172  cd comnetsemu/app/comnetsemu_5Gnet
+  173  tmux
+  174  exit
+  175  cd comnetsemu/app/comnetsemu_5Gnet
+  176  ls
+  177  git clone https://github.com/MattiaDeMunari/SDN-Traffic-Prediction
+  178  ls
+  179  cd SDN-Traffic-Prediction/
+  180  ls
+  181  mv requirement.txt requirements.txt 
+  182  sudo pip3 install -r requirements.txt
+  183  ls
+  184  nano traffic_prediction.py 
+  185  sudo python3 main.py --switches 10 --hosts 3 --cross-connection 0.50 --time 60 --base-flows 5 --flows 3
+  186  python3 traffic_prediction.py --csv captures --store-plot my_plots --training-split 0.75 --sample-period "0.1S"
+  187  pwd
+  188  cd ..
+  189  cd customization/
+  190  ls
+  191  nano install_vscode.md
+  192  cd ..
+  193  cd SDN-Traffic-Prediction/
+  194  ls
+  195  ls my_plots/
+  196  ls captures/
+  197  pwd
+  198  cd ..
+  199  cd .
+  200  cd ..
+  201  ls
+  202  cd app/
+  203  ls
+  204  cd comnetsemu_5Gnet
+  205  ls
+  206  cd SDN-Traffic-Prediction/
+  207  ls
+  208  cd ..
+  209  tar czvf SDN-Traffic-Prediction/*
+  210  cd SDN-Traffic-Prediction/
+  211  rm -rf *
+  212  ls
+  213  cd ..
+  214  rmdir SDN-Traffic-Prediction/
+  215  cd SDN-Traffic-Prediction/
+  216  ls -la
+  217  rm .gitignore 
+  218  cd ..
+  219  rmdir SDN-Traffic-Prediction/
+  220  ls
+  221  exit
+  222  cd comnetsemu/app/comnetsemu_5Gnet/SDN-Traffic-Prediction/
+  223  ls
+  224  mv requirement.txt requirements.txt 
+  225  cd ..
+  226  cd customization/
+  227  ls
+  228  cat install_vscode.md 
+  229  curl -fsSL https://code-server.dev/install.sh | sh
+  230  nano ~/.config/code-server/config.yaml
+  231  code-server 
+  232  nano /home/vagrant/.config/code-server/config.yaml
+  233  code-server 
+  234  nano /home/vagrant/.config/code-server/config.yaml
+  235  code-server 
+  236  nano /home/vagrant/.config/code-server/config.yaml
+  237  code-server 
+  238  cd
+  239  code-server
+  240  exit
+  241  cd GUI/
+  242  ls
+  243  ./launch.sh 
+  244  cd ..
+  245  nano README
+  246  nano README.md 
+  247  exit
+  248  cd comnetsemu/app/comnetsemu_5Gnet
+  249  tmuz
+  250  tmux
+  251  exit
+  252  ryu-manager ryu.app.simple_switch_13
+  253  ryu-manager ryu.app.simple_switch_13 > /dev/null 2>&1
+  254  ryu-manager ryu.app.simple_switch_13 > & /dev/null 2>&1
+  255  ryu-manager ryu.app.simple_switch_13 & > /dev/null 2>&1
+  256  ps
+  257  fg
+  258  ryu-manager ryu.app.simple_switch_13 > /dev/null 2>&1 &
+  259  ps
+  260  fg
+  261  ps
+  262  ryu-manager ryu.app.simple_switch_13 > /dev/null 2>&1 &
+  263  fg
+  264  nano scripts/run_ryu.sh
+  265  y
+  266  nano scripts/run_ryu.sh
+  267  chmod +x scripts/run_ryu.sh 
+  268  scripts/run_ryu.sh &
+  269  ps
+  270  fg
+  271  ps
+  272  scripts/run_ryu.sh &
+  273  ps
+  274  scripts/run_ryu.sh &
+  275  ps
+  276  fg
+  277  ps
+  278  ls
+  279  nano scripts/run_ryu.sh 
+  280  ./scripts/run_ryu.sh 
+  281  cd GUI
+  282  ls
+  283  ./launch.sh 
+  284  nano dt_app.py
+  285  ./launch.sh 
+  286  nano launch.sh 
+  287  nano dt_app.py
+  288  ./launch.sh 
+  289  nano dt_app.py
+  290  ./launch.sh 
+  291  nano dt_app.py
+  292  ./launch.sh 
+  293  nano dt_app.py
+  294  ./launch.sh 
+  295  nano dt_app.py
+  296  ./launch.sh 
+  297  nano dt_app.py
+  298  ./launch.sh 
+  299  nano dt_app.py
+  300  ./launch.sh 
+  301  nano dt_app.py
+  302  ./launch.sh 
+  303  cd ..
+  304  ls -la data/
+  305  exit
+  306  sudo python3 DT_v0.7.py 
+  307  sudo mn -c
+  308  docker ps
+  309  nano DT_v0.7.py 
+  310  sudo python3 DT_v0.7.py 
+  311  nano DT_v0.7.py 
+  312  sudo python3 DT_v0.7.py 
+  313  sudo mn -c
+  314  sudo python3 DT_v0.7.py 
+  315  nano DT_v0.7.py 
+  316  sudo python3 DT_v0.7.py 
+  317  sudo mn -c
+  318  sudo ryu-manager ryu.app.simple_switch_13
+  319  ryu-manager ryu.app.simple_switch_13
+  320  nano DT_v0.7.py 
+  321  nano run_digital_twin.sh
+  322  chmod +x run_digital_twin.sh 
+  323  ./run_digital_twin.sh 
+  324  sudo mn -c
+  325  nano run_digital_twin.sh
+  326  ./run_digital_twin.sh 
+  327  sudo lsexit
+  328  exit
+  329  cd GUI/
+  330  ./launch.sh 
+  331  exit
+  332  cd GUI/
+  333  ./launch.sh 
+  334  cd ..
+  335  ./enter_container.sh ue
+  336  ./5g_healthcheck.sh 
+  337  ./enter_container.sh ue
+  338  ./5g_healthcheck.sh 
+  339  ./enter_container.sh ue
+  340  ls data/
+  341  ifconfig
+  342  sudo mn -c
+  343  ./clean_all_containers.sh 
+  344  ./clean
+  345  ./clean.sh 
+  346  ls
+  347  ./run_digital_twin.sh 
+  348  ./clean.sh 
+  349  exit
+  350  ./5g_healthcheck.sh 
+  351  nano 5g_healthcheck.sh 
+  352  ./enter_container.sh ue
+  353  exit
+  354  cd comnetsemu/app/comnetsemu_5Gnet
+  355  ls
+  356  cd customization/
+  357  ls
+  358  nano run_ntfy.sh
+  359  chmod +x run_ntfy.sh 
+  360  nano run_ntfy.sh
+  361  ./run_ntfy.sh 
+  362  docker ps
+  363  curl -d "Backup successful 😀" localhost/mytopic
+  364  curl -d "Backup successful 😀" localhost:1235/mytopic
+  365  cd ..
+  366  cd scripts/
+  367  nano check_container.sh
+  368  cd ..
+  369  cd customization/
+  370  ls
+  371  docker ps
+  372  docker stop eed12fc8578a
+  373  nano run_ntfy.sh 
+  374  ./run_ntfy.sh 
+  375  docker ps
+  376  cd ..
+  377  cd scripts/
+  378  chmod +x check_container.sh 
+  379  ./check_container.sh 
+  380  ls
+  381  cd ..
+  382  ls
+  383  nano 5g_healthcheck.sh 
+  384  ./5g_healthcheck.sh 
+  385  nano 5g_healthcheck.sh 
+  386  ./5g_healthcheck.sh 
+  387  docker ps
+  388  docker stop ee0eae889565
+  389  ./5g_healthcheck.sh 
+  390  cp DT_v0.6.py DT_v0.7.py
+  391  tmux
+  392  nano README
+  393  nano README.md 
+  394  exit
+  395  nano DT_v0.7.py 
+  396  cp DT_v0.7.py DT_v0.8.py
+  397  nano DT_v0.8.py 
+  398  ./run_digital_twin.sh 
+  399  ./clean_all_containers.sh 
+  400  ./clean.sh
+  401  nano clean.sh 
+  402  nano clean_all_containers.sh 
+  403  nano clean.sh 
+  404  mv clean_all_containers.sh scripts/
+  405  ls
+  406  ps
+  407  pkill
+  408  pkill java
+  409  ps
+  410  nano clean.sh 
+  411  cat capture_traffic.sh 
+  412  ls old/
+  413  mv DT_v0.6.py old/
+  414  mv DT_v0.7.py old/
+  415  rm DT_v0.5.py 
+  416  ls
+  417  ls data/
+  418  ls log/
+  419  cd SDN-Traffic-Prediction/
+  420  ls
+  421  nano main.py 
+  422  cd ..
+  423  cd GUI
+  424  ls
+  425  cp dt_app.py dt_app_debug.py
+  426  ./launch.sh 
+  427  bg
+  428  cd ..
+  429  ls
+  430  cd HORSE_data/
+  431  ls
+  432  cd ..
+  433  ./run_digital_twin.sh 
+  434  ps
+  435  pkill java
+  436  ps
+  437  ps aux | grep dt_app
+  438  kill -9 17827
+  439  nano clean.sh 
+  440  ./clean.sh log
+  441  ls log/
+  442  ls data/
+  443  nano clean.sh 
+  444  ./clean.sh 
+  445  nano clean.sh 
+  446  ./clean.sh 
+  447  echo "Hello"
+  448  ./clean.sh 
+  449  nano clean.sh 
+  450  ./clean.sh 
+  451  exit
+  452  nano run_digital_twin.sh 
+  453  ./5g_healthcheck.sh 
+  454  ./enter_container.sh ue
+  455  cd customization/
+  456  ls
+  457  code
+  458  vscode
+  459  nano install_vscode.md 
+  460  nano ~/.config/code-server/config.yaml
+  461  nano install_vscode.md 
+  462  code-server 
+  463  ps
+  464  cd ../GUI/
+  465  ./launch.sh 
+  466  ps
+  467  ps aux | grep launch
+  468  ./launch.sh 
+  469  nano dt_app.py
+  470  nano launch.sh 
+  471  ./launch.sh 
+  472  ps aux | grep dt_app
+  473  kill -9 8428
+  474  ./launch.sh 
+  475  exitee
+  476  exit
+  477  cd comnetsemu/app/comnetsemu_5Gnet
+  478  ls
+  479  nano run_digital_twin.sh 
+  480  nano DT_v0.7.py 
+  481  tmux
+  482  exit
+  483  ./detect_elephants.py 
+  484  python3 ./detect_elephants.py 
+  485  nano detect_elephants.py 
+  486  python3 ./detect_elephants.py 
+  487  ls
+  488  cd scripts/
+  489  ls
+  490  cat ntfy_send.sh 
+  491  cd ..
+  492  nano 5g_healthcheck.sh 
+  493  cd scripts/
+  494  ls
+  495  exit
+  496  cd GUI/
+  497  ./launch.sh 
+  498  cd ..
+  499  cd customization/
+  500  ls
+  501  cat run_ntfy.sh 
+  502  ./run_ntfy.sh 
+  503  cd ..
+  504  nano detect_elephants.py 
+  505  python3 detect_elephants.py 
+  506  docker ps
+  507  docker stop │783971da7fe9
+  508  cd scripts/
+  509  ls
+  510  cd ..
+  511  nano 5g_healthcheck.sh 
+  512  nano detect_elephants.py 
+  513  cd scripts/
+  514  nano ntfy_send.sh 
+  515  nano ntfy_send.py 
+  516  cd ..
+  517  cd customization/
+  518  ls
+  519  nano run_ntfy.sh 
+  520  ./run_ntfy.sh 
+  521  cd ..
+  522  python3 detect_elephants.py 
+  523  nano detect_elephants.py 
+  524  python3 detect_elephants.py 
+  525  sleep 2
+  526  python3 detect_elephants.py 
+  527  nano detect_elephants.py 
+  528  python3 detect_elephants.py 
+  529  nano detect_elephants.py 
+  530  python3 detect_elephants.py 
+  531  nano detect_elephants.py 
+  532  ls -la data
+  533  cd scripts/
+  534  ./pcap_to_csv.sh ../data/trace-05-18-11-47-51-1716032871.pcap 
+  535  nano ../data/trace-05-18-11-47-51-1716032871.csv 
+  536  curl -d localhost:65432 "Prova"
+  537  curl -d "Prova" localhost:65432
+  538  curl "Prova" localhost:65432
+  539  curl localhost:65432
+  540  fg
+  541  exit
+  542  ./run_digital_twin.sh 
+  543  ./clean.sh 
+  544  ./run_digital_twin.sh 
+  545  ./clean.sh 
+  546  cd scripts/
+  547  ls
+  548  nano ntfy_send.py
+  549  cat ntfy_send.
+  550  cat ntfy_send.sh 
+  551  cd ..
+  552  cat 5g_healthcheck.sh 
+  553  cd scripts/
+  554  nano ntfy_send.py
+  555  python3 ntfy_send.py 
+  556  nano ntfy_send.py
+  557  python3 ntfy_send.py 
+  558  docker ps
+  559  python3 ntfy_send.py 
+  560  nano ntfy_send.py
+  561  python3 ntfy_send.py 
+  562  nano ntfy_send.py
+  563  python3 ntfy_send.py 
+  564  nano ntfy_send.py
+  565  python3 ntfy_send.py 
+  566  nano ntfy_send.py
+  567  python3 ntfy_send.py 
+  568  cat ntfy_send.py 
+  569  cd ..
+  570  ./sflow-rt/start.sh 
+  571  ./run_digital_twin.sh 
+  572  ./clean.sh 
+  573  ./run_digital_twin.sh 
+  574  ./clean.sh 
+  575  docker ps
+  576  cd scripts/
+  577  nano basic_rest.sh
+  578  ls
+  579  mv basic_rest.sh basic_rest.py
+  580  python3 basic_rest.py 
+  581  exit
+  582  ./5g_healthcheck.sh 
+  583  ./enter_container.sh ue
+  584  ./5g_healthcheck.sh 
+  585  cd GUI/
+  586  ./launch.sh 
+  587  exit
+  588  tshark
+  589  ls
+  590  cd comnetsemu/app/comnetsemu_5Gnet
+  591  cd scripts/
+  592  nano pcap_to_csv.sh
+  593  ls ../data/
+  594  chmod +x pcap_to_csv.sh 
+  595  ./pcap_to_csv.sh ../data/trace-05-12-16-55-43-1715532943.pcap 
+  596  nano ../data/trace-05-12-16-55-43-1715532943.csv 
+  597  nano pcap_to_csv.sh
+  598  ./pcap_to_csv.sh ../data/trace-05-12-16-55-43-1715532943.pcap 
+  599  nano pcap_to_csv.sh
+  600  nano ../data/trace-05-12-16-55-43-1715532943.csv 
+  601  nano pcap_to_csv.sh
+  602  nano ../data/trace-05-12-16-55-43-1715532943.csv 
+  603  rm ../data/trace-05-12-16-55-43-1715532943.csv 
+  604  ./pcap_to_csv.sh ../data/trace-05-12-16-55-43-1715532943.pcap 
+  605  nano ../data/trace-05-12-16-55-43-1715532943.csv 
+  606  nano pcap_to_csv.sh
+  607  ./pcap_to_csv.sh ../data/trace-05-12-16-55-43-1715532943.pcap 
+  608  nano ../data/trace-05-12-16-55-43-1715532943.csv 
+  609  cd ..
+  610  cd SDN-Traffic-Prediction/
+  611  ls
+  612  cd captures/
+  613  ls
+  614  cd s1/
+  615  ls
+  616  nano eth1.csv 
+  617  cd ..
+  618  cd scripts/
+  619  nano pcap_to_csv.sh
+  620  ./pcap_to_csv.sh ../data/trace-05-12-16-55-43-1715532943.pcap 
+  621  nano ../data/trace-05-12-16-55-43-1715532943.csv 
+  622  cd ..
+  623  cd SDN-Traffic-Prediction/
+  624  nano traffic_prediction.py 
+  625  cd ..
+  626  cd customization/
+  627  ls
+  628  cat webshark_launch.sh 
+  629  pwd
+  630  ls ../data/
+  631  nano webshark_launch.sh 
+  632  cd 
+  633  cd comnetsemu/app/comnetsemu_5Gnet
+  634  ./customization/webshark_launch.sh 
+  635  cd customization/
+  636  nano webshark_launch.sh 
+  637  mkdir captures
+  638  docker ps
+  639  cd ..
+  640  ls
+  641  nano detect_elephants.py 
+  642  tmux
+  643  exit
+  644  cd ..
+  645  cd data/
+  646  nano trace-05-18-11-47-51-1716032871.csv 
+  647  cp trace-05-18-11-47-51-1716032871.csv last.csv
+  648  ls
+  649  exit
+  650  nano detect_elephants.py 
+  651  nano traffic_prediction.py 
+  652  python3 traffic_prediction.py 
+  653  nano traffic_prediction.py 
+  654  python3 traffic_prediction.py 
+  655  nano traffic_prediction.py 
+  656  python3 traffic_prediction.py 
+  657  nano traffic_prediction.py 
+  658  python3 traffic_prediction.py 
+  659  nano traffic_prediction.py 
+  660  python3 traffic_prediction.py 
+  661  nano traffic_prediction.py 
+  662  python3 traffic_prediction.py 
+  663  nano traffic_prediction.py 
+  664  python3 traffic_prediction.py 
+  665  nano traffic_prediction.py 
+  666  python3 traffic_prediction.py 
+  667  ls
+  668  ls -la output.png 
+  669  python3 traffic_prediction.py 
+  670  nano traffic_prediction.py 
+  671  python3 traffic_prediction.py --training-split 0.5
+  672  python3 traffic_prediction.py --training-split 0.9
+  673  nano traffic_prediction.py 
+  674  python3 traffic_prediction.py --training-split 0.9
+  675  nano traffic_prediction.py 
+  676  python3 traffic_prediction.py --training-split 0.9
+  677  ls -la ../data/
+  678  python3 traffic_prediction.py --training-split 0.9 --csv trace-05-18-11-47-51-1716032871.csv
+  679  python3 traffic_prediction.py --training-split 0.9 --csv ../data/trace-05-18-11-47-51-1716032871.csv
+  680  ls -la ../data/
+  681  python3 traffic_prediction.py --training-split 0.95 --csv ../data/trace-05-18-11-47-51-1716032871.csv
+  682  nano traffic_prediction.py 
+  683  python3 traffic_prediction.py --training-split 0.95 --csv ../data/trace-05-18-11-47-51-1716032871.csv --sample-period 0.1S
+  684  python3 traffic_prediction.py --training-split 0.9 --csv ../data/trace-05-18-11-47-51-1716032871.csv --sample-period 0.05S
+  685  nano traffic_prediction.py 
+  686  python3 traffic_prediction.py --training-split 0.9 --csv ../data/trace-05-18-11-47-51-1716032871.csv --sample-period 0.05S
+  687  cd ../data/
+  688  ls
+  689  rm last.csv 
+  690  rm last-2.csv 
+  691  exit
+  692  sudo apt-get install virtualbox-guest-additions-iso
+  693  ls
+  694  cd comnetsemu/app/comnetsemu_5Gnet/SDN-Traffic-Prediction/
+  695  cp traffic_prediction.py ../scripts/
+  696  cd ../scripts/
+  697  nano traffic_prediction.py 
+  698  tmux
+  699  exit
+  700  ./5g_healthcheck.sh 
+  701  ls scenarios/
+  702  cd GUI
+  703  ls
+  704  nano dt_app.py
+  705  cd ../scenarios/
+  706  cat run_iperf_server.sh 
+  707  cat ../cmd_container.sh 
+  708  cd ..
+  709  ./5g_healthcheck.sh 
+  710  cd scripts/
+  711  ls
+  712  nano pcap_to_csv.sh 
+  713  ./pcap_to_csv.sh ../data/trace-05-19-17-13-34-1716138814.pcap 
+  714  ls
+  715  history | grep traffic
+  716  python3 traffic_prediction.py --training-split 0.9 --csv ../data/trace-05-19-17-13-34-1716138814.csv --sample-period 0.05S
+  717  python3 traffic_prediction.py --training-split 0.3 --csv ../data/trace-05-19-17-13-34-1716138814.csv --sample-period 0.05S
+  718  python3 traffic_prediction.py --training-split 0.2 --csv ../data/trace-05-19-17-13-34-1716138814.csv --sample-period 0.1S
+  719  cd ..
+  720  history > history.old
