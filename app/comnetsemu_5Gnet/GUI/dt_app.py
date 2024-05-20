@@ -77,6 +77,8 @@ def main():
             cmdline('cd ../scenarios ; ./run_iperf_server.sh ; cd ../GUI')
         if st.button('Run iperf client (UE)'):
             cmdline('cd ../scenarios ; ./run_iperf_client.sh ; cd ../GUI')
+        if st.button('Run prediction scenario'):
+            cmdline('cd ../scenarios ; ./scenario1.sh ; cd ../GUI')
 
     st.divider()
 

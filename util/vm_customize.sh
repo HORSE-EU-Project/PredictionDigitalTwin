@@ -3,4 +3,4 @@ sudo pip3 install fastapi
 sudo pip3 install uvicorn
 sudo pip3 install redis
 sudo pip3 install streamlit
-sudo apt install default-jre
+DEBIAN_FRONTEND=noninteractive sudo apt install default-jre

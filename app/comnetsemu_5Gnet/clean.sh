@@ -34,3 +34,6 @@ pgrep -f 'dt_app' | while read -r pid; do
     echo "Killing process with PID $pid"
     kill -9 "$pid"
 done
+
+# Kill Digital Twin input interface
+sudo pkill python

@@ -18,21 +18,18 @@ Supported open source software:
 
 ## Run instructions
 
+IMPORTANT: before running the NDT, please check the customization folder, and at least run:
+```
+./build.sh
+```
+to build the updated UE docker container.
+
+
 For interactive operation, please run the following commands in different terminals.
 
-Start sFlow (optional):
+Start Network Digital Twin with Ryu controller and sFlow:
 ```
-./sflow-rt/launch.sh
-```
-
-Start the Network Digital Twin:
-```
-sudo python3 [NDT_scenario_file].py
-```
-
-Start the Ryu controller:
-```
-ryu-manager ryu.app.simple_switch_stp_13 ryu.app.ofctl_rest
+./run_digital_twin.sh
 ```
 
 Run the web-based GUI to interact with the Digital Twin (for testing purposes):
@@ -41,7 +38,19 @@ cd GUI
 ./launch
 ```
 
-IMPORTANT: to be able to capture traffic, you need to enable vagrant to use sudo without password.
+If you want to test interfaces, too:
+```
+cd customization
+./run_ntfy.sh
+```
+
+When you quit the NDT, please clean up:
+```
+./clean.sh
+```
+
+### IMPORTANT
+To be able to capture traffic, you need to enable vagrant to use sudo without password.
 This is done by the following command:
 ```
 sudo visudo
@@ -49,6 +58,12 @@ sudo visudo
 and then by putting the following line after the root attributes:
 ```
 vagrant ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+For the prediction, please install the related dependencies:
+```
+cd SDN-Traffic-Prediction
+pip3 install -r requirements.txt
 ```
 
 ## Used ports
@@ -60,7 +75,7 @@ vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 | Open5GS Core | 3000 -> 1234| (user: admin, password: 1423) |
 | sFlow | 8008 | if active |
 | VSCode server | 8888 | to be installed and run manually (password: password) |
-| NTFY server | 80 -> 1236 | to be run manually |
+| NTFY server | 80 -> 8086 | to be run manually |
 | Wireshark server | 80 -> 8085 | to be run manually |
 | Reserved by Open5GS | 1235 | |
 
