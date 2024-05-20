@@ -27,6 +27,8 @@ if 'API_CHECKED' not in state:
     state.API_CHECKED=False
 if 'SFLOW_ON' not in state:
     state.SFLOW_ON=True
+if 'PREDICTION_ON' not in state:
+    state.PREDICTION_ON=False
 
 # --------------------------------------------------------------------------------
 
@@ -104,7 +106,7 @@ def main():
             if st.button('🔥 Close API'): 
                 state.API_CHECKED = False
 
-    d1, d2, d3, _ = st.columns([1,1,1,1])
+    d1, d2, _ = st.columns([1,1,1])
 
     with d1:
        if st.button('🔥 sFlow charts'):
@@ -112,8 +114,6 @@ def main():
     with d2:
        if st.button('🔥 hide charts'):
            state.SFLOW_ON = False
-    with d3:
-       st.write(state.SFLOW_ON)
 
     if state.SFLOW_ON:
        st.components.v1.iframe(f'http://{API_HOST}:8008/app/mininet-dashboard/html/index.html#charts', height=400, scrolling=True)
@@ -135,17 +135,37 @@ def main():
         st.write("Containers status:")
         st.write(df) # visualize the csv table
 
-    if st.button('Collect data'):
-        st.write(cmdline('cd ../scripts ; ./container_stats_csv.sh ; cd ../GUI'))
+    e1, e2, _ = st.columns([1,1,1])
 
-    if st.button('Check health'):
-        st.write(cmdline('cd ../scripts ; ./containers_overloaded_csv.sh ; cd ../GUI'))
+    with e1:
+        if st.button('Collect data'):
+            st.write(cmdline('cd ../scripts ; ./container_stats_csv.sh ; cd ../GUI'))
+    with e2:
+        if st.button('Refresh Page'):
+            st.rerun()
+
+    # if st.button('Check health'):
+    #     st.write(cmdline('cd ../scripts ; ./containers_overloaded_csv.sh ; cd ../GUI'))
 
     if st.button('🔥 Digital Twin APIs'):
         st.components.v1.iframe(f'http://{API_HOST}:8000/docs', height=400, scrolling=True)
 
     st.divider()
 
+    # Display Prediction
+    f1, f2, _ = st.columns([1,1,1])
+
+    with f1:
+       if st.button('🔥 Display Prediction'):
+           state.PREDICTION_ON = True
+    with f2:
+       if st.button('🔥 Hide Prediction'):
+           state.PREDICTION_ON = False
+
+    if state.PREDICTION_ON:
+        st.image("../data/output.png", width=800)
+
+    st.divider()
     # RUN 5G/6G SPECIFIC SCENARIO
     st.write("To run the 5G/6G Network Digital Twin:")
     st.code("./run_digitaltwin.sh", language="python")
