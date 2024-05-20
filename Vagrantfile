@@ -153,8 +153,8 @@ cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
     ndt.vm.network "forwarded_port", guest: 8008, host: 8008
     ndt.vm.network "forwarded_port", guest: 8501, host: 8501
     ndt.vm.network "forwarded_port", guest: 8080, host: 8080
-    ndt.vm.network "forwarded_port", guest: 1236, host: 1236
     ndt.vm.network "forwarded_port", guest: 8085, host: 8085
+    ndt.vm.network "forwarded_port", guest: 8086, host: 8086
 
     # - Uncomment the underlying line to add a private network to the VM.
     #   If VirtualBox is used as the hypervisor, this means adding or using (if already created) a host-only interface to the VM.
