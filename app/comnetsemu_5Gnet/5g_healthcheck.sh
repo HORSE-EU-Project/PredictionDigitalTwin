@@ -10,7 +10,7 @@ CONTAINER_NAME="NTFY"
 if [ -n "$output" ]; then
     echo "OK"
     if [ $(docker inspect -f '{{.State.Running}}' $CONTAINER_NAME) = "true" ]; then
-        curl -d "5G emulated network OK" localhost:1236/digitaltwin
+        curl -d "5G emulated network OK" localhost:8086/digitaltwin
     else
         echo "The notification container is not running."
     fi

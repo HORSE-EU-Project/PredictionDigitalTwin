@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import requests
 import json
+import time
 
 rt = 'http://127.0.0.1:8008'
 
@@ -24,5 +25,5 @@ while 1 == 1:
     print("Elephant flow detected:")
     print( e['flowKey'] )
     requests.post("http://localhost:8086/digitaltwin",
-      data="Large Flow detected 😀".encode(encoding='utf-8'))
-  # sleep(5)
+      data="[To DTE] Large Flow detected 😀".encode(encoding='utf-8'))
+    time.sleep(10)

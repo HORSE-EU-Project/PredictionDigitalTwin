@@ -27,5 +27,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 # Print the received payload
                 print(f"Received payload: {data.decode()}")
                 requests.post("http://localhost:8086/digitaltwin",
-                  data="Connected to Early Modeling".encode(encoding='utf-8'))
+                  data="[From Early Modeling] Notification received".encode(encoding='utf-8'))
 
