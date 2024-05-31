@@ -18,25 +18,11 @@ Supported open source software:
 
 ## Install instructions
 
-Once the Comnetsemu environment is correctly running, Build the necessary docker images for 5G UERANSIM and Open5GS:
+Once the Comnetsemu environment is correctly running, Build the necessary docker images for 5G UERANSIM and Open5GS and other software:
 ```
-cd build
-./dockerhub_pull.sh
+./install.sh
 ```
-or alternatively build them by using the build.sh command.
-
-Then run the following commands:
-```
-cd customization
-./install_java.sh
-./build.sh
-```
-
-For the prediction, please install the related dependencies:
-```
-cd SDN-Traffic-Prediction
-pip3 install -r requirements.txt
-```
+or alternatively build the containers by using the build/build.sh command.
 
 To be able to capture traffic, you need to enable vagrant to use sudo without password.
 This is done by the following command:
