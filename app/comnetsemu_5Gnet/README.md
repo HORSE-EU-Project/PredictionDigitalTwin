@@ -18,22 +18,35 @@ Supported open source software:
 
 ## Install instructions
 
-IMPORTANT: before running the NDT, please check that the installation of Comnetsemu (see README.md file in the
-home directory) is correct - for example by running
+IMPORTANT: before running the NDT, please check that the installation of Comnetsemu (see Comnetsemu Build Instructions below) is correct - for example by running
 ```
 sudo make test
 ```
 in the comnetsemu/ directory.
 
-In case Ryu controller does not work properly, please run:
+Once the Comnetsemu environment is correctly running, Build the necessary docker images for 5G UERANSIM and Open5GS:
 ```
-pip install dnspython==2.2.1
+cd build
+./build.sh
 ```
 
-Once the Comnetsemu installation is validated, then run the following commands in the customization folder:
+Or alternatively download them from DockerHub
 ```
+cd ../open5gs
+./dockerhub_pull.sh
+```
+
+Then run the following commands:
+```
+cd customization
 ./install_java.sh
 ./build.sh
+```
+
+For the prediction, please install the related dependencies:
+```
+cd SDN-Traffic-Prediction
+pip3 install -r requirements.txt
 ```
 
 To be able to capture traffic, you need to enable vagrant to use sudo without password.
@@ -44,12 +57,6 @@ sudo visudo
 and then by putting the following line after the root attributes:
 ```
 vagrant ALL=(ALL:ALL) NOPASSWD: ALL
-```
-
-For the prediction, please install the related dependencies:
-```
-cd SDN-Traffic-Prediction
-pip3 install -r requirements.txt
 ```
 
 ## Run instructions
@@ -91,40 +98,27 @@ When you quit the NDT, please clean up:
 | Wireshark server | 80 -> 8085 | to be run manually |
 | Reserved by Open5GS | 1235 | |
 
-## Build Instructions
+## Comnetsemu Build Instructions
 
 First, from the host machine, install the original comnetsemu VM:
-
 ```
 vagrant up NDT
 ```
 
 and log into the VM:
-
 ```
 vagrant ssh NDT
 ```
 
-Once/if Comnetsemu is installed, then you must build or download the required docker containers.
-
-Build the necessary docker images:
-
+In case Ryu controller does not work properly, please run:
 ```
-cd build
-./build.sh
-```
-
-Or alternatively download them from DockerHub
-
-```
-cd ../open5gs
-./dockerhub_pull.sh
+pip install dnspython==2.2.1
 ```
 
 Be sure that the additional libraries are provided in the vm_provisioning.sh script in the /util directory.
 
 
-## How to run the Network Digital Twin
+## Useful information about the HORSE Network Digital Twin
 
 ### The HORSE reference network topology and 5GS setup
 
