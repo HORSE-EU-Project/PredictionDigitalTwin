@@ -18,23 +18,12 @@ Supported open source software:
 
 ## Install instructions
 
-IMPORTANT: before running the NDT, please check that the installation of Comnetsemu (see Comnetsemu Build Instructions below) is correct - for example by running
-```
-sudo make test
-```
-in the comnetsemu/ directory.
-
 Once the Comnetsemu environment is correctly running, Build the necessary docker images for 5G UERANSIM and Open5GS:
 ```
 cd build
-./build.sh
-```
-
-Or alternatively download them from DockerHub
-```
-cd ../open5gs
 ./dockerhub_pull.sh
 ```
+or alternatively build them by using the build.sh command.
 
 Then run the following commands:
 ```
@@ -83,6 +72,19 @@ cd customization
 When you quit the NDT, please clean up:
 ```
 ./clean.sh
+```
+
+## Test instructions
+
+To check that the installation of Comnetsemu (see Comnetsemu Build Instructions below) is correct, run:
+```
+sudo make test
+```
+in the comnetsemu/ directory.
+
+To check that the NDT is running correctly, run:
+```
+./5g_healthcheck.sh
 ```
 
 ## Used ports
