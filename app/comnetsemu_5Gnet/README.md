@@ -16,14 +16,43 @@ Supported open source software:
 - UERANSIM: v3.2.6
 - Open5gs: v2.4.2
 
-## Run instructions
+## Install instructions
 
-IMPORTANT: before running the NDT, please check the customization folder, and at least run:
+IMPORTANT: before running the NDT, please check that the installation of Comnetsemu (see README.md file in the
+home directory) is correct - for example by running
 ```
+sudo make test
+```
+in the comnetsemu/ directory.
+
+In case Ryu controller does not work properly, please run:
+```
+pip install dnspython==2.2.1
+```
+
+Once the Comnetsemu installation is validated, then run the following commands in the customization folder:
+```
+./install_java.sh
 ./build.sh
 ```
-to build the updated UE docker container.
 
+To be able to capture traffic, you need to enable vagrant to use sudo without password.
+This is done by the following command:
+```
+sudo visudo
+```
+and then by putting the following line after the root attributes:
+```
+vagrant ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+For the prediction, please install the related dependencies:
+```
+cd SDN-Traffic-Prediction
+pip3 install -r requirements.txt
+```
+
+## Run instructions
 
 For interactive operation, please run the following commands in different terminals.
 
@@ -47,23 +76,6 @@ cd customization
 When you quit the NDT, please clean up:
 ```
 ./clean.sh
-```
-
-### IMPORTANT
-To be able to capture traffic, you need to enable vagrant to use sudo without password.
-This is done by the following command:
-```
-sudo visudo
-```
-and then by putting the following line after the root attributes:
-```
-vagrant ALL=(ALL:ALL) NOPASSWD: ALL
-```
-
-For the prediction, please install the related dependencies:
-```
-cd SDN-Traffic-Prediction
-pip3 install -r requirements.txt
 ```
 
 ## Used ports
