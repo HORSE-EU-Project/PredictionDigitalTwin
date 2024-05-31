@@ -103,13 +103,15 @@ To check that the NDT is running correctly, run:
 ## Comnetsemu Build Instructions
 
 First, from the host machine, install the original comnetsemu VM:
-```
-vagrant up NDT
-```
+```bash
+$ cd ~
+$ git clone https://github.com/HORSE-EU-Project/PredictionDigitalTwin.git
+$ cd ./PredictionDigitalTwin
+$ vagrant up NDT
+# Take a coffee and wait about 15-20 minutes
 
-and log into the VM:
-```
-vagrant ssh NDT
+# SSH into the VM when it's up and ready (The ComNetsEmu banner is printed on the screen)
+$ vagrant ssh NDT
 ```
 
 In case Ryu controller does not work properly, please run:
