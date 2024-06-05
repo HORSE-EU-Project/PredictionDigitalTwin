@@ -1,0 +1,20 @@
+[
+    {
+        "detection": [
+            {
+                "attack": "Type 7 Attack",
+                "accuracy": 0.9353000000000048
+            }
+        ],
+        "node": "node1"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 4 Attack",
+                "accuracy": 0.03176976190476191
+            }
+        ],
+        "node": "node2"
+    }
+]

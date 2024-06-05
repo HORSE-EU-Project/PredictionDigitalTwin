@@ -1,4 +1,4 @@
-import os, sys, json, base64
+import os, sys, json, base64, glob
 import time
 import requests
 from pathlib import Path
@@ -60,6 +60,30 @@ def main():
     st.image("../HORSE_data/HORSE-DDoS-DNS-simp.png",width=800)
     
     st.divider()
+
+    # Print input and output files
+    a1, a2 = st.columns([1,1])
+
+    with a1:
+        if st.button('Display input'):
+            folder_path = '../log/input'
+            prefix = 'input'
+            file_list = glob.glob(os.path.join(folder_path, f"{prefix}*"))
+            latest_file = max(file_list, key=os.path.getctime)
+            #print(f"Latest file: {latest_file}")
+            with open(latest_file, 'r') as file:
+                data = file.read()
+                st.code(data, language='python')
+    with a2:
+        if st.button('Display output'):
+            folder_path = '../log/output'
+            prefix = 'output'
+            file_list = glob.glob(os.path.join(folder_path, f"{prefix}*"))
+            latest_file = max(file_list, key=os.path.getctime)
+            #print(f"Latest file: {latest_file}")
+            with open(latest_file, 'r') as file:
+                data = file.read()
+                st.code(data, language='python') 
 
     # RUN Digital Twin commands
     st.header("Digital Twin Commands")
