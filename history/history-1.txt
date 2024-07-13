@@ -14,3 +14,12 @@
        bash ./install.sh -a
        sudo usermod -aG docker $USER
        newgrp docker
+
+cd 
+cd comnetsemu/app/comnetsemu_5G_customization
+./install_java.sh
+cd ../build
+./dockerhub_pull.sh
+cd ../customization
+./build.sh
+
