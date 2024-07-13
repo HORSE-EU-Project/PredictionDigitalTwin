@@ -3807,3 +3807,48 @@ Open5GS daemon v2.4.4
 05/21 10:00:23.694: [gmm] INFO: UE SUPI[imsi-001011234567895] DNN[internet] S_NSSAI[SST:1 SD:0x1] (../src/amf/gmm-handler.c:1047)
 05/21 10:00:23.694: [amf] INFO: [Added] Number of AMF-Sessions is now 10 (../src/amf/context.c:2076)
 05/21 10:00:23.696: [gmm] INFO: UE SUPI[imsi-001011234567904] DNN[internet] S_NSSAI[SST:1 SD:0x1] (../src/amf/gmm-handler.c:1047)
+Open5GS daemon v2.4.4
+
+07/13 12:17:54.314: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:129)
+07/13 12:17:54.314: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:132)
+07/13 12:17:54.321: [sbi] INFO: nghttp2_server() [127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:144)
+07/13 12:17:54.455: [sock] ERROR: socket bind(2) [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+07/13 12:17:54.456: [sock] ERROR: sctp_server() [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/sctp/ogs-lksctp.c:99)
+07/13 12:17:54.456: [sctp] ERROR: Failed to intialize AMF (../src/amf/app.c:30)
+07/13 12:17:54.456: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+07/13 12:19:44.228: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:129)
+07/13 12:19:44.228: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:132)
+07/13 12:19:44.232: [sbi] INFO: nghttp2_server() [127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:144)
+07/13 12:19:44.234: [sock] ERROR: socket bind(2) [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+07/13 12:19:44.234: [sock] ERROR: sctp_server() [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/sctp/ogs-lksctp.c:99)
+07/13 12:19:44.234: [sctp] ERROR: Failed to intialize AMF (../src/amf/app.c:30)
+07/13 12:19:44.234: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+07/13 12:20:39.703: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:129)
+07/13 12:20:39.703: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:132)
+07/13 12:20:39.717: [sbi] INFO: nghttp2_server() [127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:144)
+07/13 12:20:39.718: [sock] ERROR: socket bind(2) [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+07/13 12:20:39.718: [sock] ERROR: sctp_server() [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/sctp/ogs-lksctp.c:99)
+07/13 12:20:39.718: [sctp] ERROR: Failed to intialize AMF (../src/amf/app.c:30)
+07/13 12:20:39.718: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+07/13 12:22:07.258: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:129)
+07/13 12:22:07.258: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:132)
+07/13 12:22:07.262: [sbi] INFO: nghttp2_server() [127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:144)
+07/13 12:22:07.262: [sock] ERROR: socket bind(2) [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+07/13 12:22:07.262: [sock] ERROR: sctp_server() [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/sctp/ogs-lksctp.c:99)
+07/13 12:22:07.262: [sctp] ERROR: Failed to intialize AMF (../src/amf/app.c:30)
+07/13 12:22:07.262: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+07/13 12:25:19.958: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:129)
+07/13 12:25:19.958: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:132)
+07/13 12:25:19.969: [sbi] INFO: nghttp2_server() [127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:144)
+07/13 12:25:19.971: [sock] ERROR: socket bind(2) [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+07/13 12:25:19.971: [sock] ERROR: sctp_server() [192.168.0.111]:38412 failed (99:Cannot assign requested address) (../lib/sctp/ogs-lksctp.c:99)
+07/13 12:25:19.971: [sctp] ERROR: Failed to intialize AMF (../src/amf/app.c:30)
+07/13 12:25:19.971: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
