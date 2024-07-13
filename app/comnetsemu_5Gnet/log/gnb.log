@@ -1,15 +1,23 @@
 UERANSIM v3.2.6
-[2024-07-13 12:25:37.623] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
-[2024-07-13 12:25:37.709] [sctp] [error] Connecting to 192.168.0.111:38412 failed. SCTP could not connect: Connection refused
-[2024-07-13 12:25:43.914] [rrc] [debug] UE[1] new signal detected
-[2024-07-13 12:25:43.914] [rrc] [debug] UE[2] new signal detected
-[2024-07-13 12:25:43.915] [rrc] [debug] UE[3] new signal detected
-[2024-07-13 12:25:43.915] [rrc] [debug] UE[4] new signal detected
-[2024-07-13 12:25:43.915] [rrc] [debug] UE[5] new signal detected
-[2024-07-13 12:25:43.917] [rrc] [debug] UE[6] new signal detected
-[2024-07-13 12:25:43.918] [rrc] [debug] UE[7] new signal detected
-[2024-07-13 12:25:43.918] [rrc] [debug] UE[8] new signal detected
-[2024-07-13 12:25:43.918] [rrc] [debug] UE[9] new signal detected
-[2024-07-13 12:25:43.918] [rrc] [debug] UE[10] new signal detected
-terminate called after throwing an instance of 'LibError'
-  what():  sendto failed:  Network is unreachable
+[2024-07-13 14:23:48.298] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
+[2024-07-13 14:23:48.377] [sctp] [error] Connecting to 192.168.0.111:38412 failed. SCTP could not connect: Connection refused
+[2024-07-13 14:23:54.499] [rrc] [debug] UE[1] new signal detected
+[2024-07-13 14:23:54.500] [rrc] [debug] UE[2] new signal detected
+[2024-07-13 14:23:54.500] [rrc] [debug] UE[3] new signal detected
+[2024-07-13 14:23:54.500] [rrc] [debug] UE[4] new signal detected
+[2024-07-13 14:23:54.501] [rrc] [debug] UE[5] new signal detected
+[2024-07-13 14:23:54.501] [rrc] [debug] UE[6] new signal detected
+[2024-07-13 14:23:54.501] [rrc] [debug] UE[7] new signal detected
+[2024-07-13 14:23:54.502] [rrc] [debug] UE[8] new signal detected
+[2024-07-13 14:23:54.502] [rrc] [debug] UE[9] new signal detected
+[2024-07-13 14:23:54.502] [rrc] [debug] UE[10] new signal detected
+[2024-07-13 14:25:39.571] [rls] [debug] UE[1] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[2] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[3] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[4] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[5] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[6] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[7] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[8] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[9] signal lost
+[2024-07-13 14:25:39.571] [rls] [debug] UE[10] signal lost

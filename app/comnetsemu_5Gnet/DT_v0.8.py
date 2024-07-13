@@ -46,10 +46,10 @@ if __name__ == "__main__":
 
     setLogLevel("info")
 
-    script_path = os.path.abspath(__file__)
-    prj_folder = os.path.dirname(script_path)
+    # script_path = os.path.abspath(__file__)
+    # prj_folder = os.path.dirname(script_path)
 
-    # prj_folder="/home/vagrant/comnetsemu/app/comnetsemu_5Gnet"
+    prj_folder="/home/vagrant/comnetsemu/app/comnetsemu_5Gnet"
     mongodb_folder="/home/vagrant/mongodbdata"
 
     # Comment to avoid running sFlow (but first run start.sh script to activate sFlow deamon)
@@ -169,8 +169,8 @@ if __name__ == "__main__":
     env["COMPONENT_NAME"]="ue"
     ue = net.addDockerHost(
         "ue", 
-        # dimage="myueransim_v3-2-6",
-        dimage="ue_enhanced",
+        dimage="myueransim_v3-2-6",
+        # dimage="ue_enhanced",
         ip="192.168.0.132/24",
         # dcmd="",
         dcmd="bash /mnt/ueransim/open5gs_ue_init.sh",
@@ -250,8 +250,8 @@ if __name__ == "__main__":
     #info("\n*** Starting network\n")
     #net.start()
 
-    print("\n*** Waiting for 5G GTP connections to be instantiated...")
-    cmdline("./5g_wait_for_healthy.sh")
+    #print("\n*** Waiting for 5G GTP connections to be instantiated...")
+    #cmdline("./5g_wait_for_healthy.sh")
 
     print("\n*** Checking network connectivity\n")
     net.pingAll()
