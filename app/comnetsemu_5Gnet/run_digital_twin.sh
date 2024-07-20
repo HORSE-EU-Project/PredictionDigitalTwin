@@ -9,6 +9,6 @@ sleep 5
 # echo "[ DETECT ] *** Running detection script"
 # python3 ./scripts/detect_elephants.py &
 echo "[ EM ] *** Running input interface with Early Modeling"
-python3 ./scripts/digital_twin_input.py &
+python3 ./scripts/EM-interface.py &
 echo "[ NDT ] *** Running Digital Twin Engine (Comnetsemu)"
 sudo python3 DT_v0.9.py
