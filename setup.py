@@ -40,7 +40,7 @@ setup(
     python_requires=">=3.8",
     # MARK: MINIMAL requirements
     install_requires=[
-        "docker>=4.1.0,<5.0.0",
+        "docker>=7.1.0,<8.0.0",
         "pyroute2>=0.5.9,<0.6.0",
         "requests>=2.22.0,< 3.0.0",
         "ryu>=4.30,<5.0",

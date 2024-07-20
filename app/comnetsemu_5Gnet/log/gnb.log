@@ -1,4 +1,5 @@
 UERANSIM v3.2.6
+<<<<<<< HEAD
 [2024-07-13 14:31:29.259] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
 [2024-07-13 14:31:29.317] [sctp] [info] SCTP connection established (192.168.0.111:38412)
 [2024-07-13 14:31:29.318] [sctp] [debug] SCTP association setup ascId[4]
@@ -57,3 +58,17 @@ UERANSIM v3.2.6
 [2024-07-13 14:31:35.350] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
 terminate called after throwing an instance of 'LibError'
   what():  sendto failed:  Network is unreachable
+=======
+[2024-07-13 15:20:16.110] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
+[2024-07-13 15:20:16.188] [sctp] [error] Connecting to 192.168.0.111:38412 failed. SCTP could not connect: Connection refused
+[2024-07-13 15:20:22.403] [rrc] [debug] UE[1] new signal detected
+[2024-07-13 15:20:22.403] [rrc] [debug] UE[2] new signal detected
+[2024-07-13 15:20:22.403] [rrc] [debug] UE[3] new signal detected
+[2024-07-13 15:20:22.404] [rrc] [debug] UE[4] new signal detected
+[2024-07-13 15:20:22.404] [rrc] [debug] UE[5] new signal detected
+[2024-07-13 15:20:22.405] [rrc] [debug] UE[6] new signal detected
+[2024-07-13 15:20:22.405] [rrc] [debug] UE[7] new signal detected
+[2024-07-13 15:20:22.406] [rrc] [debug] UE[8] new signal detected
+[2024-07-13 15:20:22.406] [rrc] [debug] UE[9] new signal detected
+[2024-07-13 15:20:22.406] [rrc] [debug] UE[10] new signal detected
+>>>>>>> 46e484da05b87708aa37887e3d267945ae46cdea
