@@ -255,3 +255,21 @@ Open5GS daemon v2.4.4
 05/21 10:00:23.302: [app] WARNING: Try to discover [UDR] (../lib/sbi/path.c:110)
 05/21 10:00:23.303: [udm] INFO: [e337052a-1758-41ef-93e1-0bb00721389a] (NF-discover) NF registered (../src/udm/nnrf-handler.c:284)
 05/21 10:00:23.304: [udm] INFO: [e337052a-1758-41ef-93e1-0bb00721389a] (NF-discover) NF Profile updated (../src/udm/nnrf-handler.c:330)
+Open5GS daemon v2.4.4
+
+07/13 14:28:56.044: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:129)
+07/13 14:28:56.045: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:132)
+07/13 14:28:56.050: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:144)
+07/13 14:28:56.112: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+07/13 14:28:56.142: [udm] INFO: [3c71d81e-4124-41ef-a9f3-c15a10c1fc1e] NF registred [Heartbeat:10s] (../src/udm/nf-sm.c:198)
+07/13 14:28:56.285: [udm] INFO: [3c89c65e-4124-41ef-b1d6-2b16fa6460a5] (NRF-notify) NF registered (../src/udm/nnrf-handler.c:180)
+07/13 14:28:56.285: [udm] INFO: [3c89c65e-4124-41ef-b1d6-2b16fa6460a5] (NRF-notify) NF Profile updated (../src/udm/nnrf-handler.c:199)
+Open5GS daemon v2.4.4
+
+07/13 14:31:12.757: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:129)
+07/13 14:31:12.759: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:132)
+07/13 14:31:12.764: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:144)
+07/13 14:31:12.765: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+07/13 14:31:12.776: [udm] INFO: [8dee77ce-4124-41ef-94d0-29c652fc0ab4] NF registred [Heartbeat:10s] (../src/udm/nf-sm.c:198)
+07/13 14:31:12.797: [udm] INFO: [8def77b4-4124-41ef-8132-09c1444e0641] (NRF-notify) NF registered (../src/udm/nnrf-handler.c:180)
+07/13 14:31:12.797: [udm] INFO: [8def77b4-4124-41ef-8132-09c1444e0641] (NRF-notify) NF Profile updated (../src/udm/nnrf-handler.c:199)
