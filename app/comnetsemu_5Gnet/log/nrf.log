@@ -439,3 +439,39 @@ Open5GS daemon v2.4.4
 07/13 15:19:58.392: [nrf] INFO: [5dbbbf88-412b-41ef-bc6f-0370880756ce] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
 07/13 15:19:58.409: [nrf] INFO: [5dbff4b8-412b-41ef-952f-8b790ccdfe91] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
 >>>>>>> 46e484da05b87708aa37887e3d267945ae46cdea
+Open5GS daemon v2.4.4
+
+09/06 13:29:26.378: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:29:26.379: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:132)
+09/06 13:29:26.384: [sbi] INFO: nghttp2_server() [127.0.0.10]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/06 13:29:26.385: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+09/06 13:29:31.311: [nrf] INFO: [0c688a4a-6c54-41ef-bbf0-353aad127564] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:29:31.314: [nrf] INFO: [0c691d16-6c54-41ef-a9c9-a520d9ecea59] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:29:31.316: [nrf] INFO: [0c69aaf6-6c54-41ef-ae0e-e11dc2a8d253] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:29:31.318: [nrf] INFO: [0c6a63d8-6c54-41ef-bf47-a9ee022e4bc3] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:29:31.320: [nrf] INFO: [0c6aa528-6c54-41ef-8241-85fbc856ab13] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:29:31.327: [nrf] INFO: [0c6c1be2-6c54-41ef-a51b-e1b2e29be577] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+Open5GS daemon v2.4.4
+
+09/06 13:34:26.829: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:34:26.829: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:132)
+09/06 13:34:26.830: [sbi] INFO: nghttp2_server() [127.0.0.10]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/06 13:34:26.831: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+09/06 13:34:31.865: [nrf] INFO: [bf8d2702-6c54-41ef-920c-29da19ce328c] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:34:31.865: [nrf] INFO: [bf8e3b2e-6c54-41ef-9209-af4364a78ba0] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:34:31.871: [nrf] INFO: [bf8e4ee8-6c54-41ef-94e4-d1dc08d88d2c] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:34:31.874: [nrf] INFO: [bf8f9816-6c54-41ef-9746-75224f61ac7b] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:34:31.883: [nrf] INFO: [bf90394c-6c54-41ef-9c26-d3a781b565d0] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:34:31.885: [nrf] INFO: [bf9189aa-6c54-41ef-b29a-d7b2a86c55f4] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+Open5GS daemon v2.4.4
+
+09/06 13:38:17.116: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:38:17.116: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:132)
+09/06 13:38:17.118: [sbi] INFO: nghttp2_server() [127.0.0.10]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/06 13:38:17.120: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+09/06 13:38:22.125: [nrf] INFO: [48cda9b0-6c55-41ef-8c57-854684d41d0a] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:38:22.136: [nrf] INFO: [48cd614e-6c55-41ef-9d72-11e42d3ad6dd] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:38:22.157: [nrf] INFO: [48d0ba88-6c55-41ef-b2c1-fd86fa80e93a] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:38:22.165: [nrf] INFO: [48d25424-6c55-41ef-89a1-b3a4b28b9a43] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:38:22.166: [nrf] INFO: [48d15aec-6c55-41ef-907a-e95027daa8dd] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)
+09/06 13:38:22.173: [nrf] INFO: [48d45918-6c55-41ef-8edb-b9344ac73a20] NF registred [Heartbeat:10s] (../src/nrf/nf-sm.c:192)

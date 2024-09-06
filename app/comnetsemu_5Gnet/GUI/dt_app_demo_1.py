@@ -62,6 +62,8 @@ def main():
     st.divider()
 
     # Print input and output files
+    st.header("Digital Twin Commands")
+
     a1, a2 = st.columns([1,1])
 
     with a1:
@@ -74,6 +76,9 @@ def main():
             with open(latest_file, 'r') as file:
                 data = file.read()
                 st.code(data, language='python')
+        if st.button('Normal scenario'):
+            cmdline('cd ../scenarios ; ./demo-IT1-no-attack.sh ; cd ../GUI')
+
     with a2:
         if st.button('Received EM command:'):
             folder_path = '../scripts/uploads'
@@ -105,27 +110,30 @@ def main():
             st.write("Type:", type_value)
             st.write("Asset_Type:", asset_type_value)
             st.write("Asset_IPAddress:", asset_ip_value)
+        if st.button('DNS attack scenario'):
+            cmdline('cd ../scenarios ; ./demo-IT1.sh ; cd ../GUI')
 
-    # RUN Digital Twin commands
-    st.header("Digital Twin Commands")
+    #col1, col2 = st.columns([1,1])
 
-    col1, col2 = st.columns([1,1])
+    #with col1:
+        #if st.button('Normal scenario'):
+        #    cmdline('cd ../scenarios ; ./demo-IT1-no-attack.sh ; cd ../GUI')
+        #if st.button('Run hping'):
+        #    cmdline('cd ../scenarios ; ./run_hping.sh ; cd ../GUI')
+        #if st.button('Flooding attack'):
+        #    cmdline('cd ../scenarios ; ./flood.sh ; cd ../GUI')
+        #if st.button('Dump traffic'):
+        #    cmdline('cd ../scenarios ; ./dump_traffic.sh ; cd ../GUI')
 
-    with col1:
-        if st.button('Run hping'):
-            cmdline('cd ../scenarios ; ./run_hping.sh ; cd ../GUI')
-        if st.button('Flooding attack'):
-            cmdline('cd ../scenarios ; ./flood.sh ; cd ../GUI')
-        if st.button('Dump traffic'):
-            cmdline('cd ../scenarios ; ./dump_traffic.sh ; cd ../GUI')
-
-    with col2:
-        if st.button('Run iperf server (Internet)'):
-            cmdline('cd ../scenarios ; ./run_iperf_server.sh ; cd ../GUI')
-        if st.button('Run iperf client (UE)'):
-            cmdline('cd ../scenarios ; ./run_iperf_client.sh ; cd ../GUI')
-        if st.button('Run prediction scenario'):
-            cmdline('cd ../scenarios ; ./scenario1.sh ; cd ../GUI')
+    #with col2:
+        #if st.button('DNS attack scenario'):
+        #    cmdline('cd ../scenarios ; ./demo-IT1.sh ; cd ../GUI')
+        #if st.button('Run iperf server (Internet)'):
+        #    cmdline('cd ../scenarios ; ./run_iperf_server.sh ; cd ../GUI')
+        #if st.button('Run iperf client (UE)'):
+        #    cmdline('cd ../scenarios ; ./run_iperf_client.sh ; cd ../GUI')
+        #if st.button('Run prediction scenario'):
+        #    cmdline('cd ../scenarios ; ./scenario1.sh ; cd ../GUI')
 
     st.divider()
 

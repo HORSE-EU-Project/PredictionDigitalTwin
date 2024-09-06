@@ -11,4 +11,4 @@ sleep 5
 echo "[ EM ] *** Running input interface with Early Modeling"
 python3 ./scripts/EM-interface.py &
 echo "[ NDT ] *** Running Digital Twin Engine (Comnetsemu)"
-sudo python3 DT_v0.9.py
+sudo python3 DT_v1.0.py

@@ -1266,3 +1266,33 @@ Open5GS daemon v2.4.4
 07/13 15:19:58.479: [app] ERROR: Failed to intialize SMF (../src/smf/app.c:28)
 07/13 15:19:58.479: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
 >>>>>>> 46e484da05b87708aa37887e3d267945ae46cdea
+Open5GS daemon v2.4.4
+
+09/06 13:29:31.317: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/smf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:29:31.317: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/smf.log' (../lib/app/ogs-init.c:132)
+09/06 13:29:31.481: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+09/06 13:29:31.481: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+09/06 13:29:31.481: [sock] ERROR: socket bind(2) [192.168.0.111]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+09/06 13:29:31.481: [sock] ERROR: udp_server() [192.168.0.111]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+09/06 13:29:31.482: [app] ERROR: Failed to intialize SMF (../src/smf/app.c:28)
+09/06 13:29:31.482: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+09/06 13:34:31.865: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/smf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:34:31.865: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/smf.log' (../lib/app/ogs-init.c:132)
+09/06 13:34:32.014: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+09/06 13:34:32.014: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+09/06 13:34:32.014: [sock] ERROR: socket bind(2) [192.168.0.111]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+09/06 13:34:32.014: [sock] ERROR: udp_server() [192.168.0.111]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+09/06 13:34:32.014: [app] ERROR: Failed to intialize SMF (../src/smf/app.c:28)
+09/06 13:34:32.014: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)
+Open5GS daemon v2.4.4
+
+09/06 13:38:22.126: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/smf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:38:22.126: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/smf.log' (../lib/app/ogs-init.c:132)
+09/06 13:38:22.273: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+09/06 13:38:22.273: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+09/06 13:38:22.273: [sock] ERROR: socket bind(2) [192.168.0.111]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-socket.c:109)
+09/06 13:38:22.273: [sock] ERROR: udp_server() [192.168.0.111]:8805 failed (99:Cannot assign requested address) (../lib/core/ogs-udp.c:62)
+09/06 13:38:22.273: [app] ERROR: Failed to intialize SMF (../src/smf/app.c:28)
+09/06 13:38:22.274: [app] FATAL: Open5GS initialization failed. Aborted (../src/main.c:219)

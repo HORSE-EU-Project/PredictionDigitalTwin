@@ -1,1 +1,0 @@
-[    {        "node": "192.168.0.200",        "detection": [            {                "attack": "DoS",                "accuracy": 0.50            }        ]    }]

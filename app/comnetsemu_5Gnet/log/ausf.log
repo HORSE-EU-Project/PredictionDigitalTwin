@@ -274,3 +274,26 @@ Open5GS daemon v2.4.4
 07/13 15:19:58.391: [ausf] INFO: [5dbc56a0-412b-41ef-a83a-ad8280d99534] (NRF-notify) NF registered (../src/ausf/nnrf-handler.c:179)
 07/13 15:19:58.391: [ausf] INFO: [5dbc56a0-412b-41ef-a83a-ad8280d99534] (NRF-notify) NF Profile updated (../src/ausf/nnrf-handler.c:198)
 >>>>>>> 46e484da05b87708aa37887e3d267945ae46cdea
+Open5GS daemon v2.4.4
+
+09/06 13:29:31.309: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:29:31.310: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+09/06 13:29:31.313: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/06 13:29:31.315: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+09/06 13:29:31.318: [ausf] INFO: [0c6a63d8-6c54-41ef-bf47-a9ee022e4bc3] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/06 13:34:31.848: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:34:31.848: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+09/06 13:34:31.855: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/06 13:34:31.864: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+09/06 13:34:31.867: [ausf] INFO: [bf8d2702-6c54-41ef-920c-29da19ce328c] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/06 13:38:22.121: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:129)
+09/06 13:38:22.122: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:132)
+09/06 13:38:22.123: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/06 13:38:22.124: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+09/06 13:38:22.126: [ausf] INFO: [48cda9b0-6c55-41ef-8c57-854684d41d0a] NF registred [Heartbeat:10s] (../src/ausf/nf-sm.c:198)
+09/06 13:38:22.137: [ausf] INFO: [48cd614e-6c55-41ef-9d72-11e42d3ad6dd] (NRF-notify) NF registered (../src/ausf/nnrf-handler.c:179)
+09/06 13:38:22.137: [ausf] INFO: [48cd614e-6c55-41ef-9d72-11e42d3ad6dd] (NRF-notify) NF Profile updated (../src/ausf/nnrf-handler.c:198)
