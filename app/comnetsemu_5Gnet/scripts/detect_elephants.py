@@ -8,7 +8,7 @@ rt = 'http://127.0.0.1:8008'
 flow = {'keys':'link:inputifindex,ipsource,ipdestination','value':'bytes'}
 requests.put(rt+'/flow/pair/json',data=json.dumps(flow))
 
-threshold = {'metric':'pair','value':1000000/8,'byFlow':True,'timeout':1}
+threshold = {'metric':'pair','value':10000000/8,'byFlow':True,'timeout':1}
 requests.put(rt+'/threshold/elephant/json',data=json.dumps(threshold))
 
 eventurl = rt+'/events/json?thresholdID=elephant&maxEvents=10&timeout=60'
@@ -22,8 +22,19 @@ while 1 == 1:
   eventID = events[0]["eventID"]
   events.reverse()
   for e in events:
-    print("Elephant flow detected:")
+    print("Potential attack detected:")
     print( e['flowKey'] )
-    requests.post("http://localhost:8086/digitaltwin",
-      data="[To DTE] Large Flow detected 😀".encode(encoding='utf-8'))
-    time.sleep(10)
+    # Create message to DEME
+    url = 'http://192.168.130.9:65123'
+    headers = {'Content-Type': 'application/json'}
+    data = open('/home/vagrant/comnetsemu/app/comnetsemu_5Gnet/scripts/DEME_interface/sample-DoS.json', 'rb').read()
+    response = requests.post(url, headers=headers, data=data)
+    print("\n")
+    print("URL:", url)
+    print("Headers:", headers)
+    print("Payload:", data)
+    print("DEME Response:", response.status_code)
+    #print(response.text)
+    # Alternative command by shell
+    #curl --location 'http://192.168.130.9:65123' --header 'Content-Type: application/json' --data @DEME_interface/sample-DoS.json
+    time.sleep(30)

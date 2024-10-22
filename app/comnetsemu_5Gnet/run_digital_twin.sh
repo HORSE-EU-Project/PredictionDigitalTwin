@@ -6,9 +6,10 @@ sleep 5
 echo "[ RYU ] *** Running RYU controller"
 ./scripts/run_ryu.sh &
 sleep 5
-# echo "[ DETECT ] *** Running detection script"
-# python3 ./scripts/detect_elephants.py &
+echo "[ DETECT ] *** Running detection script"
+python3 ./scripts/detect_elephants.py &
 echo "[ EM ] *** Running input interface with Early Modeling"
 python3 ./scripts/EM-interface.py &
+sleep 5
 echo "[ NDT ] *** Running Digital Twin Engine (Comnetsemu)"
 sudo python3 DT_v1.0.py

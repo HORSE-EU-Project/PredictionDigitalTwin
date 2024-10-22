@@ -270,3 +270,59 @@ Open5GS daemon v2.4.4
 09/06 13:38:22.148: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
 09/06 13:38:22.154: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
 09/06 13:38:22.167: [udr] INFO: [48d0ba88-6c55-41ef-b2c1-fd86fa80e93a] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/07 14:21:12.301: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+09/07 14:21:12.301: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+09/07 14:21:12.305: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/07 14:21:12.306: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/07 14:21:12.306: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/07 14:21:12.308: [udr] INFO: [6f29be08-6d24-41ef-a357-0ddab02e3f96] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/07 14:22:24.537: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+09/07 14:22:24.537: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+09/07 14:22:24.546: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/07 14:22:24.546: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/07 14:22:24.546: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/07 14:22:24.554: [udr] INFO: [9a3822ba-6d24-41ef-98e1-fdae7e1922da] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/07 14:24:04.890: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+09/07 14:24:04.890: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+09/07 14:24:04.898: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/07 14:24:04.898: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/07 14:24:04.898: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/07 14:24:04.903: [udr] INFO: [d608a274-6d24-41ef-95b2-bd39adde3d69] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/07 14:33:29.437: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+09/07 14:33:29.437: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+09/07 14:33:29.443: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/07 14:33:29.443: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/07 14:33:29.444: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/07 14:33:29.447: [udr] INFO: [2687b428-6d26-41ef-a80f-6f2d75d560d0] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/07 14:41:42.340: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+09/07 14:41:42.340: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+09/07 14:41:42.344: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/07 14:41:42.345: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/07 14:41:42.347: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/07 14:41:42.349: [udr] INFO: [4c52bd64-6d27-41ef-856c-ddf682f19efb] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/07 15:40:26.476: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+09/07 15:40:26.476: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+09/07 15:40:26.503: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/07 15:40:26.504: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/07 15:40:26.505: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/07 15:40:26.508: [udr] INFO: [80df2498-6d2f-41ef-903a-3d534f39f13c] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
+Open5GS daemon v2.4.4
+
+09/07 15:58:08.299: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:129)
+09/07 15:58:08.299: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:132)
+09/07 15:58:08.303: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/07 15:58:08.303: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:144)
+09/07 15:58:08.303: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/07 15:58:08.308: [udr] INFO: [f9c4703c-6d31-41ef-bf2f-ebe21390d726] NF registred [Heartbeat:10s] (../src/udr/nf-sm.c:198)
