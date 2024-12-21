@@ -5,7 +5,7 @@
 >Emulate a 5G network deployment in comnetsemu.
 Demonstrate distributed UPF deployment and slice-base UPF selection.
 
-![topology](/images/newTopology.png)
+![topology](./images/newTopology.png)
 
 #### Networking II project team:
 * Bennati Jacopo (mat. 209869)
