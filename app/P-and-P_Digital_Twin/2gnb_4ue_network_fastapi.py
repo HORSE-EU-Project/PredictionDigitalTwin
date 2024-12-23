@@ -42,7 +42,11 @@ if __name__ == "__main__":
 
     env = dict()
 
-    net = Containernet(controller=Controller, link=TCLink)
+    #net = Containernet(controller=Controller, build=False, link=TCLink)
+    net = Containernet(
+        switch=OVSKernelSwitch,
+        build=False,
+        link=TCLink)
 
     info("*** Adding Host for open5gs CP\n")
     cp = net.addDockerHost(
