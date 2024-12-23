@@ -1,41 +1,41 @@
 UERANSIM v3.2.6
-[2024-12-21 10:33:21.998] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
-[2024-12-21 10:33:22.012] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
-[2024-12-21 10:33:22.012] [nas] [info] Selected plmn[001/01]
-[2024-12-21 10:33:22.012] [rrc] [info] Selected cell plmn[001/01] tac[1] category[SUITABLE]
-[2024-12-21 10:33:22.012] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
-[2024-12-21 10:33:22.012] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
-[2024-12-21 10:33:22.012] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
-[2024-12-21 10:33:22.013] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-[2024-12-21 10:33:22.013] [nas] [debug] Sending Initial Registration
-[2024-12-21 10:33:22.013] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
-[2024-12-21 10:33:22.013] [rrc] [debug] Sending RRC Setup Request
-[2024-12-21 10:33:22.018] [rrc] [info] RRC connection established
-[2024-12-21 10:33:22.018] [rrc] [info] UE switches to state [RRC-CONNECTED]
-[2024-12-21 10:33:22.018] [nas] [info] UE switches to state [CM-CONNECTED]
-[2024-12-21 10:33:22.156] [nas] [debug] Authentication Request received
-[2024-12-21 10:33:22.156] [nas] [debug] Sending Authentication Failure due to SQN out of range
-[2024-12-21 10:33:22.297] [nas] [debug] Authentication Request received
-[2024-12-21 10:33:22.437] [nas] [debug] Security Mode Command received
-[2024-12-21 10:33:22.437] [nas] [debug] Selected integrity[2] ciphering[0]
-[2024-12-21 10:33:22.582] [nas] [debug] Registration accept received
-[2024-12-21 10:33:22.582] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-[2024-12-21 10:33:22.582] [nas] [debug] Sending Registration Complete
-[2024-12-21 10:33:22.582] [nas] [info] Initial Registration is successful
-[2024-12-21 10:33:22.583] [nas] [debug] Sending PDU Session Establishment Request
-[2024-12-21 10:33:22.584] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-[2024-12-21 10:33:22.584] [nas] [debug] Sending PDU Session Establishment Request
-[2024-12-21 10:33:22.584] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-[2024-12-21 10:33:22.845] [nas] [debug] Configuration Update Command received
-[2024-12-21 10:33:22.868] [nas] [debug] PDU Session Establishment Accept received
-[2024-12-21 10:33:22.868] [nas] [info] PDU Session establishment is successful PSI[1]
-[2024-12-21 10:33:22.887] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun2, 10.45.0.4] is up.
-[2024-12-21 10:33:22.969] [nas] [debug] PDU Session Establishment Accept received
-[2024-12-21 10:33:22.969] [nas] [info] PDU Session establishment is successful PSI[2]
-[2024-12-21 10:33:22.988] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun3, 10.46.0.4] is up.
-[2024-12-21 10:33:43.480] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
-[2024-12-21 10:33:43.480] [nas] [error] Radio link failure detected
-[2024-12-21 10:33:43.480] [nas] [info] UE switches to state [CM-IDLE]
-[2024-12-21 10:33:43.480] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-[2024-12-21 10:33:43.480] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
-[2024-12-21 10:33:43.480] [nas] [error] PLMN selection failure, no cells in coverage
+[2024-12-21 18:04:33.249] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2024-12-21 18:04:33.266] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2024-12-21 18:04:33.266] [nas] [info] Selected plmn[001/01]
+[2024-12-21 18:04:33.266] [rrc] [info] Selected cell plmn[001/01] tac[1] category[SUITABLE]
+[2024-12-21 18:04:33.266] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2024-12-21 18:04:33.266] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2024-12-21 18:04:33.266] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2024-12-21 18:04:33.269] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-21 18:04:33.269] [nas] [debug] Sending Initial Registration
+[2024-12-21 18:04:33.269] [rrc] [debug] Sending RRC Setup Request
+[2024-12-21 18:04:33.269] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2024-12-21 18:04:33.275] [rrc] [info] RRC connection established
+[2024-12-21 18:04:33.275] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2024-12-21 18:04:33.275] [nas] [info] UE switches to state [CM-CONNECTED]
+[2024-12-21 18:04:33.415] [nas] [debug] Authentication Request received
+[2024-12-21 18:04:33.415] [nas] [debug] Sending Authentication Failure due to SQN out of range
+[2024-12-21 18:04:33.557] [nas] [debug] Authentication Request received
+[2024-12-21 18:04:33.697] [nas] [debug] Security Mode Command received
+[2024-12-21 18:04:33.697] [nas] [debug] Selected integrity[2] ciphering[0]
+[2024-12-21 18:04:33.844] [nas] [debug] Registration accept received
+[2024-12-21 18:04:33.844] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2024-12-21 18:04:33.844] [nas] [debug] Sending Registration Complete
+[2024-12-21 18:04:33.844] [nas] [info] Initial Registration is successful
+[2024-12-21 18:04:33.845] [nas] [debug] Sending PDU Session Establishment Request
+[2024-12-21 18:04:33.845] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-21 18:04:33.845] [nas] [debug] Sending PDU Session Establishment Request
+[2024-12-21 18:04:33.845] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2024-12-21 18:04:34.106] [nas] [debug] Configuration Update Command received
+[2024-12-21 18:04:34.130] [nas] [debug] PDU Session Establishment Accept received
+[2024-12-21 18:04:34.130] [nas] [info] PDU Session establishment is successful PSI[1]
+[2024-12-21 18:04:34.150] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun2, 10.45.0.4] is up.
+[2024-12-21 18:04:34.232] [nas] [debug] PDU Session Establishment Accept received
+[2024-12-21 18:04:34.232] [nas] [info] PDU Session establishment is successful PSI[2]
+[2024-12-21 18:04:34.252] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun3, 10.46.0.4] is up.
+[2024-12-21 18:11:44.828] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+[2024-12-21 18:11:44.829] [nas] [error] Radio link failure detected
+[2024-12-21 18:11:44.829] [nas] [info] UE switches to state [CM-IDLE]
+[2024-12-21 18:11:44.829] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2024-12-21 18:11:44.829] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+[2024-12-21 18:11:44.829] [nas] [error] PLMN selection failure, no cells in coverage
