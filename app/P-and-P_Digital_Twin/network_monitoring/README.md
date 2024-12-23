@@ -92,4 +92,9 @@ Configure Grafana to Use Prometheus:
 Now you can create custom dashboards in Grafana to visualize the Docker container metrics collected by cAdvisor and stored in Prometheus.
 ```
 
+You can generate load using:
+```
+docker run -it --name cpustress --rm containerstack/cpustress --cpu 4 --timeout 30s --metrics-brief
+```
+
 Feel free to copy the entire block above and use it as needed! 😊
