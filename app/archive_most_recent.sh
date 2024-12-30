@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the directory to search (replace '/path/to/your/directory' with your actual directory)
-DIRECTORY="./comnetsemu_5Gnet/"
+DIRECTORY="./P-and-P_Digital_Twin/"
 
 # Specify the number of days (N) for modification time
 N_DAYS=10

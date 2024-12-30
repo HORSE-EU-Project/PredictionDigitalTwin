@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreatModel id="tm_8b2c65n3dr87345s54gd746b7h83t82k" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Saman%20Tariq/Downloads/threatModel%20(3).xsd">
+    <ThreatModelElement id="tme_6d3c88w5rt45873g98el723f7g92j63l">
+        <CyberAttack>
+            <Type>DDoS signalling</Type>
+            <Pattern/>
+            <Vector/>
+            <Atlas_MITRE>
+                <Type/>
+                <ID>AML.T0000.000</ID>
+            </Atlas_MITRE>
+        </CyberAttack>
+        <ControlAction>
+            <Preventive>
+                <PreventiveAction>
+                    <Type>Ratelimitcustomrule</Type>
+                    <Atlas_MITRE_ID/>
+                </PreventiveAction>
+                <preventiveCondition type="ratelimitcustomrulecondition">
+                    <Rulecondition>
+                        <SourceAddress>HTTPtraffic</SourceAddress>
+                    </Rulecondition>
+                </preventiveCondition>
+            </Preventive>
+        </ControlAction>
+    </ThreatModelElement>
+</ThreatModel>
+
