@@ -1,0 +1,64 @@
+---
+- name: Execute task in pods
+  hosts: localhost
+  gather_facts: no
+  vars:
+    cgclients: []
+    ddosclients: []
+
+  tasks:
+#--------------------------------------Configuration------------------------------------------------------------------------------------
+    - name: Include client counts
+      include_vars:
+        file: clients_number.yaml
+  
+
+    - name: Create ddosclients_count
+      set_fact:
+        ddosclients: "{{ ddosclients + [{'name': 'dns-c' ~ item, 'pod': 'dns-c' ~ item}] }}"
+      loop: "{{ range(1, ddos_count + 1)|list }}"
+
+    - name: Include server IPs
+      include_vars:
+        file: "{{ playbook_dir }}/server_ips.yaml"
+
+    - name: Debug loaded server IPs
+      debug:
+        var: ddosserver_ip
+        
+
+#-----------------------------TCPDUMPS-------------------------------------------------------------------------------------------------
+
+    - name: Start dumps
+      shell: kubectl exec -n horse-ddos-dns-simp {{ item.pod }} -- tcpdump -i {{ item.interface }} -w /home/{{ item.pod }}_{{ item.interface }}.pcap
+      loop:
+        - { pod: "ceos1", interface: "eth1" }
+        - { pod: "ceos1", interface: "eth2" }
+        - { pod: "ceos2", interface: "eth1" }
+        - { pod: "ceos2", interface: "eth2" }
+        - { pod: "ceos2", interface: "eth3" }
+      async: 3600
+      poll: 0
+
+
+#---------------------------------Tasks execution---------------------------------------------------------------------------------------
+    - name: Execute dns-amp
+      shell: kubectl exec -n horse-ddos-dns-simp {{ item.pod }} -- env ddosserver={{ ddosserver_ip }} /bin/bash -c './dns_amp/dns-amp $ddosserver -f domain.txt -t ANY -p 53 -s 10.0.25.1 -S -n 5'
+      loop: "{{ ddosclients }}"
+      async: 3600 
+      poll: 0
+      register: acrossclient_result
+      
+      
+      
+          # Waiting tasks
+    - name: Waiting
+      async_status:
+        jid: "{{ item.ansible_job_id }}"
+      loop: "{{ (acrossclient_result.results | default([])) }}"
+      register: acrossclient_jobs
+      until: acrossclient_jobs.finished
+      retries: 999
+      delay: 15
+
+

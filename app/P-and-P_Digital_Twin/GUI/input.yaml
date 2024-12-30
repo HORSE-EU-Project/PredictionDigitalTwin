@@ -1,0 +1,552 @@
+name: ddos
+nodes:
+- name: cgserver
+  vendor: HOST
+  interfaces:
+    eth1:
+      name: eth1
+- name: csr1
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r1-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+    eth5:
+      name: GigabitEthernet5
+- name: csr4
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r4-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+- name: csr5
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r5-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+- name: csr6
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r6-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+- name: csr7
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r7-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+    eth5:
+      name: GigabitEthernet5
+- name: csr2
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r2-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+    eth5:
+      name: GigabitEthernet5
+- name: csr3
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r3-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+    eth5:
+      name: GigabitEthernet5
+- name: csr11
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r11-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+    eth5:
+      name: GigabitEthernet5
+    eth6:
+      name: GigabitEthernet6
+    eth7:
+      name: GigabitEthernet7
+    eth8:
+      name: GigabitEthernet8
+    eth9:
+      name: GigabitEthernet9
+    eth10:
+      name: GigabitEthernet10
+    eth11:
+      name: GigabitEthernet11
+    eth12:
+      name: GigabitEthernet12
+    eth13:
+      name: GigabitEthernet13
+- name: csr12
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r12-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth4:
+      name: GigabitEthernet4
+- name: csr13
+  vendor: CISCO
+  config:
+    config_path: /
+    config_file: iosxe_config.txt
+    file: r13-config
+    image: docker.io/vrnetlab/vr-csr:17.03.06
+  interfaces:
+    eth2:
+      name: GigabitEthernet2
+    eth3:
+      name: GigabitEthernet3
+    eth4:
+      name: GigabitEthernet4
+    eth5:
+      name: GigabitEthernet5
+    eth6:
+      name: GigabitEthernet6
+    eth7:
+      name: GigabitEthernet7
+    eth8:
+      name: GigabitEthernet8
+    eth9:
+      name: GigabitEthernet9
+    eth10:
+      name: GigabitEthernet10
+    eth11:
+      name: GigabitEthernet11
+    eth12:
+      name: GigabitEthernet12
+    eth13:
+      name: GigabitEthernet13
+- name: dnsc10
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient10-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc8
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient8-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc2
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient2-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc1
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient1-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc9
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient9-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc3
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient3-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc4
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient4-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc5
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient5-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc6
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient6-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnsc7
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsclient7-config.py
+    image: dnsclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dnss
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/dnsserver-config.py
+    image: dnsserver:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddoss
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosserver-config.py
+    image: ddosserver:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc1
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient1-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc2
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient2-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc3
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient3-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc7
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient7-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc5
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient5-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc4
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient4-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc8
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient8-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc10
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient10-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc6
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient6-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: ddosc9
+  vendor: HOST
+  config:
+    config_path: /etc
+    config_file: config.py
+    file: /configuracion/ddosclient9-config.py
+    image: ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+links:
+- a_node: csr4
+  a_int: eth2
+  z_node: csr1
+  z_int: eth2
+- a_node: csr5
+  a_int: eth3
+  z_node: csr2
+  z_int: eth5
+- a_node: csr6
+  a_int: eth3
+  z_node: csr5
+  z_int: eth2
+- a_node: csr6
+  a_int: eth4
+  z_node: csr4
+  z_int: eth4
+- a_node: csr7
+  a_int: eth2
+  z_node: csr6
+  z_int: eth2
+- a_node: csr7
+  a_int: eth4
+  z_node: csr3
+  z_int: eth3
+- a_node: csr2
+  a_int: eth3
+  z_node: csr1
+  z_int: eth3
+- a_node: csr3
+  a_int: eth4
+  z_node: csr2
+  z_int: eth4
+- a_node: csr11
+  a_int: eth2
+  z_node: csr1
+  z_int: eth4
+- a_node: csr11
+  a_int: eth3
+  z_node: csr4
+  z_int: eth3
+- a_node: csr11
+  a_int: eth4
+  z_node: dnsc2
+  z_int: eth1
+- a_node: csr11
+  a_int: eth10
+  z_node: dnsc8
+  z_int: eth1
+- a_node: csr11
+  a_int: eth12
+  z_node: dnsc10
+  z_int: eth1
+- a_node: csr12
+  a_int: eth2
+  z_node: csr2
+  z_int: eth2
+- a_node: csr12
+  a_int: eth4
+  z_node: csr3
+  z_int: eth5
+- a_node: csr13
+  a_int: eth2
+  z_node: csr3
+  z_int: eth2
+- a_node: csr13
+  a_int: eth3
+  z_node: csr7
+  z_int: eth3
+- a_node: csr13
+  a_int: eth4
+  z_node: ddosc1
+  z_int: eth1
+- a_node: csr13
+  a_int: eth5
+  z_node: ddosc2
+  z_int: eth1
+- a_node: dnsc1
+  a_int: eth1
+  z_node: csr11
+  z_int: eth7
+- a_node: dnsc9
+  a_int: eth1
+  z_node: csr11
+  z_int: eth11
+- a_node: dnsc3
+  a_int: eth1
+  z_node: csr11
+  z_int: eth13
+- a_node: dnsc4
+  a_int: eth1
+  z_node: csr11
+  z_int: eth5
+- a_node: dnsc5
+  a_int: eth1
+  z_node: csr11
+  z_int: eth6
+- a_node: dnsc6
+  a_int: eth1
+  z_node: csr11
+  z_int: eth8
+- a_node: dnsc7
+  a_int: eth1
+  z_node: csr11
+  z_int: eth9
+- a_node: cgserver
+  a_int: eth1
+  z_node: csr7
+  z_int: eth5
+- a_node: ddoss
+  a_int: eth1
+  z_node: csr1
+  z_int: eth5
+- a_node: ddosc3
+  a_int: eth1
+  z_node: csr13
+  z_int: eth6
+- a_node: ddosc7
+  a_int: eth1
+  z_node: csr13
+  z_int: eth10
+- a_node: ddosc5
+  a_int: eth1
+  z_node: csr13
+  z_int: eth8
+- a_node: ddosc4
+  a_int: eth1
+  z_node: csr13
+  z_int: eth7
+- a_node: ddosc8
+  a_int: eth1
+  z_node: csr13
+  z_int: eth11
+- a_node: ddosc10
+  a_int: eth1
+  z_node: csr13
+  z_int: eth13
+- a_node: ddosc6
+  a_int: eth1
+  z_node: csr13
+  z_int: eth9
+- a_node: ddosc9
+  a_int: eth1
+  z_node: csr13
+  z_int: eth12

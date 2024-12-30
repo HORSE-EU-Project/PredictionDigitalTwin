@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreatModel id="tm_8b2c65n3dr87345s54gd746b7h83t82k" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Saman%20Tariq/Downloads/threatModel%20(3).xsd">
+	<ThreatModelElement id="tme_6d3c88w5rt45873g98el723f7g92j63l">
+		<CyberAttack>
+			<Type>API vulnerability (RNAA attack NEF exposes 3GPP capability via API)</Type>
+			<Pattern/>
+			<Vector/>
+			<CAPIF>
+				<Type>3GPP Technical Specification (TS)</Type>
+				<ID>TS 23.222</ID>
+			</CAPIF>
+		</CyberAttack>
+		<ControlAction>
+			<Mitigation>
+				<MitigationAction>
+					<Type>AuthenticationAndAuthorization</Type>
+					<CAPIF_SEC_ID>3GPP TS 33.122</CAPIF_SEC_ID>
+				</MitigationAction>
+				<MitigationCondition type="AuthenticationAndAuthorizationCondition">
+					<AuthenticationAndAuthorizationCondition>
+						<security_protocol_features>
+						<OAuth2_mutual_TLS>PSK</OAuth2_mutual_TLS>
+						</security_protocol_features>
+					<Limiting_access><SourceAddress>IP address</SourceAddress>
+					</Limiting_access>
+						</AuthenticationAndAuthorizationCondition>
+				</MitigationCondition>
+			</Mitigation>
+		</ControlAction>
+	</ThreatModelElement>
+</ThreatModel>

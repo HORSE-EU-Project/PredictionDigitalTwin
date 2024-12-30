@@ -1,0 +1,1 @@
+echo "Ciao $1"

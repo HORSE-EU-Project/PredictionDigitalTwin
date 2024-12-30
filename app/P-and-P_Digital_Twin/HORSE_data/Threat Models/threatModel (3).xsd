@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ThreatModel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ThreatModelElement" type="ThreatModelElementType" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="pre-requisitetype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ThreatActorType">
+		<xs:sequence>
+			<xs:element name="AdversaryGroup">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="Internal|External"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Skill" type="xs:string" minOccurs="0"/>
+			<xs:element name="Techniques" type="xs:anySimpleType"/>
+			<xs:element name="RequiredResources" type="xs:anySimpleType"/>
+			<xs:element name="Process" type="ProcessType" minOccurs="0"/>
+			<xs:element name="TTP" type="TTPType"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ProcessType">
+		<xs:sequence>
+			<xs:element name="Motivation" type="xs:string"/>
+			<xs:element name="Compaign" type="xs:string"/>
+			<xs:element name="Intention" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TTPType">
+		<xs:sequence>
+			<xs:element name="Tactics" type="xs:string"/>
+			<xs:element name="Technique" type="xs:string"/>
+			<xs:element name="Procedure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ThreatModelElementType">
+		<xs:sequence>
+			<xs:element name="ThreatActor" minOccurs="0">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ThreatActorType"/>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Vulnerability" minOccurs="0">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="VulnerabilityType"/>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Threat" type="ThreatType" minOccurs="0"/>
+			<xs:element name="CyberAttack" type="CyberAttackType"/>
+			<xs:element name="ControlAction" type="ControlActionType"/>
+			<xs:element name="OrganizationAsset" type="OrganizationAssetType" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ThreatType">
+		<xs:annotation>
+			<xs:documentation>Parent Class</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Name">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[any]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Pattern">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[any]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="id" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[any]"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="CyberAttackType">
+		<xs:sequence>
+			<xs:element name="Type" type="xs:string"/>
+			<xs:element name="Pattern" type="xs:string"/>
+			<xs:element name="Pre-Requisite" type="xs:string" minOccurs="0"/>
+			<xs:element name="Vector" type="xs:string" minOccurs="0"/>
+			<xs:element name="ATT_CK" type="ATT_CKType"/>
+			<xs:element name="Evaluation" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Estimated_Impact" type="ImpactType"/>
+						<xs:element name="Real_Impact" type="Impact_Type" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImpactType">
+		<xs:sequence>
+			<xs:element name="PerformanceParameter" type="xs:string"/>
+			<xs:element name="SystemServices" type="xs:string"/>
+			<xs:element name="SystemComponent" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="Impact_Type">
+		<xs:sequence>
+			<xs:element name="AttackPropagation" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MitigationAndControlType_1">
+		<xs:choice>
+			<xs:element name="Preventive" type="xs:anySimpleType"/>
+			<xs:element name="Directive" type="DirectiveType"/>
+			<xs:element name="Corrective" type="xs:anySimpleType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ControlActionType">
+		<xs:choice>
+			<xs:element name="Preventive" type="PreventiveType"/>
+			<xs:element name="Mitigation" type="MitigationType" maxOccurs="unbounded"/>
+			<xs:element name="Corrective" type="xs:anySimpleType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ATT_CKType">
+		<xs:sequence>
+			<xs:element name="Type" type="xs:string"/>
+			<xs:element name="ID" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="VulnerabilityType">
+		<xs:annotation>
+			<xs:documentation>child of ThreatActor and Threat</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AttackSurface" type="AttackSurfaceType"/>
+			<xs:element name="Source" type="xs:string"/>
+			<xs:element name="Destination" type="xs:string"/>
+			<xs:element name="Timestamp" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AttackSurfaceType">
+		<xs:sequence>
+			<xs:element name="UserEquipment" type="xs:string"/>
+			<xs:element name="Network" type="xs:string"/>
+			<xs:element name="Services" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DirectiveType">
+		<xs:sequence>
+			<xs:element name="Mitigation" type="MitigationType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MitigationType">
+		<xs:sequence>
+			<xs:element name="MitigationAction" type="MitigationActionType" maxOccurs="unbounded"/>
+			<xs:element name="MitigationCondition" type="MitigationConditionType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MitigationActionType">
+		<xs:sequence>
+			<xs:element name="Type" type="xs:string"/>
+			<xs:element name="ATT_CKID" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MitigationConditionType">
+		<xs:sequence>
+			<xs:element name="FilterCondition" type="FilterConditionType"/>
+			<xs:element name="isCNF" type="xs:boolean" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="type" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="FilterConditionType">
+		<xs:choice>
+			<xs:element name="SourceAddress" type="xs:string"/>
+			<xs:element name="SourcePort" type="xs:string"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="OrganizationAssetType">
+		<xs:sequence>
+			<xs:element name="Criticality"/>
+			<xs:element name="AssetsType"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="PreventiveType">
+		<xs:sequence>
+			<xs:element name="PreventiveRule"/>
+			<xs:element name="PreventiveCondition"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

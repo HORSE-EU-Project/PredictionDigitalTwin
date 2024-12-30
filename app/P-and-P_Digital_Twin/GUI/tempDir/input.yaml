@@ -1,0 +1,269 @@
+name: horse-ddos-dns-simp
+nodes:
+- name: ceos2
+  model: ceos
+  os: eos
+  vendor: ARISTA
+  config:
+    config_path: /mnt/flash
+    config_file: startup-config
+    file: r2-config
+  interfaces:
+    eth1:
+      name: Ethernet1
+    eth2:
+      name: Ethernet2
+    eth3:
+      name: Ethernet3
+- name: dns-c10
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c10-config.py
+    file: /configuracion/dns-c10-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c8
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c8-config.py
+    file: /configuracion/dns-c8-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c2
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c2-config.py
+    file: /configuracion/dns-c2-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c1
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c1-config.py
+    file: /configuracion/dns-c1-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c9
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c9-config.py
+    file: /configuracion/dns-c9-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c3
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c3-config.py
+    file: /configuracion/dns-c3-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c4
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c4-config.py
+    file: /configuracion/dns-c4-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c5
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c5-config.py
+    file: /configuracion/dns-c5-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c6
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c6-config.py
+    file: /configuracion/dns-c6-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-c7
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-c7-config.py
+    file: /configuracion/dns-c7-config.py
+    image: javi14t/ddosclient:last
+  interfaces:
+    eth1:
+      name: Ethernet1
+- name: dns-s
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: dns-s-config.py
+    file: /configuracion/dns-s-config.py
+    image: javi14t/ddosserver:last
+  interfaces:
+    eth1:
+      name: Ethernet0
+- name: internet
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: internet-config.py
+    file: /configuracion/internet-config.py
+    image: alpine:latest
+  interfaces:
+    eth1:
+      name: Ethernet0
+- name: 5g-core
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: 5g-core-config.py
+    file: /configuracion/5g-core-config.py
+    image: alpine:latest
+  interfaces:
+    eth1:
+      name: Ethernet0
+- name: upf
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: upf-config.py
+    file: /configuracion/upf-config.py
+    image: alpine:latest
+  interfaces:
+    eth1:
+      name: Ethernet0
+- name: ceos1
+  model: ceos
+  os: eos
+  vendor: ARISTA
+  config:
+    config_path: /mnt/flash
+    config_file: startup-config
+    file: r1-config
+  interfaces:
+    eth1:
+      name: Ethernet1
+    eth2:
+      name: Ethernet2
+    eth3:
+      name: Ethernet3
+    eth4:
+      name: Ethernet4
+- name: gnb
+  vendor: HOST
+  config:
+    config_path: /home/cognet
+    config_file: gnb-config.py
+    file: /configuracion/gnb-config.py
+    image: alpine:latest
+  interfaces:
+    eth1:
+      name: Ethernet1
+    eth2:
+      name: Ethernet2
+    eth3:
+      name: Ethernet3
+    eth4:
+      name: Ethernet4
+    eth5:
+      name: Ethernet5
+    eth6:
+      name: Ethernet6
+    eth7:
+      name: Ethernet7
+    eth8:
+      name: Ethernet8
+    eth9:
+      name: Ethernet9
+    eth10:
+      name: Ethernet10
+    eth11:
+      name: Ethernet11
+links:
+- a_node: ceos2
+  a_int: eth1
+  z_node: ceos1
+  z_int: eth2
+- a_node: dns-c10
+  a_int: eth1
+  z_node: gnb
+  z_int: eth10
+- a_node: dns-c8
+  a_int: eth1
+  z_node: gnb
+  z_int: eth8
+- a_node: dns-c2
+  a_int: eth1
+  z_node: gnb
+  z_int: eth2
+- a_node: dns-c1
+  a_int: eth1
+  z_node: gnb
+  z_int: eth1
+- a_node: dns-c9
+  a_int: eth1
+  z_node: gnb
+  z_int: eth9
+- a_node: dns-c3
+  a_int: eth1
+  z_node: gnb
+  z_int: eth3
+- a_node: dns-c4
+  a_int: eth1
+  z_node: gnb
+  z_int: eth4
+- a_node: dns-c5
+  a_int: eth1
+  z_node: gnb
+  z_int: eth5
+- a_node: dns-c6
+  a_int: eth1
+  z_node: gnb
+  z_int: eth6
+- a_node: dns-c7
+  a_int: eth1
+  z_node: gnb
+  z_int: eth7
+- a_node: dns-s
+  a_int: eth1
+  z_node: ceos2
+  z_int: eth2
+- a_node: internet
+  a_int: eth1
+  z_node: ceos2
+  z_int: eth3
+- a_node: ceos1
+  a_int: eth3
+  z_node: upf
+  z_int: eth1
+- a_node: ceos1
+  a_int: eth4
+  z_node: 5g-core
+  z_int: eth1
+- a_node: gnb
+  a_int: eth11
+  z_node: ceos1
+  z_int: eth1

@@ -86,7 +86,28 @@ To run tests simply type:
 sudo python3 TestNet5G.py
 ```
 
-## Test with Wireshark
+### Testing 5G
+
+To run ping tests, please select the correct vNIC:
+
+```
+ping -I uesimtun3 8.8.8.8
+```
+
+To run iperf tests, please bind the server to the correct vNIC:
+
+```
+iperf3 -s -B 192.168.0.113
+```
+
+and on the client:
+
+```
+iperf3 -c 192.168.0.113
+```
+
+
+### Test with Wireshark
 
 Verify if it's correctly installed with all dependencies:
 
