@@ -226,11 +226,13 @@ Main maintainer:
 
 Special Acknowledgements to:
 - Riccardo Fedrizzi - rfedrizzi@fbk.eu
+
 for the original UERANSIM/Open5Gs port
 
 - Bennati Jacopo
 - Finetti Emiliano
 - Arrondo Diego
+  
 for the updated UERANSIM/Open5Gs implementation. See [original README.md file](./README_5g_network.md).
 
 
