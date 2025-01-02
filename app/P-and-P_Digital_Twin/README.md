@@ -119,7 +119,7 @@ Be sure that the additional libraries are provided in the vm_provisioning.sh scr
 
 The following briefly illustrates the default HORSE deployment scenario.
 
-<img src="./HORSE_data/newTopology.png" title="HORSE Default topology" width=1000px></img>
+<img src="./image/newTopology.png" title="HORSE Default topology" width=1000px></img>
 
 #### Original deployment scenario
 
