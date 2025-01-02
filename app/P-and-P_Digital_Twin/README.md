@@ -86,7 +86,7 @@ To check that the NDT is running correctly, run:
 | | 1235 | (reserved) |
 | Prometheus | 9090 | |
 | cAdvisor | 8080 | |
-| Grafana | 7070 | |
+| Grafana | 7070 | (Login with admin as the username and yourpassword as the password) |
 | sFlow | 8008 | if active |
 | VSCode server | 8888 | to be installed and run manually (password: password) |
 | NTFY server | 80 -> 8086 | to be run manually |
