@@ -38,3 +38,8 @@ sudo ip link delete s1-gnb2
 
 sudo ip link delete s2-mec_server
 sudo ip link delete mec_server-s2
+
+sudo ip link delete s3-dns_s
+sudo ip link delete dns_s-s3
+sudo ip link delete internet_server-s3
+sudo ip link delete s3-internet_server

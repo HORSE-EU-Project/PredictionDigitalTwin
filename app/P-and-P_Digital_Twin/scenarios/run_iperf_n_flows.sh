@@ -5,4 +5,4 @@
 #../cmd_container.sh ue bandwidth="${random_number}M"
 
 # Generate data flows
-../cmd_container.sh ue "iperf3 -t 60 -b 4m -c 192.168.0.201" &
+../cmd_container.sh ue1 "iperf3 -t 60 -b 4m -c 192.168.0.201" &
