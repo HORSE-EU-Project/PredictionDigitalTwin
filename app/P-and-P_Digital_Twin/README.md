@@ -1,137 +1,236 @@
+<img src="./images/HORSE-logo.jpg" title="./images/HORSE-logo.jpg" width=1000px></img>
 
-# Comnetsmu_5gs [Networking II]
+HORSE Prediction and Prevention Digital Twin
+============================================
+*This is the official repository of the Prediction and Prevention Digital Twin developed within the [HORSE SNS JU project](https://horse-6g.eu).
 
+The Prediction and Prevention Digital Twin is a Network Digital Twin built within a single Virtual Machine for compactness.
+It can be run on any PC platform via Vagrant and Virtualbox.
 
->Emulate a 5G network deployment in comnetsemu.
-Demonstrate distributed UPF deployment and slice-base UPF selection.
+The purpose of the Network Digital Twin is to:
+- Emulate a 5G network deployment in comnetsemu.
+- Provide REST APIs to control and interact with the Digital Twin engine (for Prediction and Prevention purposes).
 
-![topology](./images/newTopology.png)
-
-#### Networking II project team:
-* Bennati Jacopo (mat. 209869)
-* Finetti Emiliano (mat. 209076)
-* Arrondo Diego (mat. 209176)
-
-### Prerequisites
-
-- Comnetsemu [[link](https://git.comnets.net/public-repo/comnetsemu)]
+Supported open source software:
+- Comnetsemu: v0.3.0
+- UERANSIM: v3.2.6
+- Open5gs: v2.4.2
 - PyMongo
 - Tabulate
-- PyFiGlet 
+- PyFiGlet
 
-## Build Instructions
+## Install instructions
 
-Clone repository in the comnetsemu VM.
-
+Once the Comnetsemu environment is correctly running, Build the necessary docker images for 5G UERANSIM and Open5GS and other software:
 ```
-cd ~
-git clone https://github.com/jacopo-bennati/comnetsemu_5gs.git
+./install.sh
 ```
-Build the necessary docker images:
+or alternatively build the containers by using the build/build.sh command.
 
+To be able to capture traffic, you need to enable vagrant to use sudo without password.
+This is done by the following command:
 ```
-cd comnetsemu_5gs/build
-./dockerhub_pull.sh
+sudo visudo
 ```
-
-Build the mec server docker image:
-
+and then by putting the following line after the root attributes:
 ```
-cd comnetsemu_5gs/mec_server
-./build.sh
+vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 ```
 
+## Run instructions
 
-## Libraries
+For interactive operation, please run the following commands in different terminals.
 
-### Run install script
-
-Installs all prerequired python modules
+Start Network Digital Twin with Ryu controller and sFlow:
 ```
-cd comnetsemu_5gs/build
-./pyModules.sh
-```
-*If doesn't work try with __sudo__*
-
-*All set :)*
-
-## Run the network topology
-
-Inside the root folder of the repository run the bash script to perform a ___clean and safe start___:
-```
-./runTopology.sh
+./runDigitalTwin.sh
 ```
 
-#### Or instead run it manually
-
-Inside the root folder of the repository run the script as ___sudo___:
+Run the web-based GUI to interact with the Digital Twin (for testing purposes):
 ```
-sudo python3 2gnb_4ue_network.py
+cd GUI
+./launch
 ```
 
-#### Runtime issues
+If you want to test interfaces, too:
+```
+cd customization
+./run_ntfy.sh
+```
 
-If started manually and getting issues try running the clean script located in the root folder: 
+When you quit the NDT, please clean up:
 ```
 ./clean.sh
 ```
 
-## Testing connections
+## Test instructions
 
-### Testnet
-
-To run tests simply type:
-
+To check that the installation of Comnetsemu (see Comnetsemu Build Instructions below) is correct, run:
 ```
-sudo python3 TestNet5G.py
+sudo make test
 ```
+in the comnetsemu/ directory.
 
-### Testing 5G
-
-To run ping tests, please select the correct vNIC:
-
+To check that the NDT is running correctly, run:
 ```
-ping -I uesimtun3 8.8.8.8
+./5g_wait_for_healthy.sh
 ```
 
-To run iperf tests, please bind the server to the correct vNIC:
+## Used ports
+
+| Service | Port | Notes |
+| :-------- | :-------: | :------ |
+| Digital Twin GUI | 8501 |  |
+| Digital Twin API | 8000 | (8000/docs for Swagger) |
+| Open5GS Core | 3000 -> 1234| (user: admin, password: 1423) |
+| sFlow | 8008 | if active |
+| VSCode server | 8888 | to be installed and run manually (password: password) |
+| NTFY server | 80 -> 8086 | to be run manually |
+| Wireshark server | 80 -> 8085 | to be run manually |
+| Reserved by Open5GS | 1235 | |
+
+## Comnetsemu Build Instructions
+
+First, from the host machine, install the original comnetsemu VM:
+```bash
+$ cd ~
+$ git clone https://github.com/HORSE-EU-Project/PredictionDigitalTwin.git
+$ cd ./PredictionDigitalTwin
+$ vagrant up NDT
+# Take a coffee and wait about 15-20 minutes
+
+# SSH into the VM when it's up and ready (The ComNetsEmu banner is printed on the screen)
+$ vagrant ssh NDT
+```
+
+In case Ryu controller does not work properly, please run:
+```
+pip install dnspython==2.2.1
+```
+
+Be sure that the additional libraries are provided in the vm_provisioning.sh script in the /util directory.
+
+
+## Useful information about the HORSE Network Digital Twin
+
+### The HORSE reference network topology and 5GS setup
+
+#### Reference HORSE deployment scenario
+
+The following briefly illustrates the default HORSE deployment scenario.
+
+<img src="./HORSE_data/newTopology.png" title="HORSE Default topology" width=1000px></img>
+
+#### Original deployment scenario
+
+This was the original scenario, that includes 5 DockerHosts as shown in the figure below.
+The UE starts two PDU session one for each slice defined in the core network.
+This picture is provided to describe the configuration of the 5GS and related IP assignments.
+
+<img src="./images/topology.jpg" title="./images/topology.jpg" width=1000px></img>
+
+To configure the 5GC, we can open the WebUI by opening the following page in a browser on the host OS.
+```
+http://<VM_IP>:3000/
+```
+
+### Check UE connections
+
+Notice how the UE DockerHost has been initiated running `open5gs_ue_init.sh` which, based on the configuration provided in `open5gs-ue.yaml`, creates two default UE connections.
+The sessions are started specifying the slice, not the APN. The APN, and thus the associated UPF, is selected by the 5GC since, in `subscriber_profile.json`, a slice is associated to a session with specific DNN.
+
+Enter the container and verify UE connections:
+
+``` 
+$ ./enter_container.sh ue1
+# ifconfig
+``` 
+
+or
 
 ```
-iperf3 -s -B 192.168.0.113
+$ ./enter_container.sh ue1
+# ifconfig
 ```
 
-and on the client:
+You should see interfaces uesimtun0 (for the upf_cld) and uesimtun1 (for the upf_mec), or similar, active.
 
 ```
-iperf3 -c 192.168.0.113
+uesimtun0: flags=369<UP,POINTOPOINT,NOTRAILERS,RUNNING,PROMISC>  mtu 1400
+        inet 10.45.0.2  netmask 255.255.255.255  destination 10.45.0.2
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+uesimtun1: flags=369<UP,POINTOPOINT,NOTRAILERS,RUNNING,PROMISC>  mtu 1400
+        inet 10.46.0.2  netmask 255.255.255.255  destination 10.46.0.2
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
 
-### Test with Wireshark
+Start a ping test to check connectivity:
+``` 
+# ping -c 3 -n -I uesimtun0 www.google.com
+# ping -c 3 -n -I uesimtun1 www.google.com
+``` 
 
-Verify if it's correctly installed with all dependencies:
+### Test the environment
 
-```
-sudo apt-get install wireshark
-```
+You can run tcpdump software to test correct routing of traffic to the related 5G slices:
 
-To run it simply type:
-```
-wireshark
-```
-### Permission issues
+``` 
+$ ./start_tcpdump.sh upf
+``` 
 
-To enable non-root user to listen to devices use this command and add user to ___'wireshark'___ group:
-```
-sudo dpkg-reconfigure wireshark-common
-sudo adduser $USER wireshark
-sudo chmod +x /usr/bin/dumpcap
-```
-note that if you don't have $USER variable you can find it running:
-```
-whoami
-```
-in my case output is : <br>
-___vagrant___
+#### Latency test
+Enter in the UE container:
+``` 
+$ ./enter_container.sh ue
+``` 
 
----
+Start ping test on the interfaces related to the two slices:
+``` 
+# ping -c 3 -n -I uesimtun0 10.45.0.1
+# ping -c 3 -n -I uesimtun1 10.46.0.1
+``` 
+
+Observe the Round Trip Time using uesimtun0 (slice 1 - reaching the UPF in the "cloud DC" with DNN="internet" ) and ueransim1 (slice 2 - reaching the UPF in the 'mec DC' with DNN="mec")
+
+
+#### Bandwidth test
+
+Enter in the UE container:
+``` 
+$ ./enter_container.sh ue1
+``` 
+
+Start bandwidth test leveraging the two slices:
+``` 
+# iperf3 -c 10.45.0.1 -B 10.45.0.2 -t 5
+# iperf3 -c 10.46.0.1 -B 10.46.0.2 -t 5
+``` 
+
+Observe how the data-rate in the two cases follows the maximum data-rate specified for the two slices (2 Mbps for sst 1 and 10Mbps for sst 2).
+
+
+### Contact
+
+Main maintainer:
+- Fabrizio Granelli - fabrizio.granelli@unitn.it
+
+Special Acknowledgements to:
+- Riccardo Fedrizzi - rfedrizzi@fbk.eu
+for the original UERANSIM/Open5Gs port
+
+- Bennati Jacopo
+- Finetti Emiliano
+- Arrondo Diego
+for the updated UERANSIM/Open5Gs implementation. See [original README.md file](./README_5g_network.md).
+
+
