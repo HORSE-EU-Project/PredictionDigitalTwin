@@ -84,13 +84,13 @@ To check that the NDT is running correctly, run:
 | Digital Twin API | 8000 | (8000/docs for Swagger) |
 | Open5GS Core | 3000 -> 1234| (user: admin, password: 1423) |
 | | 1235 | (reserved) |
+| Prometheus | 9090 | |
+| cAdvisor | 8080 | |
+| Grafana | 7070 | |
 | sFlow | 8008 | if active |
 | VSCode server | 8888 | to be installed and run manually (password: password) |
 | NTFY server | 80 -> 8086 | to be run manually |
 | Wireshark server | 80 -> 8085 | to be run manually |
-| Prometheus | 9090 | |
-| cAdvisor | 8080 | |
-| Grafana | 7070 | |
 
 ## Comnetsemu Build Instructions
 
