@@ -90,7 +90,6 @@ Configure Grafana to Use Prometheus:
    - You can import a pre-built dashboard by entering its ID or uploading a JSON file.
 
 Now you can create custom dashboards in Grafana to visualize the Docker container metrics collected by cAdvisor and stored in Prometheus.
-```
 
 You can generate load using:
 ```
