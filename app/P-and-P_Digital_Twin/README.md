@@ -88,6 +88,9 @@ To check that the NDT is running correctly, run:
 | NTFY server | 80 -> 8086 | to be run manually |
 | Wireshark server | 80 -> 8085 | to be run manually |
 | Reserved by Open5GS | 1235 | |
+| Prometheus | 9090 | |
+| cAdvisor | 8080 | |
+| Grafana | 7070 | |
 
 ## Comnetsemu Build Instructions
 
