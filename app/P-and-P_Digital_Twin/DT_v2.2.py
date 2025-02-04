@@ -366,8 +366,8 @@ if __name__ == "__main__":
     info("\n*** Starting network\n")
     net.start()
 
-    print("\n*** Checking network connectivity\n")
-    net.pingAll() 
+    # print("\n*** Checking network connectivity\n")
+    # net.pingAll() 
 
     # Fork between CLI and RESTAPI
     processid = os.fork()
