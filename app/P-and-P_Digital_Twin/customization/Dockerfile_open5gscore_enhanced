@@ -1,0 +1,9 @@
+FROM my5gc_v2-4-4
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        traceroute \
+        tcpreplay && \
+     apt-get autoremove -y &&apt-get autoclean
+
+WORKDIR /open5gs
