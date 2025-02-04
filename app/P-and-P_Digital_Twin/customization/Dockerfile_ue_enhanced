@@ -1,5 +1,5 @@
 FROM myueransim_v3-2-6
 
-RUN apt update && apt install -y hping3 && apt install traceroute && apt install iperf3
+RUN apt update && apt install -y hping3 && apt install -y traceroute && apt install -y iperf3 && apt install -y nmap
 
 WORKDIR /UERANSIM/build
