@@ -11,4 +11,4 @@ cd network_monitoring
 docker compose up -d
 cd ..
 echo "[ NDT ] *** Running Digital Twin Engine (Comnetsemu)"
-sudo python3 DT_v2.2.py
+sudo python3 DT_v2.3.py
