@@ -1,19 +1,5 @@
 UERANSIM v3.2.6
-[2025-05-29 16:52:52.861] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
-[2025-05-29 16:52:53.255] [sctp] [info] SCTP connection established (192.168.0.111:38412)
-[2025-05-29 16:52:53.255] [sctp] [debug] SCTP association setup ascId[4]
-[2025-05-29 16:52:53.255] [ngap] [debug] Sending NG Setup Request
-[2025-05-29 16:52:53.390] [ngap] [debug] NG Setup Response received
-[2025-05-29 16:52:53.390] [ngap] [info] NG Setup procedure is successful
-[2025-05-29 16:52:58.819] [rrc] [debug] UE[1] new signal detected
-[2025-05-29 16:52:58.827] [rrc] [info] RRC Setup for UE[1]
-[2025-05-29 16:52:58.833] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-05-29 16:52:59.237] [rrc] [debug] UE[2] new signal detected
-[2025-05-29 16:52:59.246] [rrc] [info] RRC Setup for UE[2]
-[2025-05-29 16:52:59.251] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-05-29 16:52:59.541] [ngap] [debug] Initial Context Setup Request received
-[2025-05-29 16:52:59.846] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-05-29 16:52:59.945] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-05-29 16:53:00.282] [ngap] [debug] Initial Context Setup Request received
-[2025-05-29 16:53:00.766] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-[2025-05-29 16:53:00.874] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+[2025-06-06 17:11:48.242] [rls-udp] [error] RLS failure [Socket bind failed: Cannot assign requested address]
+[2025-06-06 17:11:48.244] [gtp] [error] GTP/UDP task could not be created. Socket bind failed: Cannot assign requested address
+[2025-06-06 17:11:48.244] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
+[2025-06-06 17:11:48.246] [sctp] [error] Binding to 192.168.0.131:0 failed. SCTP bind failed: Cannot assign requested address
