@@ -1,21 +1,5 @@
 UERANSIM v3.2.6
-[2025-05-29 16:52:53.397] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
-[2025-05-29 16:52:53.792] [sctp] [info] SCTP connection established (192.168.0.111:38412)
-[2025-05-29 16:52:53.793] [sctp] [debug] SCTP association setup ascId[6]
-[2025-05-29 16:52:53.793] [ngap] [debug] Sending NG Setup Request
-[2025-05-29 16:52:53.922] [ngap] [debug] NG Setup Response received
-[2025-05-29 16:52:53.922] [ngap] [info] NG Setup procedure is successful
-[2025-05-29 16:53:03.809] [rrc] [debug] UE[1] new signal detected
-[2025-05-29 16:53:03.818] [rrc] [info] RRC Setup for UE[1]
-[2025-05-29 16:53:03.823] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-05-29 16:53:04.238] [rrc] [debug] UE[2] new signal detected
-[2025-05-29 16:53:04.246] [rrc] [info] RRC Setup for UE[2]
-[2025-05-29 16:53:04.251] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-05-29 16:53:04.380] [ngap] [debug] Initial Context Setup Request received
-[2025-05-29 16:53:04.667] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-05-29 16:53:04.768] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-05-29 16:53:05.257] [ngap] [debug] Initial Context Setup Request received
-[2025-05-29 16:53:05.742] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-[2025-05-29 16:53:05.842] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-terminate called after throwing an instance of 'LibError'
-  what():  sendto failed:  Network is unreachable
+[2025-06-06 17:11:48.612] [rls-udp] [error] RLS failure [Socket bind failed: Cannot assign requested address]
+[2025-06-06 17:11:48.614] [gtp] [error] GTP/UDP task could not be created. Socket bind failed: Cannot assign requested address
+[2025-06-06 17:11:48.614] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
+[2025-06-06 17:11:48.616] [sctp] [error] Binding to 192.168.0.132:0 failed. SCTP bind failed: Cannot assign requested address
