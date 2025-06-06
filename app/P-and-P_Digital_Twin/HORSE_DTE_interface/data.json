@@ -1,0 +1,83 @@
+[
+    {
+        "detection": [
+            {
+                "attack": "Type 7 Attack",
+                "accuracy": 0.9353000000000048
+            }
+        ],
+        "node": "node1"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 4 Attack",
+                "accuracy": 0.03176976190476191
+            }
+        ],
+        "node": "node2"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 6 Attack",
+                "accuracy": 0.040083603896105
+            }
+        ],
+        "node": "node3"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 6 Attack",
+                "accuracy": 0.0
+            }
+        ],
+        "node": "node4"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 4 Attack",
+                "accuracy": 0.02941976190476191
+            }
+        ],
+        "node": "node5"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 4 Attack",
+                "accuracy": 0.03176976190476191
+            }
+        ],
+        "node": "node6"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 1 Attack",
+                "accuracy": 0.02396196751769034
+            }
+        ],
+        "node": "node7"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 2 Attack",
+                "accuracy": 0.0523282519841270
+            }
+        ],
+        "node": "node8"
+    },
+    {
+        "detection": [
+            {
+                "attack": "Type 5 Attack",
+                "accuracy": 0.2973835984848485
+            }
+        ],
+        "node": "node9"
+    }
+]
