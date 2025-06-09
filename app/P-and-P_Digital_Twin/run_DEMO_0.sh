@@ -3,4 +3,4 @@ cd ./HORSE_EM_interface/
 cd ..
 sleep 10
 cd ./HORSE_DTE_interface/
-./test_DTE.sh
+./test_DTE_UPC.sh
