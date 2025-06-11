@@ -21,6 +21,8 @@ def upload_file():
         attack_ip = root.find(".//Attack_IPAddress")
 
         if attack_ip is not None:
+            with open("last.xml", 'w') as file:
+                file.write(xml_content)
             return f"Attack_IPAddress: {attack_ip.text}, Type: {attack_type.text}", 200
         else:
             return "Campo Attack_IPAddress non trovato", 400

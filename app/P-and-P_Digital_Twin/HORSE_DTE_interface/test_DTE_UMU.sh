@@ -1,5 +1,5 @@
 curl -X 'POST' \
-  'http://10.19.2.12:9898/receive-data/' \
+  'http://10.208.11.73:9898/receive-data/' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '[
