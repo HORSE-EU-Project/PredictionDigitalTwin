@@ -37,7 +37,8 @@ while true; do
     echo "File updated! (Previous: $(date -d @"$LAST_MOD_TIMESTAMP"), Current: $(date -d @"$CURRENT_MOD_TIMESTAMP"))"
     LAST_MOD_TIMESTAMP="$CURRENT_MOD_TIMESTAMP" # Update the stored timestamp
     cd ../HORSE_DTE_interface/
-    echo "[HORSE] Contacting DTE"
+    echo "[HORSE SAN] Contacting DTE"
+    echo "[HORSE DTE] Answer:"
     ./test_DTE_UPC.sh
     cd ../HORSE_EM_interface/
   fi
