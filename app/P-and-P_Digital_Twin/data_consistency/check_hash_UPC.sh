@@ -42,7 +42,7 @@ else
     echo "  Stored Hash:  $STORED_HASH"
     echo "[HORSE SAN] Contacting DTE"
     echo "[HORSE DTE] Answer:"
-    ./test_DTE_UMU.sh
+    ./test_DTE_UPC.sh
 fi
 
 exit 0
