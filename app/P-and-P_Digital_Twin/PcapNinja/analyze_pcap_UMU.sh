@@ -7,7 +7,7 @@ PCAP_FILE="../dns.pcap"
 OUTPUT_FILE="output.json"
 
 # Run the pcapninja command and store the output
-PCAP_OUTPUT=$(python3 pcapninja.py --pcap_file "${PCAP_FILE}")
+PCAP_OUTPUT=$(python3 -W ignore pcapninja.py --pcap_file "${PCAP_FILE}")
 
 # Extract the "Security concerns" section
 SECURITY_CONCERNS_SECTION=$(echo "${PCAP_OUTPUT}" | awk '/^5\. Security Concerns:/,/^6\. Key Recommendations:/ {
@@ -38,7 +38,10 @@ while IFS= read -r line; do
 
     # Try to extract the short attack name
     if [[ "$line" =~ [Dd][Dd][Oo][Ss] ]]; then
-        current_attack_name="DDoS"
+        # for DEMO 3
+        # current_attack_name="DDoS"
+        # for DEMO 2
+        current_attack_name="DNS Amplification"
     elif [[ "$line" =~ [Uu]nusual\ ports ]]; then
         current_attack_name="Unusual Port Traffic"
     elif [[ "$line" =~ [Hh]igh\ traffic\ concentration ]]; then
@@ -59,7 +62,7 @@ while IFS= read -r line; do
 done <<< "${SECURITY_CONCERNS_SECTION}"
 
 # Print the extracted information
-echo "--- Security Concerns ---"
+echo "--- P\&P NDT Security Concerns ---"
 if [ ${#short_attack_names[@]} -eq 0 ] && [ ${#ip_addresses[@]} -eq 0 ]; then
     echo "No specific attack types or IPs found."
 else
@@ -101,7 +104,7 @@ else
     echo "---"
     echo "JSON output also saved to $OUTPUT_FILE"
     
-    echo "[HORSE SAN] Sending JSON file to DTE"
+    echo "[HORSE SAN] Sending JSON file to DTE module"
     
     # Send the actual JSON content from the file to avoid variable expansion issues
     curl -X 'POST' \
@@ -111,5 +114,6 @@ else
       -d @"$OUTPUT_FILE"
     
     echo
-    echo "[HORSE SAN] DTE notification complete"
+    echo "[HORSE SAN] DTE notification complete, waiting for another message from EM module"
+    echo
 fi

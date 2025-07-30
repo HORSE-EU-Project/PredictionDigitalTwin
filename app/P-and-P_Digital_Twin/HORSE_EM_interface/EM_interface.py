@@ -28,6 +28,7 @@ def upload_file():
                 file.write(xml_content)
             script_path = "run_UMU.sh"
             process = subprocess.Popen(['/bin/bash', script_path])
+            print("[HORSE SAN] Input received by EM module, proceeding with Prediction and Prevention")
             print(f"[HORSE SAN] Started external script '{script_path}' with PID: {process.pid}")
             return f"Attack_IPAddress: {attack_ip.text}, Type: {attack_type.text}", 200
         else:
