@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Define the pcap file
-PCAP_FILE="../dns.pcap"
+# PCAP_FILE="../dns.pcap"
+PCAP_FILE="/home/vagrant/umu-traces/n3_2025-07-10_14-13-36.pcap"
 
 # Define the output file name
 OUTPUT_FILE="output.json"
@@ -39,9 +40,9 @@ while IFS= read -r line; do
     # Try to extract the short attack name
     if [[ "$line" =~ [Dd][Dd][Oo][Ss] ]]; then
         # for DEMO 3
-        # current_attack_name="DDoS"
+        current_attack_name="DDoS"
         # for DEMO 2
-        current_attack_name="DNS Amplification"
+        # current_attack_name="DNS Amplification"
     elif [[ "$line" =~ [Uu]nusual\ ports ]]; then
         current_attack_name="Unusual Port Traffic"
     elif [[ "$line" =~ [Hh]igh\ traffic\ concentration ]]; then
