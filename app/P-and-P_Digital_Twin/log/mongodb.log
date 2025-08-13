@@ -1,45 +1,45 @@
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/var/lib/mongodb 64-bit host=7de951054634
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] db version v3.6.8
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] allocator: tcmalloc
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] modules: none
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] build environment:
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten]     distarch: x86_64
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten]     target_arch: x86_64
-2025-08-13T15:44:01.603+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, storage: { dbPath: "/var/lib/mongodb", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/open5gs/install/var/log/open5gs/mongodb.log" } }
-2025-08-13T15:44:01.603+0000 W -        [initandlisten] Detected unclean shutdown - /var/lib/mongodb/mongod.lock is not empty.
-2025-08-13T15:44:01.604+0000 I -        [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
-2025-08-13T15:44:01.604+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
-2025-08-13T15:44:01.604+0000 I STORAGE  [initandlisten] 
-2025-08-13T15:44:01.604+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
-2025-08-13T15:44:01.604+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
-2025-08-13T15:44:01.604+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1447M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
-2025-08-13T15:44:02.282+0000 I STORAGE  [initandlisten] WiredTiger message [1755099842:282362][8:0x7fb6b14fbac0], txn-recover: Main recovery loop: starting at 7/19968
-2025-08-13T15:44:02.291+0000 I STORAGE  [initandlisten] WiredTiger message [1755099842:291048][8:0x7fb6b14fbac0], txn-recover: Recovering log 7 through 8
-2025-08-13T15:44:02.387+0000 I STORAGE  [initandlisten] WiredTiger message [1755099842:387340][8:0x7fb6b14fbac0], txn-recover: Recovering log 8 through 8
-2025-08-13T15:44:02.436+0000 I STORAGE  [initandlisten] WiredTiger message [1755099842:436667][8:0x7fb6b14fbac0], txn-recover: Set global recovery timestamp: 0
-2025-08-13T15:44:02.501+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
-2025-08-13T15:44:02.501+0000 I CONTROL  [initandlisten] 
-2025-08-13T15:44:02.501+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
-2025-08-13T15:44:02.501+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
-2025-08-13T15:44:02.501+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
-2025-08-13T15:44:02.501+0000 I CONTROL  [initandlisten] 
-2025-08-13T15:44:02.583+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
-2025-08-13T15:44:02.584+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
-2025-08-13T15:44:03.002+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
-2025-08-13T15:44:06.884+0000 I NETWORK  [listener] connection accepted from 172.17.0.1:46942 #1 (1 connection now open)
-2025-08-13T15:44:06.885+0000 I NETWORK  [conn1] received client metadata from 172.17.0.1:46942 conn1: { driver: { name: "PyMongo|c", version: "4.10.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "5.4.0-214-generic" }, platform: "CPython 3.8.10.final.0" }
-2025-08-13T15:44:06.885+0000 I NETWORK  [listener] connection accepted from 172.17.0.1:46958 #2 (2 connections now open)
-2025-08-13T15:44:06.885+0000 I NETWORK  [conn2] received client metadata from 172.17.0.1:46958 conn2: { driver: { name: "PyMongo|c", version: "4.10.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "5.4.0-214-generic" }, platform: "CPython 3.8.10.final.0" }
-2025-08-13T15:44:15.950+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49730 #3 (3 connections now open)
-2025-08-13T15:44:15.985+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:49730 conn3: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-214-generic" }, platform: "Node.js v14.20.1, LE, mongodb-core: 2.1.18" }
-2025-08-13T15:44:16.018+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49736 #4 (4 connections now open)
-2025-08-13T15:44:16.031+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49744 #5 (5 connections now open)
-2025-08-13T15:44:16.048+0000 I NETWORK  [conn3] end connection 127.0.0.1:49730 (3 connections now open)
-2025-08-13T15:44:16.048+0000 I NETWORK  [conn4] end connection 127.0.0.1:49736 (4 connections now open)
-2025-08-13T15:44:16.048+0000 I NETWORK  [conn5] end connection 127.0.0.1:49744 (2 connections now open)
-2025-08-13T15:44:21.595+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37964 #6 (3 connections now open)
-2025-08-13T15:44:21.601+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:37964 conn6: { driver: { name: "mongoc", version: "1.16.1" }, os: { type: "Linux", name: "Ubuntu", version: "20.04", architecture: "x86_64" }, platform: "cfg=0x00a15e80e9 posix=200809 stdc=201710 CC=GCC 9.2.1 20200228" }
-2025-08-13T15:44:21.602+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37968 #7 (4 connections now open)
-2025-08-13T15:44:21.602+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:37968 conn7: { driver: { name: "mongoc", version: "1.16.1" }, os: { type: "Linux", name: "Ubuntu", version: "20.04", architecture: "x86_64" }, platform: "cfg=0x00a15e80e9 posix=200809 stdc=201710 CC=GCC 9.2.1 20200228" }
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/var/lib/mongodb 64-bit host=6fcb11b42ae5
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] db version v3.6.8
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] modules: none
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] build environment:
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-08-13T18:05:23.264+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, storage: { dbPath: "/var/lib/mongodb", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/open5gs/install/var/log/open5gs/mongodb.log" } }
+2025-08-13T18:05:23.265+0000 W -        [initandlisten] Detected unclean shutdown - /var/lib/mongodb/mongod.lock is not empty.
+2025-08-13T18:05:23.265+0000 I -        [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2025-08-13T18:05:23.265+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2025-08-13T18:05:23.265+0000 I STORAGE  [initandlisten] 
+2025-08-13T18:05:23.265+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2025-08-13T18:05:23.265+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2025-08-13T18:05:23.265+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1447M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2025-08-13T18:05:24.044+0000 I STORAGE  [initandlisten] WiredTiger message [1755108324:44092][8:0x7f5b0bdb4ac0], txn-recover: Main recovery loop: starting at 8/26112
+2025-08-13T18:05:24.044+0000 I STORAGE  [initandlisten] WiredTiger message [1755108324:44599][8:0x7f5b0bdb4ac0], txn-recover: Recovering log 8 through 9
+2025-08-13T18:05:24.109+0000 I STORAGE  [initandlisten] WiredTiger message [1755108324:109402][8:0x7f5b0bdb4ac0], txn-recover: Recovering log 9 through 9
+2025-08-13T18:05:24.167+0000 I STORAGE  [initandlisten] WiredTiger message [1755108324:167831][8:0x7f5b0bdb4ac0], txn-recover: Set global recovery timestamp: 0
+2025-08-13T18:05:24.261+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2025-08-13T18:05:24.261+0000 I CONTROL  [initandlisten] 
+2025-08-13T18:05:24.261+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-08-13T18:05:24.261+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-08-13T18:05:24.261+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2025-08-13T18:05:24.261+0000 I CONTROL  [initandlisten] 
+2025-08-13T18:05:24.329+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2025-08-13T18:05:24.329+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2025-08-13T18:05:25.041+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2025-08-13T18:05:28.988+0000 I NETWORK  [listener] connection accepted from 172.17.0.1:32968 #1 (1 connection now open)
+2025-08-13T18:05:28.989+0000 I NETWORK  [conn1] received client metadata from 172.17.0.1:32968 conn1: { driver: { name: "PyMongo|c", version: "4.10.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "5.4.0-214-generic" }, platform: "CPython 3.8.10.final.0" }
+2025-08-13T18:05:28.990+0000 I NETWORK  [listener] connection accepted from 172.17.0.1:32982 #2 (2 connections now open)
+2025-08-13T18:05:28.990+0000 I NETWORK  [conn2] received client metadata from 172.17.0.1:32982 conn2: { driver: { name: "PyMongo|c", version: "4.10.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "5.4.0-214-generic" }, platform: "CPython 3.8.10.final.0" }
+2025-08-13T18:05:37.602+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39998 #3 (3 connections now open)
+2025-08-13T18:05:37.641+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:39998 conn3: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-214-generic" }, platform: "Node.js v14.20.1, LE, mongodb-core: 2.1.18" }
+2025-08-13T18:05:37.673+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:40000 #4 (4 connections now open)
+2025-08-13T18:05:37.684+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:40002 #5 (5 connections now open)
+2025-08-13T18:05:37.703+0000 I NETWORK  [conn4] end connection 127.0.0.1:40000 (3 connections now open)
+2025-08-13T18:05:37.703+0000 I NETWORK  [conn5] end connection 127.0.0.1:40002 (4 connections now open)
+2025-08-13T18:05:37.703+0000 I NETWORK  [conn3] end connection 127.0.0.1:39998 (2 connections now open)
+2025-08-13T18:05:43.240+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43440 #6 (3 connections now open)
+2025-08-13T18:05:43.241+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:43440 conn6: { driver: { name: "mongoc", version: "1.16.1" }, os: { type: "Linux", name: "Ubuntu", version: "20.04", architecture: "x86_64" }, platform: "cfg=0x00a15e80e9 posix=200809 stdc=201710 CC=GCC 9.2.1 20200228" }
+2025-08-13T18:05:43.244+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43444 #7 (4 connections now open)
+2025-08-13T18:05:43.245+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:43444 conn7: { driver: { name: "mongoc", version: "1.16.1" }, os: { type: "Linux", name: "Ubuntu", version: "20.04", architecture: "x86_64" }, platform: "cfg=0x00a15e80e9 posix=200809 stdc=201710 CC=GCC 9.2.1 20200228" }
