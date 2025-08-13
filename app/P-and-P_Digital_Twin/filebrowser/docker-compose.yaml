@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    filebrowser:
+        container_name: filebrowser
+        volumes:
+        - /home/vagrant:/srv
+        - /home/vagrant/comnetsemu/app/P-and-P_Digital_Twin/filebrowser/filebrowser.db:/database/filebrowser.db
+        environment:
+        - PUID=1002
+        - PGID=1002
+        ports:
+        - 9099:80
+        image: filebrowser/filebrowser:s6
