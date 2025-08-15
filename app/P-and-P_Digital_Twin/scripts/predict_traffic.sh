@@ -33,6 +33,6 @@ echo "Most recent file: $my_variable"
 ./pcap_to_csv.sh $my_variable
 csv_filename="${my_variable%.pcap}.csv"
 echo "Predicting from $csv_filename"
-python3 traffic_prediction.py --training-split 0.9 --sample-period 0.1S --csv $csv_filename
+python3 traffic_prediction.py --training-split 0.6 --sample-period 0.1S --csv $csv_filename
 
 echo "Prediction complete"
