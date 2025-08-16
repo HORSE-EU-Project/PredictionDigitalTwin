@@ -264,7 +264,18 @@ def generate_enhanced_executive_summary(data, concerns, recommendations):
     total_duration = data['end_time'] - data['start_time']
     top_src_ip = data['src_ips'].most_common(1)[0]
     top_dst_ip = data['dst_ips'].most_common(1)[0]
-    top_port = data['ports'].most_common(1)[0]
+    # top_port = data['ports'].most_common(1)[0]
+
+    ports_counter = data['ports']
+    most_common_ports = ports_counter.most_common(1)
+
+    if most_common_ports:
+        top_port = most_common_ports[0]
+        print(f"The top port is: {top_port}")
+    else:
+        print("No ports found in the data.")
+        # Handle the case where there are no ports, perhaps set top_port to None or a default value
+        top_port = None
 
     summary = f"""
 Executive Summary of Network Traffic Analysis
@@ -277,7 +288,6 @@ Executive Summary of Network Traffic Analysis
 2. Traffic Distribution:
    - Top Source IP: {top_src_ip[0]} ({top_src_ip[1]} packets, {(top_src_ip[1]/data['total_packets']*100):.2f}% of total)
    - Top Destination IP: {top_dst_ip[0]} ({top_dst_ip[1]} packets, {(top_dst_ip[1]/data['total_packets']*100):.2f}% of total)
-   - Most Active Port: {top_port[0]} ({top_port[1]} occurrences)
 
 3. Protocol Analysis:
    - Primary Protocol: {data['protocols'].most_common(1)[0][0]}
@@ -296,4 +306,8 @@ Executive Summary of Network Traffic Analysis
 
 This summary provides a high-level overview of the network traffic captured in the PCAP file. For detailed analysis and visualizations, please refer to the full report.
 """
+
+# OLD point 2 ending with:
+# - Most Active Port: {top_port[0]} ({top_port[1]} occurrences)
+
     return summary

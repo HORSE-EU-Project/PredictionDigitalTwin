@@ -38,8 +38,8 @@ def main(pcap_file):
     print("Executive Summary:")
     print(executive_summary)
 
-    print("\nGenerating PDF report...")
-    generate_pdf_report(data, analysis, executive_summary, concerns, recommendations)
+    # print("\nGenerating PDF report...")
+    # generate_pdf_report(data, analysis, executive_summary, concerns, recommendations)
 
 if __name__ == "__main__":
     banner()
