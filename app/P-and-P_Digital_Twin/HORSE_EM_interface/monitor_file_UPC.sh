@@ -26,6 +26,7 @@ echo "Monitoring file: '$FILE_TO_MONITOR' for updates every ${SLEEP_INTERVAL} se
 LAST_MOD_TIMESTAMP=$(stat -c %Y "$FILE_TO_MONITOR")
 
 echo "Initial timestamp: $(date -d @"$LAST_MOD_TIMESTAMP")"
+echo
 
 # Loop forever to check for updates
 while true; do
