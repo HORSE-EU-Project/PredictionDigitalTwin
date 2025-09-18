@@ -1,0 +1,14 @@
+Total packets: 6924
+Total SYN packets (no ACK counted): 2.0
+Source IP counts:
+192.168.0.112: 4399
+192.168.0.200: 2525
+High volume of traffic detected.
+High traffic from single source IP detected (potential DoS): 192.168.0.112 with 4399 packets.
+High traffic from single source IP detected (potential DoS): 192.168.0.200 with 2525 packets.
+Destination IP counts:
+192.168.0.200: 4399
+192.168.0.112: 2525
+High volume of traffic detected.
+High traffic to single destination IP detected: 192.168.0.200 with 4399 packets.
+High traffic to single destination IP detected: 192.168.0.112 with 2525 packets.
