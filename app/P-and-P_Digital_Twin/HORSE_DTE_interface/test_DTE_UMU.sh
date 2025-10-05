@@ -9,4 +9,4 @@ curl -X 'POST' \
   }
 ]'
 echo
-
+python3 ./HORSE_dashboard/update_senderv2.py box3 green "Message to DTE Sent"
