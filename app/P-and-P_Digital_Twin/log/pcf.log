@@ -1,0 +1,17 @@
+Open5GS daemon v2.4.4
+
+10/06 09:54:46.004: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/pcf.yaml' (../lib/app/ogs-init.c:129)
+10/06 09:54:46.004: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/pcf.log' (../lib/app/ogs-init.c:132)
+10/06 09:54:46.085: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+10/06 09:54:46.085: [sbi] INFO: nghttp2_server() [127.0.0.13]:7777 (../lib/sbi/nghttp2-server.c:144)
+10/06 09:54:46.086: [app] INFO: PCF initialize...done (../src/pcf/app.c:31)
+10/06 09:54:46.087: [pcf] INFO: [7d57b80c-a29a-41f0-b490-619464ae3c21] NF registred [Heartbeat:10s] (../src/pcf/nf-sm.c:198)
+10/06 09:54:54.554: [app] WARNING: Try to discover [UDR] (../lib/sbi/path.c:110)
+10/06 09:54:54.555: [pcf] INFO: [7d579b24-a29a-41f0-a4f3-c7c97060b9e3] (NF-discover) NF registered (../src/pcf/nnrf-handler.c:286)
+10/06 09:54:54.555: [pcf] INFO: [7d579b24-a29a-41f0-a4f3-c7c97060b9e3] (NF-discover) NF Profile updated (../src/pcf/nnrf-handler.c:346)
+10/06 09:54:54.829: [app] WARNING: Try to discover [BSF] (../lib/sbi/path.c:110)
+10/06 09:54:54.829: [app] WARNING: Try to discover [BSF] (../lib/sbi/path.c:110)
+10/06 09:54:54.830: [pcf] INFO: [7d54cb06-a29a-41f0-a330-fd58f62a9c05] (NF-discover) NF registered (../src/pcf/nnrf-handler.c:286)
+10/06 09:54:54.830: [pcf] INFO: [7d54cb06-a29a-41f0-a330-fd58f62a9c05] (NF-discover) NF Profile updated (../src/pcf/nnrf-handler.c:346)
+10/06 09:54:54.830: [pcf] WARNING: [7d54cb06-a29a-41f0-a330-fd58f62a9c05] (NF-discover) NF has already been added (../src/pcf/nnrf-handler.c:291)
+10/06 09:54:54.830: [pcf] INFO: [7d54cb06-a29a-41f0-a330-fd58f62a9c05] (NF-discover) NF Profile updated (../src/pcf/nnrf-handler.c:346)
