@@ -7,3 +7,6 @@ sudo pip3 install tabulate
 
 # For a pretty CLI appearance
 sudo pip3 install pyfiglet
+
+# For prediction
+sudo pip3 install scikit-learn

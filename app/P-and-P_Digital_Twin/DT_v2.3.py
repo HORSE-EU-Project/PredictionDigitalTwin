@@ -352,7 +352,10 @@ if __name__ == "__main__":
     net.addLink(internet_server, s3, bw=100, delay="50ms", intfName1="internet-eth1", intfName2="s3-internet")
 
     print("\n*** Open5GS: Starting subscription procedure")
-    o5gs   = Open5GS( "172.17.0.2" ,"27017")
+    # CNIT:
+    o5gs   = Open5GS( "172.215.0.2" ,"27017")
+    # UMU: 
+    #o5gs   = Open5GS( "172.17.0.2" ,"27017")
     o5gs.removeAllSubscribers()
     with open( prj_folder + "/python_modules/subscriber_profile2_2.json" , 'r') as f:
         data = json.load( f )
