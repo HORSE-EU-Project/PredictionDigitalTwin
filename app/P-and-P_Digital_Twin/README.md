@@ -41,6 +41,11 @@ vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 
 For interactive operation, please run the following commands in different terminals.
 
+Identify the HORSE testbed (CNIT, UPC, UMU):
+```
+export TESTBED="UMU"
+```
+
 Start Network Digital Twin with Ryu controller and sFlow:
 ```
 ./runDigitalTwin.sh
