@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Release IT-2 of the HORSE P&P Digital Twin
-# V2.3
+# V2.4
 
 # ATTENTION: please check the IP address of the docker interface of mongodb
 # Use docker0 but with last number equal to 2
@@ -38,6 +38,9 @@ if __name__ == "__main__":
     AUTOTEST_MODE = os.environ.get("COMNETSEMU_AUTOTEST_MODE", 0)
 
     setLogLevel("info")
+
+    home_testbed = os.environ.get('TESTBED', 'UMU')
+    print(f"The TESTBED is: {home_testbed}")
 
     # Ottieni il percorso del file di script Python corrente
     script_path = os.path.abspath(__file__)
@@ -352,10 +355,17 @@ if __name__ == "__main__":
     net.addLink(internet_server, s3, bw=100, delay="50ms", intfName1="internet-eth1", intfName2="s3-internet")
 
     print("\n*** Open5GS: Starting subscription procedure")
-    # CNIT:
-    o5gs   = Open5GS( "172.215.0.2" ,"27017")
-    # UMU: 
-    #o5gs   = Open5GS( "172.17.0.2" ,"27017")
+
+    if (home_testbed == "CNIT"):
+        # CNIT:
+        o5gs   = Open5GS( "172.215.0.2" ,"27017")
+    elif (home_testbed == "UMU"): 
+        # UMU: 
+        o5gs   = Open5GS( "172.17.0.2" ,"27017")
+    else:
+        # UPC:
+        o5gs   = Open5GS( "172.17.0.2" ,"27017")
+
     o5gs.removeAllSubscribers()
     with open( prj_folder + "/python_modules/subscriber_profile2_2.json" , 'r') as f:
         data = json.load( f )
