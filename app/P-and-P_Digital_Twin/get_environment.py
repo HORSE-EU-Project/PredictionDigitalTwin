@@ -1,7 +1,7 @@
 import os
 
 # Get the value of 'HOME' or default to '/tmp' if it's not set
-home_directory = os.environ.get('TESTBED', 'UMU')
+home_directory = os.environ.get('TESTBED')
 print(f"The TESTBED is: {home_directory}")
 
 # Get the value of 'CUSTOM_VAR' or default to None
