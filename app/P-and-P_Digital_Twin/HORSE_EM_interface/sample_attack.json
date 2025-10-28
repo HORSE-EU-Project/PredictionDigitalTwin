@@ -1,0 +1,47 @@
+{
+   "ThreatModel": {
+       "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+       "-id": "tm_8b2c65n3dr87345s54gd746b7h83t82k",
+       "-xsi:noNamespaceSchemaLocation": "threatModel.xsd",
+       "ThreatModelElement": {
+           "-id": "tme_6d3c88w5rt45873g98el723f7g92j63l",
+           "ThreatActor": {
+               "Source": "dns-c1"
+           },
+           "CyberAttack": {
+               "Type": "DNS_Amplification",
+               "Pattern": {},
+               "Vector": {
+                   "AttackLocation": "dns-s",
+                   "Parameter": {
+                       "Description": "DNS Amplification on pod dns-s",
+                       "Protocol": "UDP",
+                       "Port": "53",
+                       "DomainName": "dominio1.com",
+                       "Duration": "300"
+                   },
+                   "AttackTimestamp": "2025-03-20T10:48:44.613"
+               },
+               "ATT_CK": {
+                   "Type": "Network Denial of Service: Reflection Amplification",
+                   "ID": "T1498.002"
+               }
+           },
+           "ControlAction": {
+               "Mitigation": {
+                   "MitigationAction": {
+                       "Type": "FilterNetworkTraffic",
+                       "ATT_CKID": "M1037"
+                   },
+                   "MitigationCondition": {
+                       "-type": "FilterNetworkTrafficCondition",
+                       "FilterCondition": {
+                           "SourceAddress": "2001:720:1710:4::5001/128"
+                       },
+                       "isCNF": "false"
+                   }
+               }
+           }
+       }
+   }
+}
