@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 import subprocess
 import time
 import os
+import textwrap
 
 app = Flask(__name__)
 
@@ -23,12 +24,18 @@ def upload_file():
         # Cerca il campo Attack_IPAddress nel file XML
         attack_ip = root.find(".//Attack_IPAddress")
 
+        cyber_attack = root.find(".//CyberAttack")
+
         if attack_ip is not None:
             with open("last.xml", 'w') as file:
                 file.write(xml_content)
             script_path = "run_UMU.sh"
             process = subprocess.Popen(['/bin/bash', script_path])
             print("[HORSE SAN] Input received by EM module, proceeding with Prediction and Prevention")
+            print("--- CyberAttack Section Content ---")
+            cyber_attack_xml_string = ET.tostring(cyber_attack, encoding='unicode')
+            print(textwrap.dedent(cyber_attack_xml_string))
+            print("-----------------------------------")
             print(f"[HORSE SAN] Started external script '{script_path}' with PID: {process.pid}")
             return f"Attack_IPAddress: {attack_ip.text}, Type: {attack_type.text}", 200
         else:
