@@ -39,8 +39,9 @@ while IFS= read -r line; do
 
     # Try to extract the short attack name
     if [[ "$line" =~ [Dd][Dd][Oo][Ss] ]]; then
+        current_attack_name="ddos_downlink"
         # for DEMO 3
-        current_attack_name="DDoS"
+        # current_attack_name="DDoS"
         # for DEMO 2
         # current_attack_name="DNS Amplification"
     elif [[ "$line" =~ [Uu]nusual\ ports ]]; then
@@ -85,7 +86,7 @@ else
         if [[ "${short_attack_names[$i]}" != "N/A" && -n "${short_attack_names[$i]}" ]]; then
             ATTACK_NAME="${short_attack_names[$i]}"
             # Generate a single JSON object (without the surrounding array brackets)
-            SINGLE_JSON_OBJECT="{\"prediction\": \"$ATTACK_NAME\", \"confidence\": 0.6}"
+            SINGLE_JSON_OBJECT="{\"prevention\": \"$ATTACK_NAME\", \"confidence\": 0.6}"
             
             # Add the single JSON object to our array
             ALL_JSON_OBJECTS+=("$SINGLE_JSON_OBJECT")
@@ -109,7 +110,7 @@ else
     
     # Send the actual JSON content from the file to avoid variable expansion issues
     curl -X 'POST' \
-      'http://10.19.2.12:9898/receive-data/' \
+      'http://10.19.2.1:9898/receive-data/' \
       -H 'accept: application/json' \
       -H 'Content-Type: application/json' \
       -d @"$OUTPUT_FILE"

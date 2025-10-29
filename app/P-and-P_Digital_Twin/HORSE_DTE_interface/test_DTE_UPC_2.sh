@@ -4,9 +4,9 @@ curl -X 'POST' \
   -H 'Content-Type: application/json' \
   -d '[
   {
-    "prevention": "ddos_downlink",
+    "prediction": "DDoS",
     "confidence": 0.5
   }
 ]'
 echo
-echo
+python3 ./HORSE_dashboard/update_senderv2.py box3 green "Message to DTE Sent"

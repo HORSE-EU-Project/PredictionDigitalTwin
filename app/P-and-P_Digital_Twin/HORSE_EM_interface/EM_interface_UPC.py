@@ -22,24 +22,25 @@ def upload_file():
         attack_type = root.find(".//Type")
 
         # Cerca il campo Attack_IPAddress nel file XML
-        attack_ip = root.find(".//Attack_IPAddress")
+        #attack_ip = root.find(".//Attack_IPAddress")
 
         cyber_attack = root.find(".//CyberAttack")
 
-        if attack_ip is not None:
+        if attack_type is not None:
             with open("last.xml", 'w') as file:
                 file.write(xml_content)
             script_path = "run_UPC.sh"
-            process = subprocess.Popen(['/bin/bash', script_path])
+            # process = subprocess.Popen(['/bin/bash', script_path])
             print("[HORSE SAN] Input received by EM module, proceeding with Prediction and Prevention")
             print("--- CyberAttack Section Content ---")
             cyber_attack_xml_string = ET.tostring(cyber_attack, encoding='unicode')
             print(textwrap.dedent(cyber_attack_xml_string))
             print("-----------------------------------")
-            print(f"[HORSE SAN] Started external script '{script_path}' with PID: {process.pid}")
-            return f"Attack_IPAddress: {attack_ip.text}, Type: {attack_type.text}", 200
+            # print(f"[HORSE SAN] Started external script '{script_path}' with PID: {process.pid}")
+            return f"Attack Type: {attack_type.text}", 200
+            # return f"Attack_IPAddress: {attack_ip.text}, Type: {attack_type.text}", 200
         else:
-            return "Campo Attack_IPAddress non trovato", 400
+            return "Campo Attack_Type non trovato", 400
 
     except ET.ParseError:
         return "Errore nel parsing del file XML", 400

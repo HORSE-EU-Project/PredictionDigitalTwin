@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The URL for the POST request
-URL="http://10.19.2.12:9898/receive-data/"
+URL="http://10.19.2.1:9898/receive-data/"
 
 # The JSON data to be sent. We are taking only the first object from your file.
 JSON_DATA='[ 

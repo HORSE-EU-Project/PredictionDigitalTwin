@@ -13,5 +13,5 @@ cd ./HORSE_EM_interface/
 python3 ../HORSE_dashboard/update_senderv2.py box1 green "EM Message Received"
 sleep 10
 python3 ../HORSE_dashboard/update_senderv2.py box3 green "Message to DTE Sent" 
-./monitor_file_UPC.sh ./last.xml
+% ./monitor_file_UPC.sh ./last.xml
 
