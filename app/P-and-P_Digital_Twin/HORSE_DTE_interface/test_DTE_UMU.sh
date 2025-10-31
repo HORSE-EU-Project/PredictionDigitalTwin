@@ -4,7 +4,7 @@ curl -X 'POST' \
   -H 'Content-Type: application/json' \
   -d '[
   {
-    "prediction": "DDoS",
+    "prevention": "dns_amplification",
     "confidence": 0.5
   }
 ]'

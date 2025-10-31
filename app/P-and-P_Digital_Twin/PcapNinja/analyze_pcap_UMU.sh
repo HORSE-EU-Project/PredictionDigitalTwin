@@ -85,7 +85,7 @@ else
         if [[ "${short_attack_names[$i]}" != "N/A" && -n "${short_attack_names[$i]}" ]]; then
             ATTACK_NAME="${short_attack_names[$i]}"
             # Generate a single JSON object (without the surrounding array brackets)
-            SINGLE_JSON_OBJECT="{\"prediction\": \"$ATTACK_NAME\", \"confidence\": 0.6}"
+            SINGLE_JSON_OBJECT="{\"prevention\": \"$ATTACK_NAME\", \"confidence\": 0.6}"
             
             # Add the single JSON object to our array
             ALL_JSON_OBJECTS+=("$SINGLE_JSON_OBJECT")

@@ -3,47 +3,39 @@
 # Mapping file used: ip_mapping_example.csv
 # NOTE: The throughput is used as the bandwidth limit (-b) and is assumed to be in Kbps (K).
 
-pkill iperf3 # Clean up any previous iperf3 server daemons before starting
+# Clean up any previous iperf3 server daemons before starting
+../../cmd_container.sh internet_server "pkill iperf3" 
+# --- Flow 1: host-A-core -> 224.0.0.102 (UDP) @ 1792K on Port 52905 ---
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 52905 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 224.0.0.102 -p 52905 -u -b 1792K -t 10" > output.log 2>&1 &
 
-# --- Flow 1: host-A-core -> 10.0.0.102 (UDP) @ 2048K on Port 52905 ---
-iperf3 -s -p 52905 -D & # Server on 10.0.0.102
-iperf3 -c 10.0.0.102 -p 52905 -u -b 2048K -t 10 # Client from host-A-core
-sleep 1
+# --- Flow 2: host-A-core -> 224.0.0.18 (VRRP) @ 2560K on Port 18296 ---
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 18296 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 224.0.0.18 -p 18296 -b 2560K -t 10" > output.log 2>&1 &
 
-# --- Flow 2: host-A-core -> host-F-router (VRRP) @ 2560K on Port 18296 ---
-iperf3 -s -p 18296 -D & # Server on host-F-router
-iperf3 -c host-F-router -p 18296 -b 2560K -t 10 # Client from host-A-core
-sleep 1
+# --- Flow 3: host-D-server -> host-C-fw (GTP) @ 304592K on Port 12639 ---
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 12639 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c host-C-fw -p 12639 -b 304592K -t 10" > output.log 2>&1 &
 
-# --- Flow 3: host-D-server -> host-C-fw (GTP) @ 304128K on Port 12639 ---
-iperf3 -s -p 12639 -D & # Server on host-C-fw
-iperf3 -c host-C-fw -p 12639 -b 304128K -t 10 # Client from host-D-server
-sleep 1
+# --- Flow 4: host-B-edge -> host-C-fw (SCTP) @ 880K on Port 59598 ---
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 59598 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c host-C-fw -p 59598 -b 880K -t 10" > output.log 2>&1 &
 
-# --- Flow 4: host-B-edge -> host-C-fw (SCTP) @ 1176K on Port 59598 ---
-iperf3 -s -p 59598 -D & # Server on host-C-fw
-iperf3 -c host-C-fw -p 59598 -b 1176K -t 10 # Client from host-B-edge
-sleep 1
-
-# --- Flow 5: host-C-fw -> host-B-edge (SCTP) @ 1176K on Port 29024 ---
-iperf3 -s -p 29024 -D & # Server on host-B-edge
-iperf3 -c host-B-edge -p 29024 -b 1176K -t 10 # Client from host-C-fw
-sleep 1
+# --- Flow 5: host-C-fw -> host-B-edge (SCTP) @ 880K on Port 29024 ---
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 29024 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c host-B-edge -p 29024 -b 880K -t 10" > output.log 2>&1 &
 
 # --- Flow 6: host-C-fw -> 10.252.249.3 (GTP) @ 304744K on Port 27049 ---
-iperf3 -s -p 27049 -D & # Server on 10.252.249.3
-iperf3 -c 10.252.249.3 -p 27049 -b 304744K -t 10 # Client from host-C-fw
-sleep 1
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 27049 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.252.249.3 -p 27049 -b 304744K -t 10" > output.log 2>&1 &
 
-# --- Flow 7: host-E-client -> 10.0.0.255 (UDP) @ 616K on Port 25628 ---
-iperf3 -s -p 25628 -D & # Server on 10.0.0.255
-iperf3 -c 10.0.0.255 -p 25628 -u -b 616K -t 10 # Client from host-E-client
-sleep 1
+# --- Flow 7: host-E-client -> 224.0.1.1 (UDP) @ 152K on Port 25628 ---
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 25628 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 224.0.1.1 -p 25628 -u -b 152K -t 10" > output.log 2>&1 &
 
-# --- Flow 8: host-E-client -> 10.0.1.1 (UDP) @ 616K on Port 20144 ---
-iperf3 -s -p 20144 -D & # Server on 10.0.1.1
-iperf3 -c 10.0.1.1 -p 20144 -u -b 616K -t 10 # Client from host-E-client
-sleep 1
+# --- Flow 8: host-E-client -> 255.255.255.255 (UDP) @ 784K on Port 20144 ---
+../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 20144 -D" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 255.255.255.255 -p 20144 -u -b 784K -t 10" > output.log 2>&1 &
 
 # Final cleanup
-pkill iperf3
+../../cmd_container.sh internet_server "pkill iperf3" 

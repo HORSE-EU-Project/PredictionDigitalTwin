@@ -1,3 +1,5 @@
+cd ../PT_Offline
+./run_PT_to_NDT.sh
 cd ../PcapNinja
 ./analyze_pcap_UMU.sh
 cd ..
