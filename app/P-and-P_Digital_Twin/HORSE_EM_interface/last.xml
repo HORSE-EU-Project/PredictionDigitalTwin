@@ -6,13 +6,13 @@
 			<Pattern/>
 			<Vector>
 				<Attack_timestamp>2024-04-28T19:21:44.613z</Attack_timestamp>
-				<Attack_location>NTP server</Attack_location>
+				<Attack_location>DNS server</Attack_location>
 				<Attack_IPAddress>192.255.255.200</Attack_IPAddress>
-				<Parameter>Count of packets NTP monlist</Parameter>
+				<Parameter>Count of DNS packet received per second</Parameter>
 			</Vector>
 			<ATT_CK>
-				<Type/>
-				<ID/>
+				<Type>Network Denial of Service: Reflection Amplification</Type>
+				<ID>T1498.002</ID>
 			</ATT_CK>
 			
 			<Attack_impact>
@@ -37,7 +37,7 @@
 				</Nodes>
 				<Ports>
 					<Port_id>1</Port_id>
-					<Port_number>123</Port_number>
+					<Port_number>53</Port_number>
 					<Port_type>UDP</Port_type>
 					<Port_status>Open</Port_status>
 				</Ports>
@@ -47,7 +47,7 @@
 		<ControlAction>
 			<Mitigation>
 				<MitigationAction>
-					<Type>FilterUDPTraffic</Type>
+					<Type>FilterNetworkTraffic</Type>
 					<ATT_CKID>M1037</ATT_CKID>
 				</MitigationAction>
 				<MitigationCondition type="FilterNetworkTrafficCondition">

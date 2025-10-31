@@ -40,9 +40,9 @@ while IFS= read -r line; do
     # Try to extract the short attack name
     if [[ "$line" =~ [Dd][Dd][Oo][Ss] ]]; then
         # for DEMO 3
-        current_attack_name="DDoS"
+        # current_attack_name="DDoS"
         # for DEMO 2
-        # current_attack_name="DNS Amplification"
+        current_attack_name="dns_amplification"
     elif [[ "$line" =~ [Uu]nusual\ ports ]]; then
         current_attack_name="Unusual Port Traffic"
     elif [[ "$line" =~ [Hh]igh\ traffic\ concentration ]]; then
