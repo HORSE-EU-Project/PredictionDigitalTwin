@@ -11,7 +11,7 @@ if [ -z "$1" ]; then
 fi
 
 FILE_TO_MONITOR="$1"
-SLEEP_INTERVAL=30 # seconds
+SLEEP_INTERVAL=5 # seconds
 
 # Check if the file exists
 if [ ! -f "$FILE_TO_MONITOR" ]; then
@@ -39,7 +39,7 @@ while true; do
     LAST_MOD_TIMESTAMP="$CURRENT_MOD_TIMESTAMP" # Update the stored timestamp
     cd ../HORSE_DTE_interface/
     echo "[HORSE SAN] Contacting DTE"
-    echo "[HORSE DTE] Answer:"
+    echo "[HORSE SAN -> DTE] Sending msg:"
     ./test_DTE_UPC.sh
     cd ../HORSE_EM_interface/
   fi
