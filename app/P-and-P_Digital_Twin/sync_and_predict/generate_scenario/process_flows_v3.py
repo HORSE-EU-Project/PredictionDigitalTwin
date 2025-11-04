@@ -61,7 +61,9 @@ def process_flows(input_csv_file, mapping_file_path=None):
         "# NOTE: The throughput is used as the bandwidth limit (-b) and is assumed to be in Kbps (K).",
         "",
         "# Clean up any previous iperf3 server daemons before starting",
-        "../../cmd_container.sh internet_server \"pkill iperf3\" "
+        "../../cmd_container.sh internet_server \"pkill iperf3\" ",
+	"# Run tcpdump on all interfaces (20 sec.)",
+	"sudo tcpdump -i any -s 0 -G 20 -w all_traffic.pcap &",
         ""
     ]
 

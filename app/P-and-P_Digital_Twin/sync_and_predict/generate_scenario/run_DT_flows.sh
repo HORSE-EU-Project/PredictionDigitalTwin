@@ -5,6 +5,9 @@
 
 # Clean up any previous iperf3 server daemons before starting
 ../../cmd_container.sh internet_server "pkill iperf3" 
+# Run tcpdump on all interfaces (20 sec.)
+sudo tcpdump -i any -s 0 -G 20 -w all_traffic.pcap &
+
 # --- Flow 1: host-A-core -> 224.0.0.102 (UDP) @ 13440K on Port 52905 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 52905 -D" > output.log 2>&1 &
 ../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 224.0.0.102 -p 52905 -u -b 13440K -t 10" > output.log 2>&1 &

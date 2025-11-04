@@ -1,9 +1,10 @@
 Open5GS daemon v2.4.4
 
-11/04 16:15:37.235: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:129)
-11/04 16:15:37.235: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:132)
-11/04 16:15:37.245: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:144)
-11/04 16:15:37.247: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
-11/04 16:15:37.250: [udm] INFO: [7fb810a4-b999-41f0-90de-e308f7a97ee6] NF registred [Heartbeat:10s] (../src/udm/nf-sm.c:198)
-11/04 16:15:37.257: [udm] INFO: [7fb91274-b999-41f0-8506-eb5b146dd97a] (NRF-notify) NF registered (../src/udm/nnrf-handler.c:180)
-11/04 16:15:37.257: [udm] INFO: [7fb91274-b999-41f0-8506-eb5b146dd97a] (NRF-notify) NF Profile updated (../src/udm/nnrf-handler.c:199)
+11/04 18:12:57.767: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:129)
+11/04 18:12:57.768: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:132)
+11/04 18:12:57.776: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:144)
+11/04 18:12:57.779: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+11/04 18:12:57.783: [udm] INFO: [e433dca6-b9a9-41f0-98ea-7ffa106794b2] NF registred [Heartbeat:10s] (../src/udm/nf-sm.c:198)
+11/04 18:12:57.795: [udm] INFO: [e4364f0e-b9a9-41f0-b873-e51b71949ddd] (NRF-notify) NF registered (../src/udm/nnrf-handler.c:180)
+11/04 18:12:57.795: [udm] INFO: [e4364f0e-b9a9-41f0-b873-e51b71949ddd] (NRF-notify) NF Profile updated (../src/udm/nnrf-handler.c:199)
+11/04 18:13:22.695: [app] INFO: SIGHUP received (../src/main.c:58)
