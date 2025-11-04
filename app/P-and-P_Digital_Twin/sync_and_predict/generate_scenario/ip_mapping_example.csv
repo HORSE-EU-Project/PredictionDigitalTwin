@@ -1,0 +1,7 @@
+original_ip,mapped_alias
+10.252.0.2,host-A-core
+10.252.249.2,192.168.0.201
+10.252.40.101,192.168.0.201
+10.252.249.1,host-D-server
+10.90.0.1,host-E-client
+10.0.0.18,host-F-router

@@ -1,0 +1,19 @@
+iperf3: error - unable to connect to server: Connection timed out
+ port 38229 connected to 192.168.0.201 port 29024
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   460 KBytes  3.77 Mbits/sec    0   94.8 KBytes       
+[  5]   1.00-2.00   sec  2.25 MBytes  18.9 Mbits/sec    2    266 KBytes       
+[  5]   2.00-3.00   sec   896 KBytes  7.34 Mbits/sec  771    323 KBytes       
+[  5]   3.00-4.00   sec   896 KBytes  7.34 Mbits/sec  279    247 KBytes       
+[  5]   4.00-5.00   sec   640 KBytes  5.24 Mbits/sec  173    199 KBytes       
+[  5]   5.00-6.00   sec   640 KBytes  5.24 Mbits/sec   44    165 KBytes       
+[  5]   6.00-7.00   sec   768 KBytes  6.29 Mbits/sec    0    179 KBytes       
+[  5]   7.00-8.00   sec   640 KBytes  5.24 Mbits/sec   14    129 KBytes       
+[  5]   8.00-9.00   sec   640 KBytes  5.24 Mbits/sec    0    145 KBytes       
+[  5]   9.00-10.00  sec   640 KBytes  5.24 Mbits/sec    0    154 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  8.32 MBytes  6.98 Mbits/sec  1283             sender
+[  5]   0.00-10.23  sec  5.84 MBytes  4.79 Mbits/sec                  receiver
+
+iperf Done.

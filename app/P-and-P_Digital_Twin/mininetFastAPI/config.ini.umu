@@ -1,0 +1,4 @@
+[MININET_SERVER]
+ipaddr = 10.208.11.75
+port = 8000
+
