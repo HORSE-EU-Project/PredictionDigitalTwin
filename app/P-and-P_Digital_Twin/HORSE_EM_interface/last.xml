@@ -1,40 +1,62 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ThreatModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="tm_8b2c65n3dr87345s54gd746b7h83t82k" xsi:noNamespaceSchemaLocation="threatModel.xsd">
-  <ThreatModelElement id="tme_6d3c88w5rt45873g98el723f7g92j63l">
-    <ThreatActor>
-      <Source>internet</Source>
-    </ThreatActor>
-    <CyberAttack>
-      <Type>DDoS_Downlink</Type>
-      <Pattern />
-      <Vector>
-        <AttackLocation>dns-c1</AttackLocation>
-        <Parameter>
-          <Description>DDoS Downlink on dns-c1</Description>
-          <Protocol>TCP</Protocol>
-          <Flag>SYN</Flag>
-          <Duration>300</Duration>
-        </Parameter>
-        <AttackTimestamp>2025-03-20T10:48:44.613</AttackTimestamp>
-      </Vector>
-      <ATT_CK>
-        <Type>Network Denial of Service</Type>
-        <ID>T1498</ID>
-      </ATT_CK>
-    </CyberAttack>
-    <ControlAction>
-      <Mitigation>
-        <MitigationAction>
-          <Type>FilterNetworkTraffic</Type>
-          <ATT_CKID>M1037</ATT_CKID>
-        </MitigationAction>
-        <MitigationCondition type="FilterNetworkTrafficCondition">
-          <FilterCondition>
-            <SourceAddress>192.168.1.100/32</SourceAddress>
-          </FilterCondition>
-          <isCNF>false</isCNF>
-        </MitigationCondition>
-      </Mitigation>
-    </ControlAction>
-  </ThreatModelElement>
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreatModel id="tm_8b2c65n3dr87345s54gd746b7h83t82k" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Saman%20Tariq/Downloads/threatModel%20(3).xsd">
+	<ThreatModelElement id="tme_6d3c88w5rt45873g98el723f7g92j63l">
+		<CyberAttack>
+			<Type>Network Denial of Service</Type>
+			<Pattern/>
+			<Vector>
+				<Attack_timestamp>2024-04-28T19:21:44.613z</Attack_timestamp>
+				<Attack_location>DNS server</Attack_location>
+				<Attack_IPAddress>192.255.255.200</Attack_IPAddress>
+				<Parameter>Count of DNS packet received per second</Parameter>
+			</Vector>
+			<ATT_CK>
+				<Type>Network Denial of Service: Reflection Amplification</Type>
+				<ID>T1498.002</ID>
+			</ATT_CK>
+			
+			<Attack_impact>
+				<Estimated_impact>
+				<System_parameter>Server-side processing time</System_parameter>
+				<System_components>Server</System_components>
+				<System_services>End user Application</System_services>
+			    </Estimated_impact>
+			    <Real_impact>
+				<Attack_Propagation/>
+			    </Real_impact>
+			</Attack_impact>
+		</CyberAttack>
+		<OrganizationAsset>
+			<Network_Features>
+				<Nodes>
+					<Node_id>1</Node_id>
+					<Node_Name>Server</Node_Name>
+					<Node_Type>Pimary</Node_Type>
+					<Node_Area/>
+					<Node_IPaddress>192.168.0.200</Node_IPaddress>
+				</Nodes>
+				<Ports>
+					<Port_id>1</Port_id>
+					<Port_number>53</Port_number>
+					<Port_type>UDP</Port_type>
+					<Port_status>Open</Port_status>
+				</Ports>
+			</Network_Features>
+		</OrganizationAsset>
+		<ThreatActor IP_address=""><AdversaryGroup/><Techniques/><Intension/><TTP><Tactics/><Technique/><Procedure/></TTP><Vulnerability><Source/><Destination/><Timestamp/></Vulnerability></ThreatActor>
+		<ControlAction>
+			<Mitigation>
+				<MitigationAction>
+					<Type>FilterNetworkTraffic</Type>
+					<ATT_CKID>M1037</ATT_CKID>
+				</MitigationAction>
+				<MitigationCondition type="FilterNetworkTrafficCondition">
+					<FilterCondition>
+						<SourceAddress>192.168.1.100/32</SourceAddress>
+					</FilterCondition>
+					<isCNF>false</isCNF>
+				</MitigationCondition>
+			</Mitigation>
+		</ControlAction>
+	</ThreatModelElement>
 </ThreatModel>

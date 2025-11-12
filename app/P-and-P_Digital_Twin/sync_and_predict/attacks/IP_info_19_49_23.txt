@@ -1,0 +1,4 @@
+Total packets: 0
+Total SYN packets (no ACK counted): 0.0
+Source IP counts:
+Destination IP counts:
