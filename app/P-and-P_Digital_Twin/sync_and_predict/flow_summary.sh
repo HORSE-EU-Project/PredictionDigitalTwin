@@ -5,7 +5,7 @@ tshark -r $1 -T fields \
 | awk -F',' '
 BEGIN {
     # Print the header first
-    print "IP_A,IP_B,Protocol,Total_Bytes,Total_Packets";
+    print "ipsrc,ipdst,protocol,throughput,total_packets";
 }
 {
     # $1=ip.src, $2=ip.dst, $3=protocol, $4=frame.len (bytes)

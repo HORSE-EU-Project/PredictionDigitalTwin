@@ -5,3 +5,5 @@ original_ip,mapped_alias
 10.252.249.1,host-D-server
 10.90.0.1,host-E-client
 10.0.0.18,host-F-router
+10.8.0.101,10.45.0.4
+192.168.130.145,192.168.0.201
