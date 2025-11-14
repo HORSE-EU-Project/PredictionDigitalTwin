@@ -5,18 +5,19 @@
 
 # Clean up any previous iperf3 server daemons before starting
 ../../cmd_container.sh internet_server "pkill iperf3" 
+../../cmd_container.sh ue1 "pkill iperf3" 
 # Run tcpdump on all interfaces (120 sec.)
 sudo tcpdump -i s3-internet -s 0 -G 120 -w all_traffic_internet.pcap &
 
 # --- Flow 1: 10.45.0.4 -> 192.168.0.201 (SSH) @ 66400K on Port 52905 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 52905 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.201 -p 52905 -b 66400K -t 10" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.201 -p 52905 -b 66400K -t 120" > output.log 2>&1 &
 
 # --- Flow 2: 10.45.0.4 -> 192.168.0.201 (TCP) @ 12742K on Port 18296 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 18296 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.201 -p 18296 -b 12742K -t 10" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.201 -p 18296 -b 12742K -t 120" > output.log 2>&1 &
 
 # --- Flow 3: 10.45.0.4 -> 192.168.0.201 (UDP) @ 3626573357K on Port 12639 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 12639 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.201 -p 12639 -u -b 3626573357K -t 10" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.201 -p 12639 -u -b 3626573357K -t 120" > output.log 2>&1 &
 

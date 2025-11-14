@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define the pcap file
-PCAP_FILE="../dns.pcap"
 # PCAP_FILE="/home/vagrant/umu-traces/n3_2025-07-10_14-13-36.pcap"
+PCAP_FILE="/home/vagrant/comnetsemu/app/P-and-P_Digital_Twin/sync_and_predict/generate_scenario/all_traffic_internet.pcap"
 
 # Define the output file name
 OUTPUT_FILE="output.json"
