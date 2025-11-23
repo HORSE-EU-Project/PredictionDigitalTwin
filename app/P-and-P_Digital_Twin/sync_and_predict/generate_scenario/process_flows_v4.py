@@ -64,7 +64,7 @@ def process_flows(input_csv_file, mapping_file_path=None):
         "../../cmd_container.sh internet_server \"pkill iperf3\" ",
         "../../cmd_container.sh ue1 \"pkill iperf3\" ",
 	"# Run tcpdump on all interfaces (120 sec.)",
-	"sudo tcpdump -i s3-internet -s 0 -G 120 -w all_traffic_internet.pcap &",
+	"sudo tcpdump -i s1-s2 -s 0 -G 120 -w all_traffic_internet.pcap &",
         ""
     ]
 
@@ -93,7 +93,7 @@ def process_flows(input_csv_file, mapping_file_path=None):
 
         # 2. Client command (Source host)
         if protocol == 'UDP':
-            client_cmd = f"../../cmd_container.sh ue1 \"iperf3 -B 10.45.0.4 -c {ip_dst_mapped} -p {iperf_port} -u -b {throughput_str} -t 120\" > output.log 2>&1 &"
+            client_cmd = f"../../cmd_container.sh ue1 \"iperf3 -u -B 10.45.0.4 -c {ip_dst_mapped} -p {iperf_port} -u -b {throughput_str} -t 120\" > output.log 2>&1 &"
         else:
             client_cmd = f"../../cmd_container.sh ue1 \"iperf3 -B 10.45.0.4 -c {ip_dst_mapped} -p {iperf_port} -b {throughput_str} -t 120\" > output.log 2>&1 &"
         
