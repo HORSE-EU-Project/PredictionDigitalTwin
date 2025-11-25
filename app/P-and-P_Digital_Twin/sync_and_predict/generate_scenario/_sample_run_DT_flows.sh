@@ -59,5 +59,7 @@
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 17717 -D" > output.log 2>&1 &
 ../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.0.4 -p 17717 -b 70720K -t 120" > output.log 2>&1 &
 
-../../cmd_container.sh upf_cld "tcpdump -i ogstun -G 30 -W 1 -w capture.pcap" 
+../../cmd_container.sh upf_cld "tcpdump -i ogstun -G 20 -W 1 -w capture.pcap"
 docker cp upf_cld:/open5gs/capture.pcap /tmp/temp.pcap
+#../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 20 -w capture.pcap
+#docker cp upf_cld:capture.pcap /tmp/temp.pcap

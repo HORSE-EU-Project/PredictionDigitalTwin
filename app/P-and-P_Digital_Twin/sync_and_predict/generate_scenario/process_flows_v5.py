@@ -104,8 +104,8 @@ def process_flows(input_csv_file, mapping_file_path=None):
 
     #shell_script_lines.append("# Final cleanup")
     #shell_script_lines.append("../../cmd_container.sh internet_server \"pkill iperf3\" ")
-    shell_script_lines.append("../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 120 -w capture.pcap")
-    shell_script_lines.append("docker cp upf_cld:capture.pcap /tmp/temp.pcap")
+    shell_script_lines.append("../../cmd_container.sh upf_cld \"tcpdump -i ogstun -G 30 -W 1 -w capture.pcap\" ")
+    shell_script_lines.append("docker cp upf_cld:/open5gs/capture.pcap /tmp/temp.pcap")
     shell_script_lines.append("")
 
     # --- 4. Save the shell file as "run_DT_flows.sh" ---
