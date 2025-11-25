@@ -64,7 +64,7 @@ def process_flows(input_csv_file, mapping_file_path=None):
         "../../cmd_container.sh internet_server \"pkill iperf3\" ",
         "../../cmd_container.sh ue1 \"pkill iperf3\" ",
 	"# Run tcpdump on all interfaces (120 sec.)",
-	"../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 120 -w capture.pcap &",
+	"#../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 120 -w capture.pcap &",
         ""
     ]
 
@@ -104,6 +104,7 @@ def process_flows(input_csv_file, mapping_file_path=None):
 
     #shell_script_lines.append("# Final cleanup")
     #shell_script_lines.append("../../cmd_container.sh internet_server \"pkill iperf3\" ")
+    shell_script_lines.append("../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 120 -w capture.pcap")
     shell_script_lines.append("docker cp upf_cld:capture.pcap /tmp/temp.pcap")
     shell_script_lines.append("")
 

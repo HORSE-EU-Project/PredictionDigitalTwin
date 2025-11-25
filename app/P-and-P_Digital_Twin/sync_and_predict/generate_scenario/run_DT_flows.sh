@@ -7,7 +7,7 @@
 ../../cmd_container.sh internet_server "pkill iperf3" 
 ../../cmd_container.sh ue1 "pkill iperf3" 
 # Run tcpdump on all interfaces (120 sec.)
-# ../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 120 -w capture.pcap &
+#../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 120 -w capture.pcap &
 
 # --- Flow 1: 10.45.0.4 -> 192.168.0.200 (HTTP) @ 84630K on Port 52905 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 52905 -D" > output.log 2>&1 &
@@ -59,4 +59,5 @@
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 17717 -D" > output.log 2>&1 &
 ../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.0.4 -p 17717 -b 70720K -t 120" > output.log 2>&1 &
 
+#../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 20 -w capture.pcap
 #docker cp upf_cld:capture.pcap /tmp/temp.pcap
