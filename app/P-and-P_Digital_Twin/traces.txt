@@ -1,0 +1,30 @@
+Directory:
+/packet-capture/cnit/demo-10/api-exposure/2025_11_19
+
+Split large pcap files into 10 sec. parts:
+editcap -i 10 input.pcap output_%02d.pcap
+
+
+total 20628
+drwxrwxr-x 2 ubuntu ubuntu    4096 Nov 19 19:39 .
+drwxrwxr-x 3 ubuntu ubuntu    4096 Nov 19 19:39 ..
+-rw-r--r-- 1 ubuntu ubuntu  808624 Nov 19 12:48 2025_11_19-13_36_25-normal.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    3948 Nov 19 15:58 2025_11_19-13_36_25-normal.txt
+-rw-r--r-- 1 ubuntu ubuntu  812264 Nov 19 13:04 2025_11_19-13_52_26-normal.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    3948 Nov 19 15:58 2025_11_19-13_52_26-normal.txt
+-rw-r--r-- 1 ubuntu ubuntu  787434 Nov 19 13:17 2025_11_19-14_05_51-normal.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    3948 Nov 19 15:58 2025_11_19-14_05_51-normal.txt
+-rw-r--r-- 1 ubuntu ubuntu 2507664 Nov 19 13:39 2025_11_19-14_28_10-attack_light.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    7193 Nov 19 15:58 2025_11_19-14_28_10-attack_light.txt
+-rw-r--r-- 1 ubuntu ubuntu 2503674 Nov 19 13:51 2025_11_19-14_40_00-attack_light.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    7193 Nov 19 15:58 2025_11_19-14_40_00-attack_light.txt
+-rw-r--r-- 1 ubuntu ubuntu 2513324 Nov 19 14:31 2025_11_19-15_19_41-attack_light.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    7193 Nov 19 15:58 2025_11_19-15_19_41-attack_light.txt
+-rw-r--r-- 1 ubuntu ubuntu 3545908 Nov 19 14:43 2025_11_19-15_32_16-attack_heavy.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    7193 Nov 19 15:59 2025_11_19-15_32_16-attack_heavy.txt
+-rw-r--r-- 1 ubuntu ubuntu 3686842 Nov 19 15:28 2025_11_19-16_16_45-attack_heavy.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    7193 Nov 19 15:59 2025_11_19-16_16_45-attack_heavy.txt
+-rw-r--r-- 1 ubuntu ubuntu 3855376 Nov 19 15:46 2025_11_19-16_35_04-attack_heavy.pcap
+-rw-rw-r-- 1 ubuntu ubuntu    7193 Nov 19 15:59 2025_11_19-16_35_04-attack_heavy.txt
+-rw-r--r-- 1 ubuntu ubuntu     863 Nov 19 13:36 README.txt
+-rwxr-xr-x 1 ubuntu ubuntu     326 Nov 19 15:57 get_stats.sh

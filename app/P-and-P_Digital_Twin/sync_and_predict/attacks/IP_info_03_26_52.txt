@@ -1,0 +1,31 @@
+Total packets: 6500
+Total SYN packets (no ACK counted): 650.0
+Source IP counts:
+192.168.130.10: 780
+192.168.130.145: 2600
+192.168.130.93: 780
+192.168.130.133: 780
+192.168.130.27: 780
+192.168.130.103: 780
+High volume of traffic detected.
+Potential SYN flood detected.
+High traffic from single source IP detected (potential DoS): 192.168.130.10 with 780 packets.
+High traffic from single source IP detected (potential DoS): 192.168.130.145 with 2600 packets.
+High traffic from single source IP detected (potential DoS): 192.168.130.93 with 780 packets.
+High traffic from single source IP detected (potential DoS): 192.168.130.133 with 780 packets.
+High traffic from single source IP detected (potential DoS): 192.168.130.27 with 780 packets.
+High traffic from single source IP detected (potential DoS): 192.168.130.103 with 780 packets.
+Destination IP counts:
+192.168.130.145: 3900
+192.168.130.10: 520
+192.168.130.93: 520
+192.168.130.133: 520
+192.168.130.27: 520
+192.168.130.103: 520
+High volume of traffic detected.
+High traffic to single destination IP detected: 192.168.130.145 with 3900 packets.
+High traffic to single destination IP detected: 192.168.130.10 with 520 packets.
+High traffic to single destination IP detected: 192.168.130.93 with 520 packets.
+High traffic to single destination IP detected: 192.168.130.133 with 520 packets.
+High traffic to single destination IP detected: 192.168.130.27 with 520 packets.
+High traffic to single destination IP detected: 192.168.130.103 with 520 packets.
