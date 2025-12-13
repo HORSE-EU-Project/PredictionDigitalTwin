@@ -9,55 +9,40 @@
 # Run tcpdump on all interfaces (120 sec.)
 #../../cmd_container.sh upf_cld tcpdump -i ogstun -s 0 -G 120 -w capture.pcap &
 
-# --- Flow 1: 10.45.0.4 -> 192.168.0.200 (HTTP) @ 84630K on Port 52905 ---
+# --- Flow 1: 10.201.1.2 -> 10.45.202.100 (DTLSv1.2) @ 19245233K on Port 52905 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 52905 -D" > output.log 2>&1 &
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 52905 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.200 -p 52905 -b 84630K -t 120" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.202.100 -p 52905 -b 19245233K -t 120" > output.log 2>&1 &
 
-# --- Flow 2: 10.45.0.4 -> 192.168.0.200 (TCP) @ 70720K on Port 18296 ---
+# --- Flow 2: 10.201.1.2 -> 10.45.202.100 (STUN) @ 54032K on Port 18296 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 18296 -D" > output.log 2>&1 &
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 18296 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.200 -p 18296 -b 70720K -t 120" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.202.100 -p 18296 -b 54032K -t 120" > output.log 2>&1 &
 
-# --- Flow 3: 10.45.0.4 -> 192.168.0.200 (HTTP) @ 61620K on Port 12639 ---
+# --- Flow 3: 10.201.1.2 -> 10.45.202.100 (UDP) @ 487393099K on Port 12639 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 12639 -D" > output.log 2>&1 &
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 12639 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.200 -p 12639 -b 61620K -t 120" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -u -B 10.45.0.4 -c 10.45.202.100 -p 12639 -u -b 487393099K -t 120" > output.log 2>&1 &
 
-# --- Flow 4: 10.45.0.4 -> 192.168.0.200 (TCP) @ 70720K on Port 59598 ---
+# --- Flow 4: 10.201.1.2 -> 10.45.202.100 (UDP\) @ 0K on Port 59598 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 59598 -D" > output.log 2>&1 &
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 59598 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.200 -p 59598 -b 70720K -t 120" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.202.100 -p 59598 -b 0K -t 120" > output.log 2>&1 &
 
-# --- Flow 5: 10.45.0.4 -> 192.168.0.200 (HTTP) @ 82810K on Port 29024 ---
+# --- Flow 5: 10.45.100.101 -> 10.45.100.102 (BGP) @ 546K on Port 29024 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 29024 -D" > output.log 2>&1 &
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 29024 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.200 -p 29024 -b 82810K -t 120" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.100.102 -p 29024 -b 546K -t 120" > output.log 2>&1 &
 
-# --- Flow 6: 10.45.0.4 -> 192.168.0.200 (TCP) @ 70720K on Port 27049 ---
+# --- Flow 6: 10.45.100.101 -> 10.45.100.102 (TCP) @ 216K on Port 27049 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 27049 -D" > output.log 2>&1 &
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 27049 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 192.168.0.200 -p 27049 -b 70720K -t 120" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.100.102 -p 27049 -b 216K -t 120" > output.log 2>&1 &
 
-# --- Flow 7: 192.168.0.200 -> 10.45.0.4 (HTTP) @ 60580K on Port 25628 ---
+# --- Flow 7: 10.45.110.254\ -> 10.45.202.100 (10.45.202.100\) @ 260K on Port 25628 ---
 ../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 25628 -D" > output.log 2>&1 &
 ../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 25628 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.0.4 -p 25628 -b 60580K -t 120" > output.log 2>&1 &
-
-# --- Flow 8: 192.168.0.200 -> 10.45.0.4 (TCP) @ 70720K on Port 20144 ---
-../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 20144 -D" > output.log 2>&1 &
-../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 20144 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.0.4 -p 20144 -b 70720K -t 120" > output.log 2>&1 &
-
-# --- Flow 9: 192.168.0.200 -> 10.45.0.4 (HTTP) @ 61360K on Port 59265 ---
-../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 59265 -D" > output.log 2>&1 &
-../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 59265 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.0.4 -p 59265 -b 61360K -t 120" > output.log 2>&1 &
-
-# --- Flow 10: 192.168.0.200 -> 10.45.0.4 (TCP) @ 70720K on Port 17717 ---
-../../cmd_container.sh internet_server "timeout 2m iperf3 -s -B 192.168.0.201 -p 17717 -D" > output.log 2>&1 &
-../../cmd_container.sh dns_s "timeout 2m iperf3 -s -B 192.168.0.200 -p 17717 -D" > output.log 2>&1 &
-../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.0.4 -p 17717 -b 70720K -t 120" > output.log 2>&1 &
+../../cmd_container.sh ue1 "iperf3 -B 10.45.0.4 -c 10.45.202.100 -p 25628 -b 260K -t 120" > output.log 2>&1 &
 
 ../../cmd_container.sh upf_cld "tcpdump -i ogstun -G 30 -W 1 -w capture.pcap" 
 docker cp upf_cld:/open5gs/capture.pcap /tmp/temp.pcap
