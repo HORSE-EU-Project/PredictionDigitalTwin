@@ -1,4 +1,5 @@
 clear
+export demo=1
 figlet "HORSE P&P NDT"
 figlet -f ./scripts/smkeyboard.flf "DEMO#10"
 echo

@@ -2,16 +2,16 @@
 <ThreatModel id="tm_8b2c65n3dr87345s54gd746b7h83t82k" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Saman%20Tariq/Downloads/threatModel%20(3).xsd">
 	<ThreatModelElement id="tme_6d3c88w5rt45873g98el723f7g92j63l">
 		<CyberAttack>
-			<Type>API Exposure</Type>
+			<Type>Network Denial of Service</Type>
 			<Pattern/>
 			<Vector>
 				<Attack_timestamp>2024-04-28T19:21:44.613z</Attack_timestamp>
-				<Attack_location>5G core</Attack_location>
+				<Attack_location>DNS server</Attack_location>
 				<Attack_IPAddress>192.255.255.200</Attack_IPAddress>
-				<Parameter>Count of control packets received per second in the core</Parameter>
+				<Parameter>Count of downlink packet received per second</Parameter>
 			</Vector>
 			<ATT_CK>
-				<Type>API Exposure</Type>
+				<Type>Network Denial of Service: DDoS downlink</Type>
 				<ID>T1498.002</ID>
 			</ATT_CK>
 			
