@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreatModel id="tm_8b2c65n3dr87345s54gd746b7h83t82k" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="threatModel.xsd">
+	<ThreatModelElement id="tme_6d3c88w5rt45873g98el723f7g92j63l">
+		<ThreatActor>
+			<Source>dns-c1</Source>
+		</ThreatActor>
+		<CyberAttack>
+			<Type>DNS_Amplification</Type>
+			<Pattern/>
+			<Vector>
+				<AttackLocation>dns-s</AttackLocation>
+				<Parameter>
+					<Description>DNS Amplification on pod dns-s</Description>
+					<Protocol>UDP</Protocol>
+					<Port>53</Port>
+					<DomainName>dominio1.com</DomainName>
+					<Duration>300</Duration>
+				</Parameter>
+				<AttackTimestamp>2025-03-20T10:48:44.613</AttackTimestamp>
+			</Vector>
+			<ATT_CK>
+				<Type>Network Denial of Service: Reflection Amplification</Type>
+				<ID>T1498.002</ID>
+			</ATT_CK>
+		</CyberAttack>
+		<ControlAction>
+			<Mitigation>
+				<MitigationAction>
+					<Type>FilterNetworkTraffic</Type>
+					<ATT_CKID>M1037</ATT_CKID>
+				</MitigationAction>
+				<MitigationCondition type="FilterNetworkTrafficCondition">
+					<FilterCondition>
+						<SourceAddress>2001:720:1710:4::5001/128</SourceAddress>
+					</FilterCondition>
+					<isCNF>false</isCNF>
+				</MitigationCondition>
+			</Mitigation>
+		</ControlAction>
+	</ThreatModelElement>
+</ThreatModel>

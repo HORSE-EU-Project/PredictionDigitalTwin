@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreatModel id="tm_8b2c65n3dr87345s54gd746b7h83t82k" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="threatModel.xsd">
+	<ThreatModelElement id="tme_6d3c88w5rt45873g98el723f7g92j63l">
+		<ThreatActor>
+			<Source>internet</Source>
+		</ThreatActor>
+		<CyberAttack>
+			<Type>DDoS_Downlink</Type>
+			<Pattern/>
+			<Vector>
+				<AttackLocation>dns-c1</AttackLocation>
+				<Parameter>
+					<Description>Count DNS packets</Description>
+					<Protocol>TCP</Protocol>
+					<Flag>SYN</Flag>
+					<Duration>60</Duration>
+				</Parameter>
+				<AttackTimestamp>2025-03-20T10:48:44.613</AttackTimestamp>
+			</Vector>
+			<ATT_CK>
+				<Type>Network Denial of Service</Type>
+				<ID>T1498</ID>
+			</ATT_CK>
+		</CyberAttack>
+		<ControlAction>
+			<Mitigation>
+				<MitigationAction>
+					<Type>FilterNetworkTraffic</Type>
+					<ATT_CKID>M1037</ATT_CKID>
+				</MitigationAction>
+				<MitigationCondition type="FilterNetworkTrafficCondition">
+					<FilterCondition>
+						<SourceAddress>192.168.1.100/32</SourceAddress>
+					</FilterCondition>
+					<isCNF>false</isCNF>
+				</MitigationCondition>
+			</Mitigation>
+		</ControlAction>
+	</ThreatModelElement>
+</ThreatModel>
