@@ -1,21 +1,21 @@
 UERANSIM v3.2.6
-[2026-01-08 15:43:22.498] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
-[2026-01-08 15:43:22.897] [sctp] [info] SCTP connection established (192.168.0.111:38412)
-[2026-01-08 15:43:22.897] [sctp] [debug] SCTP association setup ascId[791]
-[2026-01-08 15:43:22.897] [ngap] [debug] Sending NG Setup Request
-[2026-01-08 15:43:23.028] [ngap] [debug] NG Setup Response received
-[2026-01-08 15:43:23.028] [ngap] [info] NG Setup procedure is successful
-[2026-01-08 15:43:32.998] [rrc] [debug] UE[1] new signal detected
-[2026-01-08 15:43:33.542] [rrc] [debug] UE[2] new signal detected
-[2026-01-08 15:43:33.554] [rrc] [info] RRC Setup for UE[2]
-[2026-01-08 15:43:33.560] [ngap] [debug] Initial NAS message received from UE[2]
-[2026-01-08 15:43:34.136] [ngap] [debug] Initial Context Setup Request received
-[2026-01-08 15:43:34.625] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-[2026-01-08 15:43:34.727] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-[2026-01-08 15:43:35.492] [rrc] [info] RRC Setup for UE[1]
-[2026-01-08 15:43:35.497] [ngap] [debug] Initial NAS message received from UE[1]
-[2026-01-08 15:43:36.067] [ngap] [debug] Initial Context Setup Request received
-[2026-01-08 15:43:36.556] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2026-01-08 15:43:36.658] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2026-01-08 15:49:12.389] [rls] [debug] UE[1] signal lost
-[2026-01-08 15:49:12.389] [rls] [debug] UE[2] signal lost
+[2026-01-23 10:25:39.026] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
+[2026-01-23 10:25:39.411] [sctp] [info] SCTP connection established (192.168.0.111:38412)
+[2026-01-23 10:25:39.411] [sctp] [debug] SCTP association setup ascId[35]
+[2026-01-23 10:25:39.411] [ngap] [debug] Sending NG Setup Request
+[2026-01-23 10:25:39.538] [ngap] [debug] NG Setup Response received
+[2026-01-23 10:25:39.538] [ngap] [info] NG Setup procedure is successful
+[2026-01-23 10:25:49.417] [rrc] [debug] UE[1] new signal detected
+[2026-01-23 10:25:49.422] [rrc] [info] RRC Setup for UE[1]
+[2026-01-23 10:25:49.427] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-01-23 10:25:49.799] [rrc] [debug] UE[2] new signal detected
+[2026-01-23 10:25:49.806] [rrc] [info] RRC Setup for UE[2]
+[2026-01-23 10:25:49.811] [ngap] [debug] Initial NAS message received from UE[2]
+[2026-01-23 10:25:50.082] [ngap] [debug] Initial Context Setup Request received
+[2026-01-23 10:25:50.353] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2026-01-23 10:25:50.453] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2026-01-23 10:25:50.800] [ngap] [debug] Initial Context Setup Request received
+[2026-01-23 10:25:51.268] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+[2026-01-23 10:25:51.369] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+terminate called after throwing an instance of 'LibError'
+  what():  sendto failed:  Network is unreachable

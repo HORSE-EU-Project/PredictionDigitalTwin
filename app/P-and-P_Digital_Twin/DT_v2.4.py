@@ -39,7 +39,9 @@ if __name__ == "__main__":
 
     setLogLevel("info")
 
-    home_testbed = os.environ.get('TESTBED', 'CNIT')
+    # home_testbed = os.environ.get('TESTBED', 'CNIT')
+    # home_testbed = os.environ.get('TESTBED', 'UPC')
+    home_testbed = os.environ.get('TESTBED', 'UMU')
     print(f"The TESTBED is: {home_testbed}")
 
     # Ottieni il percorso del file di script Python corrente
