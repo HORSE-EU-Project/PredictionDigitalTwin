@@ -21,14 +21,11 @@ Supported open source software:
 
 ## Install instructions
 
-Once the Comnetsemu environment is correctly running, build the necessary docker images for 5G UERANSIM and Open5GS and other software:
+Once the Comnetsemu environment is correctly running, Build the necessary docker images for 5G UERANSIM and Open5GS and other software:
 ```
-cd build
-./build.sh
-./pyModules.sh
+./install.sh
 ```
-or alternatively download the containers by using the dockerhub_pull.sh command.
-Moreover, please check the additional package that you wish to install from the customization folder.
+or alternatively build the containers by using the build/build.sh command.
 
 To be able to capture traffic, you need to enable vagrant to use sudo without password.
 This is done by the following command:
@@ -44,7 +41,7 @@ vagrant ALL=(ALL:ALL) NOPASSWD: ALL
 
 For interactive operation, please run the following commands in different terminals.
 
-Identify the HORSE testbed (CNIT, UPC, UMU) by uncommenting the corresponding line in the file DT_vx.z.py (e.g. DT_v2.4.py), or alternatively:
+Identify the HORSE testbed (CNIT, UPC, UMU):
 ```
 export TESTBED="UMU"
 ```
@@ -53,18 +50,11 @@ Start Network Digital Twin with Ryu controller and sFlow:
 ```
 ./runDigitalTwin.sh
 ```
-The command launches the NDT, sFlow, Prometheus and Grafana.
-About Prometheus and Grafana, please see details in the "/network_monitoring" directory.
 
 Run the web-based GUI to interact with the Digital Twin (for testing purposes):
 ```
 cd GUI
 ./launch
-```
-or the simpler dashboard:
-```
-cd HORSE_dashboard
-python3 ndt_dashboard.py
 ```
 
 If you want to test interfaces, too:
@@ -73,8 +63,7 @@ cd customization
 ./run_ntfy.sh
 ```
 
-When you quit the NDT, please write "quit" in the terminal where you run "./runDigitalTwin.sh",
-wait for the process to terminate, then press CTRL+C and finally please clean up:
+When you quit the NDT, please clean up:
 ```
 ./clean.sh
 ```
@@ -92,18 +81,10 @@ To check that the NDT is running correctly, run:
 ./5g_wait_for_healthy.sh
 ```
 
-## Important notice
-Please note that the different scripts were used for testing the module within the HORSE platform.
-Therefore, they are not functional without the rest of the platform. However, they can provide an
-example on how to generate traffic on the NDT, run predictions and analyze the results.
-For simplicity, in the public version, we are using PcapNinja for quick traffic analysis and simple
-attack prediction.
-
 ## Used ports
 
 | Service | Port | Notes |
 | :-------- | :-------: | :------ |
-| Input from Early Modeling | 5000 |  |
 | Digital Twin GUI | 8501 |  |
 | Digital Twin API | 8000 | (8000/docs for Swagger) |
 | Open5GS Core | 3000 -> 1234| (user: admin, password: 1423) |
@@ -112,7 +93,6 @@ attack prediction.
 | cAdvisor | 8080 | |
 | Grafana | 7070 | (Login with admin as the username and yourpassword as the password) |
 | sFlow | 8008 | if active |
-| NDT Dashboard | 9000| to be run manually |
 | VSCode server | 8888 | to be installed and run manually (password: password) |
 | NTFY server | 80 -> 8086 | to be run manually |
 | Wireshark server | 80 -> 8085 | to be run manually |
