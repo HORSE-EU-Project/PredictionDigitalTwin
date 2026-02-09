@@ -1,20 +1,26 @@
 UERANSIM v3.2.6
-[2026-02-03 09:06:56.012] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
-[2026-02-03 09:06:56.412] [sctp] [info] SCTP connection established (192.168.0.111:38412)
-[2026-02-03 09:06:56.413] [sctp] [debug] SCTP association setup ascId[806]
-[2026-02-03 09:06:56.413] [ngap] [debug] Sending NG Setup Request
-[2026-02-03 09:06:56.544] [ngap] [debug] NG Setup Response received
-[2026-02-03 09:06:56.544] [ngap] [info] NG Setup procedure is successful
-[2026-02-03 09:07:02.095] [rrc] [debug] UE[1] new signal detected
-[2026-02-03 09:07:02.104] [rrc] [info] RRC Setup for UE[1]
-[2026-02-03 09:07:02.110] [ngap] [debug] Initial NAS message received from UE[1]
-[2026-02-03 09:07:02.695] [ngap] [debug] Initial Context Setup Request received
-[2026-02-03 09:07:02.730] [rrc] [debug] UE[2] new signal detected
-[2026-02-03 09:07:02.738] [rrc] [info] RRC Setup for UE[2]
-[2026-02-03 09:07:02.743] [ngap] [debug] Initial NAS message received from UE[2]
-[2026-02-03 09:07:03.206] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2026-02-03 09:07:03.310] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2026-02-03 09:07:03.805] [ngap] [debug] Initial Context Setup Request received
-[2026-02-03 09:07:04.293] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-[2026-02-03 09:07:04.393] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-[2026-02-03 09:15:23.302] [rls] [debug] UE[1] signal lost
+[2026-02-06 14:26:27.334] [sctp] [info] Trying to establish SCTP connection... (192.168.0.111:38412)
+[2026-02-06 14:26:27.725] [sctp] [info] SCTP connection established (192.168.0.111:38412)
+[2026-02-06 14:26:27.726] [sctp] [debug] SCTP association setup ascId[837]
+[2026-02-06 14:26:27.726] [ngap] [debug] Sending NG Setup Request
+[2026-02-06 14:26:27.859] [ngap] [debug] NG Setup Response received
+[2026-02-06 14:26:27.859] [ngap] [info] NG Setup procedure is successful
+[2026-02-06 14:26:33.392] [rrc] [debug] UE[1] new signal detected
+[2026-02-06 14:26:33.403] [rrc] [info] RRC Setup for UE[1]
+[2026-02-06 14:26:33.409] [ngap] [debug] Initial NAS message received from UE[1]
+[2026-02-06 14:26:33.939] [rrc] [debug] UE[2] new signal detected
+[2026-02-06 14:26:33.945] [rrc] [info] RRC Setup for UE[2]
+[2026-02-06 14:26:33.951] [ngap] [debug] Initial NAS message received from UE[2]
+[2026-02-06 14:26:33.997] [ngap] [debug] Initial Context Setup Request received
+[2026-02-06 14:26:34.307] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2026-02-06 14:26:34.406] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2026-02-06 14:26:34.891] [ngap] [debug] Initial Context Setup Request received
+[2026-02-06 14:26:35.381] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+[2026-02-06 14:26:35.485] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+[2026-02-09 08:06:56.115] [rls] [debug] UE[1] signal lost
+[2026-02-09 08:06:56.115] [rls] [debug] UE[2] signal lost
+[2026-02-09 08:08:34.345] [sctp] [warning] Unhandled SCTP notification received
+[2026-02-09 08:14:55.271] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2026-02-09 08:14:55.272] [ngap] [error] Association terminated for AMF[2]
+[2026-02-09 08:14:55.272] [ngap] [debug] Removing AMF context[2]
+terminate called recursively

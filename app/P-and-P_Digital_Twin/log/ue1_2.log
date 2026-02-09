@@ -1,41 +1,260 @@
 UERANSIM v3.2.6
-[2026-02-03 09:07:07.083] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
-[2026-02-03 09:07:07.096] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
-[2026-02-03 09:07:07.096] [nas] [info] Selected plmn[001/01]
-[2026-02-03 09:07:07.096] [rrc] [info] Selected cell plmn[001/01] tac[1] category[SUITABLE]
-[2026-02-03 09:07:07.096] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
-[2026-02-03 09:07:07.096] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
-[2026-02-03 09:07:07.096] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
-[2026-02-03 09:07:07.099] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-[2026-02-03 09:07:07.099] [nas] [debug] Sending Initial Registration
-[2026-02-03 09:07:07.100] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
-[2026-02-03 09:07:07.100] [rrc] [debug] Sending RRC Setup Request
-[2026-02-03 09:07:07.107] [rrc] [info] RRC connection established
-[2026-02-03 09:07:07.107] [rrc] [info] UE switches to state [RRC-CONNECTED]
-[2026-02-03 09:07:07.107] [nas] [info] UE switches to state [CM-CONNECTED]
-[2026-02-03 09:07:07.248] [nas] [debug] Authentication Request received
-[2026-02-03 09:07:07.248] [nas] [debug] Sending Authentication Failure due to SQN out of range
-[2026-02-03 09:07:07.390] [nas] [debug] Authentication Request received
-[2026-02-03 09:07:07.530] [nas] [debug] Security Mode Command received
-[2026-02-03 09:07:07.530] [nas] [debug] Selected integrity[2] ciphering[0]
-[2026-02-03 09:07:07.676] [nas] [debug] Registration accept received
-[2026-02-03 09:07:07.676] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
-[2026-02-03 09:07:07.676] [nas] [debug] Sending Registration Complete
-[2026-02-03 09:07:07.676] [nas] [info] Initial Registration is successful
-[2026-02-03 09:07:07.676] [nas] [debug] Sending PDU Session Establishment Request
-[2026-02-03 09:07:07.679] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-[2026-02-03 09:07:07.679] [nas] [debug] Sending PDU Session Establishment Request
-[2026-02-03 09:07:07.679] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
-[2026-02-03 09:07:08.138] [nas] [debug] Configuration Update Command received
-[2026-02-03 09:07:08.160] [nas] [debug] PDU Session Establishment Accept received
-[2026-02-03 09:07:08.160] [nas] [info] PDU Session establishment is successful PSI[1]
-[2026-02-03 09:07:08.182] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun2, 10.45.0.4] is up.
-[2026-02-03 09:07:08.262] [nas] [debug] PDU Session Establishment Accept received
-[2026-02-03 09:07:08.262] [nas] [info] PDU Session establishment is successful PSI[2]
-[2026-02-03 09:07:08.283] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun3, 10.46.0.4] is up.
-[2026-02-03 09:15:23.851] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
-[2026-02-03 09:15:23.851] [nas] [error] Radio link failure detected
-[2026-02-03 09:15:23.852] [nas] [info] UE switches to state [CM-IDLE]
-[2026-02-03 09:15:23.852] [nas] [info] UE switches to state [MM-REGISTERED/PS]
-[2026-02-03 09:15:23.852] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
-[2026-02-03 09:15:23.852] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-06 14:26:38.377] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2026-02-06 14:26:38.391] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2026-02-06 14:26:38.393] [nas] [info] Selected plmn[001/01]
+[2026-02-06 14:26:38.393] [rrc] [info] Selected cell plmn[001/01] tac[1] category[SUITABLE]
+[2026-02-06 14:26:38.393] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2026-02-06 14:26:38.393] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2026-02-06 14:26:38.393] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2026-02-06 14:26:38.393] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-02-06 14:26:38.393] [nas] [debug] Sending Initial Registration
+[2026-02-06 14:26:38.393] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2026-02-06 14:26:38.393] [rrc] [debug] Sending RRC Setup Request
+[2026-02-06 14:26:38.399] [rrc] [info] RRC connection established
+[2026-02-06 14:26:38.399] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2026-02-06 14:26:38.399] [nas] [info] UE switches to state [CM-CONNECTED]
+[2026-02-06 14:26:38.542] [nas] [debug] Authentication Request received
+[2026-02-06 14:26:38.542] [nas] [debug] Sending Authentication Failure due to SQN out of range
+[2026-02-06 14:26:38.683] [nas] [debug] Authentication Request received
+[2026-02-06 14:26:38.821] [nas] [debug] Security Mode Command received
+[2026-02-06 14:26:38.821] [nas] [debug] Selected integrity[2] ciphering[0]
+[2026-02-06 14:26:38.969] [nas] [debug] Registration accept received
+[2026-02-06 14:26:38.969] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2026-02-06 14:26:38.969] [nas] [debug] Sending Registration Complete
+[2026-02-06 14:26:38.969] [nas] [info] Initial Registration is successful
+[2026-02-06 14:26:38.969] [nas] [debug] Sending PDU Session Establishment Request
+[2026-02-06 14:26:38.969] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-02-06 14:26:38.969] [nas] [debug] Sending PDU Session Establishment Request
+[2026-02-06 14:26:38.969] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2026-02-06 14:26:39.238] [nas] [debug] Configuration Update Command received
+[2026-02-06 14:26:39.268] [nas] [debug] PDU Session Establishment Accept received
+[2026-02-06 14:26:39.268] [nas] [info] PDU Session establishment is successful PSI[1]
+[2026-02-06 14:26:39.290] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun2, 10.45.0.4] is up.
+[2026-02-06 14:26:39.356] [nas] [debug] PDU Session Establishment Accept received
+[2026-02-06 14:26:39.356] [nas] [info] PDU Session establishment is successful PSI[2]
+[2026-02-06 14:26:39.371] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun3, 10.46.0.4] is up.
+[2026-02-09 08:06:55.824] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+[2026-02-09 08:06:55.824] [nas] [error] Radio link failure detected
+[2026-02-09 08:06:55.824] [nas] [info] UE switches to state [CM-IDLE]
+[2026-02-09 08:06:55.824] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2026-02-09 08:06:55.824] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+[2026-02-09 08:06:55.824] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:06:58.101] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:06:58.291] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:06:58.291] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:07:00.303] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:07:01.404] [nas] [info] UE switches to state [MM-REGISTERED/NO-CELL-AVAILABLE]
+[2026-02-09 08:07:28.303] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:07:28.303] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:07:31.131] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:07:58.315] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:07:58.315] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:08:01.959] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:08:28.327] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:08:28.327] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:08:32.787] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:08:58.339] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:08:58.339] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:09:03.615] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:09:28.351] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:09:28.351] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:09:34.443] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:09:58.363] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:09:58.363] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:10:05.271] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:10:28.375] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:10:28.375] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:10:36.099] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:10:58.387] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:10:58.387] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:11:06.927] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:11:28.399] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:11:28.399] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:11:37.755] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:11:58.411] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:11:58.411] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:12:08.585] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:12:28.423] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:12:28.423] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:12:39.413] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:12:58.435] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:12:58.435] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:13:10.241] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:13:28.447] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:13:28.447] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:13:41.069] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:13:58.459] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:13:58.459] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:14:11.897] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:14:28.471] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:14:28.471] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:14:42.725] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:14:58.483] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:14:58.483] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:15:13.553] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:15:28.495] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:15:28.495] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:15:44.381] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:15:58.507] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:15:58.507] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:16:15.209] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:16:28.519] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:16:28.519] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:16:46.037] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:16:58.531] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:16:58.531] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:17:16.865] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:17:28.543] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:17:28.543] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:17:47.693] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:17:58.555] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:17:58.555] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:18:18.521] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:18:28.567] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:18:28.567] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:18:49.349] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:18:58.579] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:18:58.579] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:19:20.177] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:19:28.591] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:19:28.591] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:19:51.005] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:19:58.603] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:19:58.603] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:20:21.833] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:20:28.615] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:20:28.615] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:20:52.661] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:20:58.627] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:20:58.627] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:21:23.489] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:21:28.639] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:21:28.639] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:21:54.317] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:21:58.651] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:21:58.651] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:22:25.145] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:22:28.663] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:22:28.663] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:22:55.973] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:22:58.675] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:22:58.675] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:23:26.801] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:23:28.687] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:23:28.687] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:23:57.629] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:23:58.699] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:23:58.699] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:24:28.457] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:24:28.711] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:24:28.711] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:24:58.723] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:24:58.723] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:24:59.285] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:25:28.735] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:25:28.735] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:25:30.113] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:25:58.747] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:25:58.747] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:26:00.941] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:26:28.759] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:26:28.759] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:26:31.769] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:26:58.771] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:26:58.771] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:27:02.597] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:27:28.783] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:27:28.783] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:27:33.425] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:27:58.795] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:27:58.795] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:28:04.255] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:28:28.807] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:28:28.807] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:28:35.083] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:28:58.819] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:28:58.819] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:29:05.911] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:29:28.831] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:29:28.831] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:29:36.739] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:29:58.844] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:29:58.844] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:30:07.567] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:30:28.856] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:30:28.856] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:30:38.395] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:30:58.868] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:30:58.868] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:31:09.223] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:31:28.880] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:31:28.880] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:31:40.051] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:31:58.892] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:31:58.892] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:32:10.879] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:32:28.904] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:32:28.904] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:32:41.709] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:32:58.916] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:32:58.916] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:33:12.537] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:33:28.928] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:33:28.928] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:33:43.365] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:33:58.940] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:33:58.940] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:34:14.193] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:34:28.952] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:34:28.952] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:34:45.024] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:34:58.964] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:34:58.964] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:35:15.852] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:35:28.976] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:35:28.976] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:35:46.680] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:35:58.988] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:35:58.988] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:36:17.508] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:36:29.000] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:36:29.000] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:36:48.336] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:36:59.012] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:36:59.012] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:37:19.164] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:37:29.024] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:37:29.024] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:37:49.992] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:37:59.036] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:37:59.036] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:38:20.820] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:38:29.048] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:38:29.048] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:38:51.648] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:38:59.060] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:38:59.060] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:39:22.476] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:39:29.072] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:39:29.072] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:39:53.304] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:39:59.084] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:39:59.084] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:40:24.132] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:40:29.096] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:40:29.096] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:40:54.960] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:40:59.108] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:40:59.108] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:41:25.788] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:41:29.120] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:41:29.120] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:41:56.616] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:41:59.132] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:41:59.132] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:42:27.444] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:42:29.144] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:42:29.144] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2026-02-09 08:42:58.272] [nas] [error] PLMN selection failure, no cells in coverage
+[2026-02-09 08:42:59.156] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2026-02-09 08:42:59.156] [rrc] [error] Cell selection failure, no suitable or acceptable cell found

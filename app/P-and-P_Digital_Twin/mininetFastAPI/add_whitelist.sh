@@ -1,0 +1,4 @@
+curl -X POST "https://192.168.30.9:8443/clients/whitelist" \
+  -H "X-Admin-Token: a-very-strong-secret" \
+  -H "Content-Type: application/json" \
+  -d '{"entries": ["192.168.1.50", "10.0.0.0/8"]}'
