@@ -9,13 +9,13 @@
 # ===============================================
 
 # Directory where the .pcap files are located.
-SOURCE_DIR="/packet-capture/cnit/demo-10/api-exposure/2025_11_19"
+SOURCE_DIR="/packet-capture/cnit/demo-10/live"
 
 # Directory where the most recent file should be copied.
 DEST_DIR="/tmp/pcap_destination"
 
 # The desired name of the copied output file.
-OUTPUT_FILENAME="latest_capture_$(date +%Y%m%d_%H%M%S).pcap"
+OUTPUT_FILENAME="current.pcap"
 
 # Full path for the destination file
 DEST_FILE="${DEST_DIR}/${OUTPUT_FILENAME}"

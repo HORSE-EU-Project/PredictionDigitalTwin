@@ -9,6 +9,7 @@ OUTPUT_FILE="output.json"
 
 # Run the pcapninja command and store the output
 PCAP_OUTPUT=$(python3 -W ignore pcapninja.py --pcap_file "${PCAP_FILE}")
+echo "${PCAP_OUTPUT}"
 
 # Extract the "Security concerns" section
 SECURITY_CONCERNS_SECTION=$(echo "${PCAP_OUTPUT}" | awk '/^5\. Security Concerns:/,/^6\. Key Recommendations:/ {
@@ -38,39 +39,39 @@ while IFS= read -r line; do
     current_ip=""
 
     # Try to extract the short attack name
-    #if [[ "$line" =~ [Dd][Dd][Oo][Ss] ]]; then
-    #    current_attack_name="ddos_downlink"
+    if [[ "$line" =~ [Dd][Dd][Oo][Ss] ]]; then
+        current_attack_name="ddos_downlink"
         # for DEMO 3
         # current_attack_name="DDoS"
         # for DEMO 2
         # current_attack_name="DNS Amplification"
-    #elif [[ "$line" =~ [Uu]nusual\ ports ]]; then
-    #    current_attack_name="Unusual Port Traffic"
-    #elif [[ "$line" =~ [Hh]igh\ traffic\ concentration ]]; then
-    #    current_attack_name="High Traffic Concentration"
-    #fi
+    elif [[ "$line" =~ [Uu]nusual\ ports ]]; then
+        current_attack_name="Unusual Port Traffic"
+    elif [[ "$line" =~ [Hh]igh\ traffic\ concentration ]]; then
+        current_attack_name="High Traffic Concentration"
+    fi
 
-    # NEW #
-    case "$demo" in
-        1)
-            attack="ddos_downlink"
-            ;;
-        2)
-            attack="dns_amplification"
-            ;;
-        3)
-            attack="ddos_downlink"
-            ;;
-        4)
-            attack="api_exposure"
-            ;;
-        10)
-            attack="ddos_downlink"
-            ;;
-        *)
-            attack="Unknown attack"
-            ;;
-    esac
+    # for testing #
+    #case "$demo" in
+    #    1)
+    #        attack="ddos_downlink"
+    #        ;;
+    #    2)
+    #        attack="dns_amplification"
+    #        ;;
+    #    3)
+    #        attack="ddos_downlink"
+    #        ;;
+    #    4)
+    #        attack="api_exposure"
+    #        ;;
+    #    10)
+    #        attack="ddos_downlink"
+    #        ;;
+    #    *)
+    #        attack="Unknown attack"
+    #        ;;
+    #esac
 
     current_attack_name="$attack"
 

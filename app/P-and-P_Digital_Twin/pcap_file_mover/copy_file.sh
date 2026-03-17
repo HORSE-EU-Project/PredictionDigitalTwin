@@ -8,7 +8,7 @@
 
 # 1. The full path to the source directory.
 # Example: /home/user/documents
-SOURCE_DIR="/packet-capture/cnit/demo-10/api-exposure/2025_11_19"
+SOURCE_DIR="/packet-capture/cnit/demo-10/api-exposure/live"
 
 # 2. The full path to the destination directory.
 # Example: /home/user/backups
